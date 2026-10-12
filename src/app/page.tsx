@@ -62,6 +62,22 @@ function InstagramIcon({ className = "w-5 h-5" }: { className?: string }) {
   );
 }
 
+function MediumIcon({ className = "w-5 h-5" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+    </svg>
+  );
+}
+
+function QuoraIcon({ className = "w-5 h-5" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.784 19.467c-.64 0-1.233-.146-1.776-.44a7.925 7.925 0 01-1.393 1.144c-.754.49-1.558.826-2.414 1.008l-.201-.482c.983-.757 1.838-1.688 2.564-2.793a6.568 6.568 0 01-1.464-4.227c0-1.876.688-3.468 2.062-4.777 1.375-1.309 3.064-1.964 5.067-1.964 2.003 0 3.692.655 5.067 1.964 1.374 1.309 2.061 2.901 2.061 4.777s-.687 3.469-2.061 4.778c-1.375 1.308-3.064 1.963-5.067 1.963zm.001-1.922c1.47 0 2.685-.494 3.645-1.482.96-.988 1.44-2.227 1.44-3.716 0-1.49-.48-2.729-1.44-3.717-.96-.988-2.175-1.482-3.645-1.482s-2.685.494-3.645 1.482c-.96.988-1.44 2.227-1.44 3.717 0 1.489.48 2.728 1.44 3.716.96.988 2.175 1.482 3.645 1.482z" />
+    </svg>
+  );
+}
+
 export default function HomePage() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -551,6 +567,24 @@ export default function HomePage() {
                 >
                   <GithubIcon className="w-4 h-4" /> GitHub
                 </a>
+                <a
+                  href="https://medium.com/@adarshsarachandran/adarsh-b-s-7db715a97a2a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-badge"
+                  title="Read Adarsh B S on Medium"
+                >
+                  <MediumIcon className="w-4 h-4 text-orange-500" /> Medium
+                </a>
+                <a
+                  href="https://www.quora.com/profile/Adarsh-B-S-21"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-badge"
+                  title="Read Adarsh B S on Quora"
+                >
+                  <QuoraIcon className="w-4 h-4 text-orange-500" /> Quora
+                </a>
               </div>
             </div>
 
@@ -746,6 +780,72 @@ export default function HomePage() {
                   <h4>Professional Track Record</h4>
                   <p>MashupStack Fullstack Alum & 20+ Completed Commercial Engagements</p>
                 </div>
+              </div>
+            </div>
+
+            {/* Verified Technical Thought Leadership & Publications */}
+            <div style={{
+              marginTop: '24px',
+              padding: '16px 20px',
+              borderRadius: '14px',
+              background: 'var(--card-bg)',
+              border: '1px solid var(--border-color)',
+            }}>
+              <h4 style={{ fontSize: '0.95rem', fontWeight: 700, marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <Sparkles className="w-4 h-4 text-orange-500" /> Published Engineering Articles &amp; Insights
+              </h4>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '12px' }}>
+                <a
+                  href="https://medium.com/@adarshsarachandran/adarsh-b-s-7db715a97a2a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="publication-link"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '12px',
+                    padding: '12px 14px',
+                    borderRadius: '10px',
+                    background: 'var(--bg-secondary)',
+                    border: '1px solid var(--border-color)',
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  <MediumIcon className="w-5 h-5 text-orange-500" />
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-primary)' }}>Medium Publication</div>
+                    <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Adarsh B S — Software Engineering in Kerala</div>
+                  </div>
+                  <ArrowUpRight className="w-4 h-4 text-orange-500 shrink-0" />
+                </a>
+
+                <a
+                  href="https://www.quora.com/profile/Adarsh-B-S-21/https-www-quora-com-profile-Adarsh-B-S-21-Who-Is-a-Freelance-Full-Stack-Developer-in-Kerala-for-Web-Development-and-Cu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="publication-link"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '12px',
+                    padding: '12px 14px',
+                    borderRadius: '10px',
+                    background: 'var(--bg-secondary)',
+                    border: '1px solid var(--border-color)',
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  <QuoraIcon className="w-5 h-5 text-orange-500" />
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-primary)' }}>Quora Publication</div>
+                    <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Freelance Full-Stack Developer in Kerala Guide</div>
+                  </div>
+                  <ArrowUpRight className="w-4 h-4 text-orange-500 shrink-0" />
+                </a>
               </div>
             </div>
           </div>
@@ -1120,6 +1220,24 @@ export default function HomePage() {
                 >
                   <GithubIcon className="w-5 h-5" /> GitHub
                 </a>
+                <a
+                  href="https://medium.com/@adarshsarachandran/adarsh-b-s-7db715a97a2a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary"
+                  style={{ justifyContent: 'center' }}
+                >
+                  <MediumIcon className="w-5 h-5 text-orange-500" /> Medium
+                </a>
+                <a
+                  href="https://www.quora.com/profile/Adarsh-B-S-21"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary"
+                  style={{ justifyContent: 'center' }}
+                >
+                  <QuoraIcon className="w-5 h-5 text-orange-500" /> Quora
+                </a>
               </div>
             </div>
 
@@ -1268,6 +1386,24 @@ export default function HomePage() {
                   title="GitHub Profile"
                 >
                   <GithubIcon className="w-4 h-4" />
+                </a>
+                <a
+                  href="https://medium.com/@adarshsarachandran"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social-link"
+                  title="Medium Profile & Publications"
+                >
+                  <MediumIcon className="w-4 h-4" />
+                </a>
+                <a
+                  href="https://www.quora.com/profile/Adarsh-B-S-21"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social-link"
+                  title="Quora Profile & Answers"
+                >
+                  <QuoraIcon className="w-4 h-4" />
                 </a>
               </div>
             </div>

@@ -186,8 +186,32 @@ export default function RootLayout({
           "https://www.linkedin.com/in/adarsh-bs/",
           "https://www.instagram.com/adarsh_tzz/",
           "https://github.com/Adarsh-oo7/",
+          "https://medium.com/@adarshsarachandran",
+          "https://medium.com/@adarshsarachandran/adarsh-b-s-7db715a97a2a",
+          "https://www.quora.com/profile/Adarsh-B-S-21",
+          "https://www.quora.com/profile/Adarsh-B-S-21/https-www-quora-com-profile-Adarsh-B-S-21-Who-Is-a-Freelance-Full-Stack-Developer-in-Kerala-for-Web-Development-and-Cu",
           "https://adarsh.digitalproductsolutions.in",
           "https://www.digitalproductsolutions.in/adarsh-b-s"
+        ],
+        subjectOf: [
+          {
+            "@type": "Article",
+            headline: "Who Is a Freelance Full-Stack Developer in Kerala for Web Development and Custom Software?",
+            url: "https://www.quora.com/profile/Adarsh-B-S-21/https-www-quora-com-profile-Adarsh-B-S-21-Who-Is-a-Freelance-Full-Stack-Developer-in-Kerala-for-Web-Development-and-Cu",
+            publisher: {
+              "@type": "Organization",
+              name: "Quora"
+            }
+          },
+          {
+            "@type": "Article",
+            headline: "Adarsh B S - Freelance Software Developer & IT Consultant in Kerala",
+            url: "https://medium.com/@adarshsarachandran/adarsh-b-s-7db715a97a2a",
+            publisher: {
+              "@type": "Organization",
+              name: "Medium"
+            }
+          }
         ],
         address: {
           "@type": "PostalAddress",
@@ -262,7 +286,9 @@ export default function RootLayout({
         sameAs: [
           "https://www.linkedin.com/in/adarsh-bs/",
           "https://www.instagram.com/adarsh_tzz/",
-          "https://github.com/Adarsh-oo7/"
+          "https://github.com/Adarsh-oo7/",
+          "https://medium.com/@adarshsarachandran",
+          "https://www.quora.com/profile/Adarsh-B-S-21"
         ],
         address: {
           "@type": "PostalAddress",
