@@ -55,7 +55,7 @@ function LinkedinIcon({ className = "w-5 h-5" }: { className?: string }) {
 export default function HomePage() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeProjectFilter, setActiveProjectFilter] = useState<'all' | 'fullstack' | 'frontend' | 'tools'>('all');
+  const [activeProjectFilter, setActiveProjectFilter] = useState<'all' | 'client' | 'founded'>('all');
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   // Form State
@@ -275,73 +275,84 @@ export default function HomePage() {
     }
   ];
 
-  // Portfolio Projects
+  // Portfolio Projects - Real Client Deployments & Founded Ventures
   const projectsList = [
     {
       id: 1,
-      title: 'E-Commerce Web Application',
-      category: 'fullstack',
-      image: '/assets/e-commers.png',
-      tag: 'Fullstack Solution',
-      desc: 'Full-featured online commerce system built with Python Django backend, modern frontend, responsive cart workflows, and secure payment processing.',
-      tech: ['Python', 'Django', 'Bootstrap 5', 'JavaScript', 'MySQL'],
-      github: 'https://github.com/Adarsh-oo7/e-cart',
-      demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7168983742500253696/'
+      title: "Care 'N' Cure Australia - Healthcare Growth Platform",
+      category: 'client',
+      image: '/assets/clients/carencure.png',
+      tag: 'Australian Enterprise Client',
+      desc: "Full-scale organic SEO growth, technical performance optimization, and IT consulting for an Australian healthcare enterprise, driving sustained multi-channel client acquisition across Sydney and Melbourne.",
+      tech: ['IT Consulting', 'Technical SEO', 'Organic Growth', 'Web Optimization'],
+      github: 'https://github.com/Adarsh-oo7/',
+      demo: 'https://carencure.com.au/'
     },
     {
       id: 2,
-      title: 'Weather Intelligence Platform',
-      category: 'frontend',
-      image: '/assets/weather.png',
-      tag: 'API Web Application',
-      desc: 'Responsive meteorological dashboard integrating real-time climate data APIs, geolocation lookup, and dynamic forecast visualizations.',
-      tech: ['JavaScript (ES6+)', 'REST APIs', 'Bootstrap 5', 'HTML5/CSS3'],
-      github: 'https://github.com/Adarsh-oo7/weatherApp',
-      demo: 'https://adarsh-oo7.github.io/weatherApp/'
+      title: 'Novora Global Health Multi-Region Ecosystem',
+      category: 'client',
+      image: '/assets/clients/novora.png',
+      tag: 'Global & UK / EU Client',
+      desc: 'Architected cross-border digital health platform infrastructure serving the UK, Germany, and international markets with multi-regional domain routing, performance tuning, and international SEO.',
+      tech: ['Multi-Region Arch', 'Next.js / TypeScript', 'International SEO', 'API Infrastructure'],
+      github: 'https://github.com/Adarsh-oo7/',
+      demo: 'https://novoraglobalhealth.com/'
     },
     {
       id: 3,
-      title: 'Hotel Management & Booking App',
-      category: 'fullstack',
-      image: '/assets/hotel.png',
-      tag: 'Hospitality Management',
-      desc: 'Comprehensive hotel room reservation and management portal with room availability calendars, client check-in workflows, and admin controls.',
-      tech: ['Django', 'Python', 'CSS3', 'MySQL', 'JavaScript'],
-      github: 'https://github.com/Adarsh-oo7/hotel',
-      demo: 'https://github.com/Adarsh-oo7/hotel'
+      title: 'Mangrove Spot - Business Consulting & Growth Engine',
+      category: 'client',
+      image: '/assets/clients/mangrovespot.png',
+      tag: 'Kerala Business Client',
+      desc: 'End-to-end IT consulting and strategic organic SEO delivering proven search engine domination and multi-fold customer booking expansion for premier Kerala eco-tourism destination.',
+      tech: ['IT Consulting', 'Local Search Dominance', 'Performance Engineering', 'Organic Growth'],
+      github: 'https://github.com/Adarsh-oo7/',
+      demo: 'https://www.mangrovespot.in/'
     },
     {
       id: 4,
-      title: 'Counselor Consultation Portal',
-      category: 'frontend',
-      image: '/assets/counsiler.png',
-      tag: 'Healthcare & Advisory',
-      desc: 'Client appointment booking and advisory platform designed for intuitive navigation, clear practitioner bio, and direct booking triggers.',
-      tech: ['HTML5', 'CSS3', 'Bootstrap 5', 'Responsive Design'],
-      github: 'https://github.com/Adarsh-oo7/counsiler',
-      demo: 'https://adarsh-oo7.github.io/counsiler/'
+      title: 'Mangrove Moments - Experiential Tourism & Web Platform',
+      category: 'client',
+      image: '/assets/clients/mangrovemoments.jpg',
+      tag: 'Tourism & Events Client',
+      desc: 'Custom web application development, responsive client booking workflows, and search engine optimization consulting for luxury Kerala experiential events and tourism.',
+      tech: ['Web App Development', 'SEO Consulting', 'Responsive Design', 'Lead Automation'],
+      github: 'https://github.com/Adarsh-oo7/',
+      demo: 'https://www.mangrovemoments.com/'
     },
     {
       id: 5,
-      title: 'Executive Portfolio Platform',
-      category: 'frontend',
-      image: '/assets/hari.png',
-      tag: 'Brand Experience',
-      desc: 'High-speed, conversion-focused personal portfolio designed to showcase creative achievements and generate inbound freelance opportunities.',
-      tech: ['HTML5', 'CSS3', 'Bootstrap 5', 'JavaScript'],
-      github: 'https://github.com/Adarsh-oo7/hari.',
-      demo: 'https://adarsh-oo7.github.io/hari./'
+      title: 'Digital Product Solutions - Agency & Cloud Architecture',
+      category: 'founded',
+      image: '/assets/clients/digitalproductsolutions.png',
+      tag: 'Founded Tech Venture',
+      desc: 'Founded and engineered enterprise digital solutions agency delivering custom web platforms, cloud architecture, and end-to-end business automation for international businesses.',
+      tech: ['Founder & Architect', 'Next.js', 'Python / Django', 'Cloud Systems'],
+      github: 'https://github.com/Adarsh-oo7/',
+      demo: 'https://www.digitalproductsolutions.in/'
     },
     {
       id: 6,
-      title: 'Smart Calculator & Financial Tool',
-      category: 'tools',
-      image: '/assets/calculater.png',
-      tag: 'Utility Tool',
-      desc: 'Interactive, precision calculator application with mathematical expression parsing and clean digital interface.',
-      tech: ['JavaScript', 'HTML5', 'CSS3', 'DOM Algorithms'],
-      github: 'https://github.com/Adarsh-oo7/calculater',
-      demo: 'https://adarsh-oo7.github.io/calculater/'
+      title: 'Kerala Sellers - B2B Commercial Marketplace',
+      category: 'founded',
+      image: '/assets/clients/keralasellers.png',
+      tag: 'Founded Commercial Platform',
+      desc: 'State-wide commercial vendor directory and commerce platform connecting Kerala businesses, engineered with programmatic SEO and high-volume merchant discovery.',
+      tech: ['Platform Founder', 'E-Commerce Arch', 'Programmatic SEO', 'PostgreSQL'],
+      github: 'https://github.com/Adarsh-oo7/',
+      demo: 'https://www.keralasellers.in/'
+    },
+    {
+      id: 7,
+      title: 'KPSC Master - High-Concurrency EdTech Platform',
+      category: 'founded',
+      image: '/assets/clients/kpscmaster.png',
+      tag: 'Founded EdTech Platform',
+      desc: 'High-volume competitive examination portal serving thousands of Kerala Public Service Commission aspirants, engineered for extreme speed, high concurrent load, and organic search ranking.',
+      tech: ['Founder & Architect', 'System Architecture', 'High-Traffic SEO', 'Database Optimization'],
+      github: 'https://github.com/Adarsh-oo7/',
+      demo: 'https://www.kpscmaster.in/'
     }
   ];
 
@@ -775,25 +786,19 @@ export default function HomePage() {
               onClick={() => setActiveProjectFilter('all')}
               className={`filter-tab ${activeProjectFilter === 'all' ? 'active' : ''}`}
             >
-              All Projects (6)
+              All Projects &amp; Ventures (7)
             </button>
             <button
-              onClick={() => setActiveProjectFilter('fullstack')}
-              className={`filter-tab ${activeProjectFilter === 'fullstack' ? 'active' : ''}`}
+              onClick={() => setActiveProjectFilter('client')}
+              className={`filter-tab ${activeProjectFilter === 'client' ? 'active' : ''}`}
             >
-              Fullstack & Django
+              Global &amp; Client Engagements (4)
             </button>
             <button
-              onClick={() => setActiveProjectFilter('frontend')}
-              className={`filter-tab ${activeProjectFilter === 'frontend' ? 'active' : ''}`}
+              onClick={() => setActiveProjectFilter('founded')}
+              className={`filter-tab ${activeProjectFilter === 'founded' ? 'active' : ''}`}
             >
-              Frontend & Web
-            </button>
-            <button
-              onClick={() => setActiveProjectFilter('tools')}
-              className={`filter-tab ${activeProjectFilter === 'tools' ? 'active' : ''}`}
-            >
-              Interactive Tools
+              Founded Startups &amp; Platforms (3)
             </button>
           </div>
 
@@ -823,20 +828,22 @@ export default function HomePage() {
                   </div>
                   <div className="project-actions">
                     <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-secondary btn-small"
-                    >
-                      <GithubIcon className="w-4 h-4" /> Code
-                    </a>
-                    <a
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-small"
+                      style={{ flex: 1, justifyContent: 'center' }}
                     >
-                      <ExternalLink className="w-4 h-4" /> Live Demo
+                      <ExternalLink className="w-4 h-4" /> Visit Live Platform
+                    </a>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-secondary btn-small"
+                      title="Adarsh B S GitHub Profile"
+                    >
+                      <GithubIcon className="w-4 h-4" /> GitHub
                     </a>
                   </div>
                 </div>
