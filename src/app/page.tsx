@@ -52,6 +52,16 @@ function LinkedinIcon({ className = "w-5 h-5" }: { className?: string }) {
   );
 }
 
+function InstagramIcon({ className = "w-5 h-5" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+    </svg>
+  );
+}
+
 export default function HomePage() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -498,6 +508,40 @@ export default function HomePage() {
               >
                 <MessageSquare className="w-5 h-5 text-emerald-500" /> WhatsApp Direct
               </a>
+            </div>
+
+            {/* Social Channels Connect */}
+            <div className="hero-social-connect">
+              <span className="social-label">Connect:</span>
+              <div className="hero-social-badges">
+                <a
+                  href="https://www.linkedin.com/in/adarsh-bs/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-badge"
+                  title="Connect with Adarsh B S on LinkedIn"
+                >
+                  <LinkedinIcon className="w-4 h-4 text-orange-500" /> LinkedIn
+                </a>
+                <a
+                  href="https://www.instagram.com/adarsh_tzz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-badge"
+                  title="Follow Adarsh B S on Instagram (@adarsh_tzz)"
+                >
+                  <InstagramIcon className="w-4 h-4 text-orange-500" /> Instagram
+                </a>
+                <a
+                  href="https://github.com/Adarsh-oo7/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-badge"
+                  title="Explore GitHub Repositories"
+                >
+                  <GithubIcon className="w-4 h-4" /> GitHub
+                </a>
+              </div>
             </div>
 
             <div className="hero-metrics">
@@ -1026,20 +1070,31 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="flex gap-4 mt-8">
+              <div className="contact-social-grid mt-8">
                 <a
                   href="https://www.linkedin.com/in/adarsh-bs/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-secondary flex-1"
+                  className="btn btn-secondary"
+                  style={{ justifyContent: 'center' }}
                 >
                   <LinkedinIcon className="w-5 h-5 text-orange-500" /> LinkedIn
+                </a>
+                <a
+                  href="https://www.instagram.com/adarsh_tzz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary"
+                  style={{ justifyContent: 'center' }}
+                >
+                  <InstagramIcon className="w-5 h-5 text-orange-500" /> Instagram
                 </a>
                 <a
                   href="https://github.com/Adarsh-oo7/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-secondary flex-1"
+                  className="btn btn-secondary"
+                  style={{ justifyContent: 'center' }}
                 >
                   <GithubIcon className="w-5 h-5" /> GitHub
                 </a>
@@ -1164,6 +1219,35 @@ export default function HomePage() {
               <p className="text-xs text-muted mt-3">
                 Official Profile: <a href="https://www.digitalproductsolutions.in/adarsh-b-s" className="text-orange-500 font-semibold hover:underline">digitalproductsolutions.in/adarsh-b-s</a>
               </p>
+              <div className="footer-social-links" style={{ display: 'flex', gap: '10px', marginTop: '16px' }}>
+                <a
+                  href="https://www.linkedin.com/in/adarsh-bs/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social-link"
+                  title="LinkedIn Profile"
+                >
+                  <LinkedinIcon className="w-4 h-4" />
+                </a>
+                <a
+                  href="https://www.instagram.com/adarsh_tzz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social-link"
+                  title="Instagram Profile (@adarsh_tzz)"
+                >
+                  <InstagramIcon className="w-4 h-4" />
+                </a>
+                <a
+                  href="https://github.com/Adarsh-oo7/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social-link"
+                  title="GitHub Profile"
+                >
+                  <GithubIcon className="w-4 h-4" />
+                </a>
+              </div>
             </div>
 
             <div>

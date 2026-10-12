@@ -132,6 +132,7 @@ export default function RootLayout({
         email: "mailto:adarshsarachandran@gmail.com",
         sameAs: [
           "https://www.linkedin.com/in/adarsh-bs/",
+          "https://www.instagram.com/adarsh_tzz/",
           "https://github.com/Adarsh-oo7/",
           "https://adarsh.digitalproductsolutions.in",
           "https://www.digitalproductsolutions.in/adarsh-b-s"
