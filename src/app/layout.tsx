@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "./globals.css";
 
-const siteUrl = "https://www.digitalproductsolutions.in";
-const profileCanonical = "https://www.digitalproductsolutions.in/adarsh-b-s";
+const siteUrl = "https://adarsh.digitalproductsolutions.in";
+const profileCanonical = "https://adarsh.digitalproductsolutions.in";
 
 export const viewport: Viewport = {
   themeColor: "#0a0e17",
