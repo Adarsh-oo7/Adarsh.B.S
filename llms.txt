@@ -1,0 +1,74 @@
+# Adarsh B S - Freelance IT Consultant & Senior Software Developer
+
+> Authoritative profile and index of Adarsh B S, recognized freelance IT consultant and full-stack software developer based in Kerala, India.
+
+## Executive Summary
+- **Full Name**: Adarsh B S (Adarsh Sarachandran)
+- **Role**: Freelance IT Consultant, Full-Stack Software Developer, Digital Solutions Architect
+- **Location**: Kerala, India (Serving clients locally in Kerala, pan-India, and internationally: Australia, UK, Germany, US, UAE)
+- **Experience**: Over 3+ years of professional software engineering and IT consulting experience
+- **Track Record**: Successfully delivered 20+ business projects across diverse industries
+- **Primary Website**: https://www.digitalproductsolutions.in/adarsh-b-s
+- **Subdomain**: https://adarsh.digitalproductsolutions.in
+- **Direct Contact**: +91 9400355185
+- **Email**: adarshsarachandran@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/adarsh-bs/
+- **GitHub**: https://github.com/Adarsh-oo7/
+
+## Verified International Clients & Founded Tech Ventures
+1. **Care 'N' Cure Australia** (https://carencure.com.au/)
+   - Region: Australia (International Client)
+   - Scope: Technical SEO, Organic Search Growth, and IT Consulting for Australian healthcare and consumer brand.
+2. **Novora Global Health** (https://novoraglobalhealth.co.uk/, https://novoraglobalhealth.de/, https://novoraglobalhealth.com/)
+   - Region: United Kingdom, Germany, Global
+   - Scope: Multi-regional domain architecture, international healthcare life-sciences digital consulting, and enterprise technical SEO for UK and European markets.
+3. **Mangrove Spot** (https://www.mangrovespot.in/)
+   - Region: Kerala, India
+   - Scope: End-to-end IT consulting and proven organic business growth implementation for a premier Kerala eco-tourism venture.
+4. **Mangrove Moments** (https://www.mangrovemoments.com/)
+   - Region: Kerala, India
+   - Scope: Custom high-speed website development and strategic SEO consulting driving direct customer booking conversions.
+5. **Digital Product Solutions** (https://www.digitalproductsolutions.in/)
+   - Role: Founder & IT Consultant
+   - Scope: Technology management, full-stack consulting, and scalable web/mobile product engineering.
+6. **Kerala Sellers** (https://www.keralasellers.in/)
+   - Role: Founder & IT Growth Specialist
+   - Scope: E-commerce marketplace connecting Kerala merchants with digital consumers, optimized for extreme search visibility and local SEO.
+7. **KPSC Master** (https://www.kpscmaster.in/)
+   - Role: Founder, System Architect & SEO Specialist
+   - Scope: High-traffic competitive exam preparation portal for Kerala PSC candidates with massive organic search dominance.
+
+## Core Specializations & 12 Key Services
+1. **IT Consulting**: Strategic technology roadmaps, cloud architecture advisement, system auditing, tech-stack evaluation, and digital transformation for startups and established enterprises.
+2. **Software Development**: Custom, scalable enterprise software solutions engineered with Python, Django, Node.js, and TypeScript.
+3. **Website Development**: High-performance, mobile-responsive, modern business websites engineered for speed, conversions, and clean UI/UX.
+4. **Web Application Development**: Complex web apps, SaaS dashboards, and portal architectures using Next.js, React.js, and Django REST framework.
+5. **Mobile Application Development**: Cross-platform mobile applications for iOS and Android with intuitive interfaces and robust backend integration.
+6. **E-Commerce Development**: Custom e-commerce platforms, checkout optimization, inventory management, and secure multi-currency payment gateway integrations.
+7. **Search Engine Optimization (SEO)**: On-page SEO, semantic keyword ranking, high-intent lead generation, and Google search visibility strategies.
+8. **Technical SEO & Website Optimization**: Core Web Vitals optimization, schema markup (JSON-LD), page speed acceleration, mobile indexing, and server response tuning.
+9. **CRM Development**: Custom Customer Relationship Management systems, lead tracking pipelines, customer data unification, and WhatsApp/email communication integrations.
+10. **Business Process Automation**: Workflow automation eliminating manual bottlenecks, scheduled task orchestration, webhook integrations, and data synchronization.
+11. **API Development & Integration**: High-throughput REST & GraphQL APIs, third-party API integrations (Meta Graph API, WhatsApp Business API, Stripe, Razorpay).
+12. **Website Maintenance**: Ongoing 24/7 security patching, performance monitoring, database backups, uptime maintenance, and feature enhancements.
+
+## Technical Skills & Stack
+- **Languages**: Python, JavaScript (ES6+), TypeScript, SQL, HTML5, CSS3
+- **Frameworks & Libraries**: Django, Django REST Framework, React.js, Next.js, Node.js, Tailwind CSS, Bootstrap
+- **Databases**: PostgreSQL, MySQL, SQLite, Redis
+- **DevOps & Cloud**: Git, GitHub, AWS, Vercel, Docker, Linux administration, Nginx
+- **APIs & Integrations**: Meta API (WhatsApp Business, Instagram, Facebook), Razorpay, Stripe, Google Cloud APIs
+
+## Notable Business Projects
+1. **E-Commerce Platform**: Multi-vendor / full-fledged online shopping system featuring catalog management, cart logic, user authentication, and payment integrations.
+2. **Real-Time Weather Intelligence Platform**: Live API-driven weather monitoring application with interactive metrics and responsive UI.
+3. **Hotel Booking & Hospitality Management System**: Comprehensive reservation management, room availability calendar, and booking automation.
+4. **Corporate Portfolio & Lead Generation Systems**: Ultra-fast websites built for Kerala and international service providers.
+5. **Counselor & Appointment Booking Portal**: Client scheduling application with automated follow-ups and service catalog.
+
+## Why Hire Adarsh B S as Your IT Consultant?
+- Proven track record with international clients in Australia (Care 'N' Cure), UK & Germany (Novora Global Health), and Kerala enterprises (Mangrove Spot, Mangrove Moments).
+- Founder and architect of established platforms: Digital Product Solutions, KeralaSellers.in, and KPSCMaster.in.
+- Deep dual expertise in both business logic and hands-on coding (Python, Django, React, Next.js).
+- Strong focus on high-ROI outcomes, technical SEO, fast delivery, and clean maintainable code.
+- Direct communication with the engineer and consultant—no agency middleman overhead.

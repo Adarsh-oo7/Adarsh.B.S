@@ -1,0 +1,15 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+User-Agent: GPTBot
+User-Agent: ChatGPT-User
+User-Agent: Google-Extended
+User-Agent: PerplexityBot
+User-Agent: ClaudeBot
+User-Agent: anthropic-ai
+User-Agent: cohere-ai
+Allow: /
+
+Host: https://www.digitalproductsolutions.in
+Sitemap: https://www.digitalproductsolutions.in/sitemap.xml
