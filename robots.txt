@@ -11,5 +11,5 @@ User-Agent: anthropic-ai
 User-Agent: cohere-ai
 Allow: /
 
-Host: https://www.digitalproductsolutions.in
-Sitemap: https://www.digitalproductsolutions.in/sitemap.xml
+Host: https://adarsh.digitalproductsolutions.in
+Sitemap: https://adarsh.digitalproductsolutions.in/sitemap.xml
