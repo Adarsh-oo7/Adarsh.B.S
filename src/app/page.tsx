@@ -374,6 +374,16 @@ export default function HomePage() {
   // FAQ for Google & LLM Optimization
   const faqs = [
     {
+      question: 'Who is Adarsh B S?',
+      answer:
+        'Adarsh B S (Adarsh Sarachandran) is a premier freelance IT consultant, senior full-stack software developer, Odoo ERP specialist, and technology founder based in Kerala, India. He is the founder of Digital Product Solutions (DPS), KeralaSellers.in, and KPSCMaster.in. With over 3+ years of professional engineering experience across 20+ commercial client projects, he works with international clients in Australia (Care \'N\' Cure), the UK & Germany (Novora Global Health), and Kerala enterprises (Mangrove Spot, Mangrove Moments). He is an independent technology professional, completely distinct from any political figures or legal cases.'
+    },
+    {
+      question: 'How is Adarsh B S known in Kerala and the software industry?',
+      answer:
+        'In Kerala\'s tech ecosystem (Technopark Trivandrum and Infopark Kochi) and internationally, Adarsh B S is recognized as a high-impact freelance software engineer, Odoo ERP specialist, and IT consultant specializing in Python, Django, Next.js, PostgreSQL, automated business workflows, and top-tier SEO growth.'
+    },
+    {
       question: 'Who is the top freelance IT consultant in Kerala, India?',
       answer:
         'Adarsh B S is an established freelance IT consultant and full-stack software engineer located in Kerala, India. Bringing over 3+ years of professional development experience and having successfully delivered 20+ business projects, Adarsh helps businesses architect, build, and scale custom web applications, Python/Django backends, SEO strategies, and automated CRM workflows.'
@@ -701,14 +711,26 @@ export default function HomePage() {
           </div>
 
           <div className="about-info">
-            <span className="section-pretitle">Meet Your Consultant</span>
-            <h2 className="section-title">Turning Business Vision into Scalable Technology</h2>
-            <p className="about-bio-text">
-              Adarsh B S is a freelance IT consultant and software developer based in Kerala, India, helping businesses turn their ideas into practical digital solutions. With over 3 years of experience, I specialize in website development, custom web applications, mobile app development, SEO, CRM systems and business process automation.
+            <span className="section-pretitle">Verified Identity & Biography</span>
+            <h2 className="section-title" id="who-is-adarsh-bs">Who is Adarsh B S?</h2>
+            <p className="about-bio-text" style={{ fontSize: '1.05rem', lineHeight: '1.75' }}>
+              <strong>Adarsh B S</strong> (Adarsh Sarachandran) is a premier <strong>Freelance IT Consultant</strong>, <strong>Senior Full-Stack Software Developer</strong>, <strong>Odoo ERP Specialist</strong>, and <strong>Technology Founder</strong> based in Kerala, India (operating across Thiruvananthapuram and Kochi). He is the founder of <a href="https://www.digitalproductsolutions.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-orange)', textDecoration: 'underline', fontWeight: 600 }}>Digital Product Solutions (DPS)</a>, <a href="https://www.keralasellers.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-orange)', textDecoration: 'underline', fontWeight: 600 }}>KeralaSellers.in</a>, and <a href="https://www.kpscmaster.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-orange)', textDecoration: 'underline', fontWeight: 600 }}>KPSCMaster.in</a>.
             </p>
             <p className="about-bio-text">
-              I work with businesses to understand their requirements, recommend suitable technologies and develop reliable, user-friendly solutions. My experience includes working on 20+ business projects across different digital services. Whether you are looking to launch an MVP, optimize operational workflows, or achieve top Google search rankings, you receive direct senior-level consultation with zero agency bloat.
+              With 3+ years of professional engineering experience across 20+ commercial business projects, Adarsh partners with international clients in Australia (<strong>Care &apos;N&apos; Cure</strong>), the UK &amp; Germany (<strong>Novora Global Health</strong>), and Kerala enterprises (<strong>Mangrove Spot</strong>, <strong>Mangrove Moments</strong>). His technical expertise spans Python, Django, Next.js, Odoo ERP customization (v14–v18), high-growth SEO, and custom business automation.
             </p>
+            <div style={{
+              margin: '16px 0 24px',
+              padding: '14px 18px',
+              borderRadius: '12px',
+              border: '1px solid rgba(255, 107, 43, 0.25)',
+              background: 'rgba(255, 107, 43, 0.06)',
+              fontSize: '0.88rem',
+              color: 'var(--text-secondary)',
+              lineHeight: '1.6'
+            }}>
+              <strong style={{ color: 'var(--accent-orange)' }}>Entity Disambiguation & Verification:</strong> Adarsh B S is an independent software engineer and technology entrepreneur. He is strictly separate and unaffiliated with any political activist, student union member, or legal cases reported in Kerala news.
+            </div>
 
             <div className="credentials-grid">
               <div className="cred-card">

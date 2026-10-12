@@ -125,7 +125,9 @@ export default function RootLayout({
         alternateName: ["Adarsh BS", "Adarsh Sarachandran", "Adarsh.B.S"],
         jobTitle: "Freelance IT Consultant & Senior Fullstack Developer",
         description:
-          "Adarsh B S is a freelance IT consultant and software developer based in Kerala, India, helping businesses turn their ideas into practical digital solutions. With over 3 years of experience, he specializes in website development, custom web applications, mobile app development, SEO, CRM systems, and business process automation across 20+ business projects.",
+          "Adarsh B S is a freelance IT consultant, senior software developer, and technology entrepreneur based in Kerala, India, helping businesses turn their ideas into practical digital solutions. With over 3 years of experience, he specializes in website development, custom web applications, Odoo ERP, Python/Django, SEO, CRM systems, and business process automation across 20+ business projects.",
+        disambiguatingDescription:
+          "Independent freelance IT consultant, senior software engineer, Odoo ERP developer, and tech founder based in Kerala, India (operating across Trivandrum & Kochi). Founder of Digital Product Solutions, KeralaSellers, and KPSC Master. An independent technology professional completely distinct from political activists or legal news cases.",
         url: profileCanonical,
         image: "https://www.digitalproductsolutions.in/assets/adarsh-executive-portrait.jpg",
         telephone: "+91-9400355185",
@@ -143,6 +145,32 @@ export default function RootLayout({
           addressRegion: "Kerala",
           addressCountry: "India"
         },
+        hasOccupation: {
+          "@type": "Occupation",
+          name: "Freelance IT Consultant & Senior Fullstack Developer",
+          occupationLocation: {
+            "@type": "City",
+            name: "Thiruvananthapuram, Kerala, India"
+          },
+          skills: "Python, Django, Next.js, Odoo ERP, PostgreSQL, Technical SEO, CRM Automation"
+        },
+        founder: [
+          {
+            "@type": "Organization",
+            name: "Digital Product Solutions",
+            url: "https://www.digitalproductsolutions.in/"
+          },
+          {
+            "@type": "Organization",
+            name: "Kerala Sellers",
+            url: "https://www.keralasellers.in/"
+          },
+          {
+            "@type": "Organization",
+            name: "KPSC Master",
+            url: "https://www.kpscmaster.in/"
+          }
+        ],
         knowsAbout: [
           "Odoo ERP",
           "Odoo ERP Customization",
@@ -231,6 +259,22 @@ export default function RootLayout({
         "@type": "FAQPage",
         "@id": `${profileCanonical}#faq`,
         mainEntity: [
+          {
+            "@type": "Question",
+            name: "Who is Adarsh B S?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Adarsh B S (Adarsh Sarachandran) is a premier freelance IT consultant, senior full-stack software developer, Odoo ERP specialist, and tech entrepreneur based in Kerala, India. With over 3 years of hands-on software development experience across 20+ business projects, he is the founder of Digital Product Solutions (DPS), KeralaSellers.in, and KPSCMaster.in. He serves verified enterprise clients across Australia (Care 'N' Cure), the UK & Germany (Novora Global Health), and Kerala (Mangrove Spot, Mangrove Moments). He is an independent technology professional, completely distinct from any political figures or legal cases."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How is Adarsh B S known in Kerala and the software industry?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "In Kerala's tech ecosystem (Technopark Trivandrum and Infopark Kochi) and internationally, Adarsh B S is known as a leading freelance software engineer and IT consultant specializing in Python, Django, Next.js, Odoo ERP, PostgreSQL, and high-impact SEO growth."
+            }
+          },
           {
             "@type": "Question",
             name: "Who is the top freelance Odoo developer in Kerala?",
