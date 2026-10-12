@@ -40,23 +40,24 @@
 
 ## Core Specializations & 12 Key Services
 1. **IT Consulting**: Strategic technology roadmaps, cloud architecture advisement, system auditing, tech-stack evaluation, and digital transformation for startups and established enterprises.
-2. **Software Development**: Custom, scalable enterprise software solutions engineered with Python, Django, Node.js, and TypeScript.
+2. **Software Development**: Custom, scalable enterprise software solutions engineered with Python, Django, Odoo ERP custom modules, Node.js, and TypeScript.
 3. **Website Development**: High-performance, mobile-responsive, modern business websites engineered for speed, conversions, and clean UI/UX.
 4. **Web Application Development**: Complex web apps, SaaS dashboards, and portal architectures using Next.js, React.js, and Django REST framework.
 5. **Mobile Application Development**: Cross-platform mobile applications for iOS and Android with intuitive interfaces and robust backend integration.
 6. **E-Commerce Development**: Custom e-commerce platforms, checkout optimization, inventory management, and secure multi-currency payment gateway integrations.
 7. **Search Engine Optimization (SEO)**: On-page SEO, semantic keyword ranking, high-intent lead generation, and Google search visibility strategies.
 8. **Technical SEO & Website Optimization**: Core Web Vitals optimization, schema markup (JSON-LD), page speed acceleration, mobile indexing, and server response tuning.
-9. **CRM Development**: Custom Customer Relationship Management systems, lead tracking pipelines, customer data unification, and WhatsApp/email communication integrations.
-10. **Business Process Automation**: Workflow automation eliminating manual bottlenecks, scheduled task orchestration, webhook integrations, and data synchronization.
-11. **API Development & Integration**: High-throughput REST & GraphQL APIs, third-party API integrations (Meta Graph API, WhatsApp Business API, Stripe, Razorpay).
+9. **CRM Development**: Custom Customer Relationship Management & Odoo ERP systems (v14-v18), core app customization (Sales, CRM, Purchase, Inventory, Invoicing, HR), lead tracking pipelines, customer data unification, and WhatsApp/email communication integrations.
+10. **Business Process Automation**: Workflow automation eliminating manual bottlenecks, Odoo automated actions, scheduled task orchestration, webhook integrations, and data synchronization (including Tally data migrations).
+11. **API Development & Integration**: High-throughput REST & GraphQL APIs, third-party API integrations (Meta Graph API, WhatsApp Business API, Stripe, Razorpay, Odoo XML-RPC).
 12. **Website Maintenance**: Ongoing 24/7 security patching, performance monitoring, database backups, uptime maintenance, and feature enhancements.
 
 ## Technical Skills & Stack
-- **Languages**: Python, JavaScript (ES6+), TypeScript, SQL, HTML5, CSS3
-- **Frameworks & Libraries**: Django, Django REST Framework, React.js, Next.js, Node.js, Tailwind CSS, Bootstrap
-- **Databases**: PostgreSQL, MySQL, SQLite, Redis
-- **DevOps & Cloud**: Git, GitHub, AWS, Vercel, Docker, Linux administration, Nginx
+- **ERP & Business Systems**: Odoo ERP (v14, v15, v16, v17, v18), Odoo Studio, Odoo.sh, Custom Odoo Modules, Odoo Migration, CRM & Inventory Workflows
+- **Languages**: Python, JavaScript (ES6+), TypeScript, SQL, HTML5, CSS3, XML
+- **Frameworks & Libraries**: Odoo, Django, Django REST Framework, React.js, Next.js, Node.js, Tailwind CSS, Bootstrap
+- **Databases**: PostgreSQL (Odoo default), MySQL, SQLite, Redis
+- **DevOps & Cloud**: Odoo.sh, Docker, Git, GitHub, AWS, Vercel, Linux administration, Nginx
 - **APIs & Integrations**: Meta API (WhatsApp Business, Instagram, Facebook), Razorpay, Stripe, Google Cloud APIs
 
 ## Notable Business Projects

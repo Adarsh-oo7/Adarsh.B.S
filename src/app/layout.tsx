@@ -14,12 +14,24 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Adarsh B S | Top Freelance IT Consultant & Software Developer Kerala, India",
-    template: "%s | Adarsh B S - IT Consultant",
+    default: "Adarsh B S | Top Freelance IT Consultant & Odoo Developer Kerala, India",
+    template: "%s | Adarsh B S - IT Consultant & Odoo Developer",
   },
   description:
-    "Adarsh B S is a premier freelance IT consultant and software developer based in Kerala, India. Specializing in custom web applications, Python/Django, Next.js, SEO, CRM development, and business automation with 3+ years experience across 20+ business projects.",
+    "Adarsh B S is a premier freelance IT consultant and Odoo ERP developer in Kerala, India (Trivandrum Technopark & Kochi Infopark). Specializing in Odoo ERP customization (v14-v18), custom module development, Python, PostgreSQL, CRM, business automation, and full-stack software development with 3+ years experience.",
   keywords: [
+    "freelance odoo developer in kerala",
+    "odoo developer kerala",
+    "odoo erp developer trivandrum",
+    "odoo developer kochi",
+    "hire freelance odoo developer kerala",
+    "odoo erp customization kerala",
+    "odoo python developer",
+    "odoo module development kerala",
+    "technopark odoo developer",
+    "infopark odoo developer",
+    "odoo migration specialist kerala",
+    "odoo crm developer kerala",
     "IT consultant Kerala",
     "freelance IT consultant Kerala",
     "top IT consultant India",
@@ -131,6 +143,13 @@ export default function RootLayout({
           addressCountry: "India"
         },
         knowsAbout: [
+          "Odoo ERP",
+          "Odoo ERP Customization",
+          "Odoo Module Development",
+          "Odoo Python Development",
+          "Odoo Migration",
+          "Odoo.sh & Docker Deployment",
+          "Odoo CRM & Inventory",
           "IT Consulting",
           "Software Development",
           "Website Development",
@@ -154,7 +173,7 @@ export default function RootLayout({
       {
         "@type": "ProfessionalService",
         "@id": `${profileCanonical}#business`,
-        name: "Adarsh B S - Freelance IT Consulting & Software Engineering",
+        name: "Adarsh B S - Freelance IT Consulting & Odoo ERP Development",
         image: "https://www.digitalproductsolutions.in/assets/adarsh-consultant-banner.jpg",
         url: profileCanonical,
         telephone: "+919400355185",
@@ -190,6 +209,8 @@ export default function RootLayout({
           "@type": "OfferCatalog",
           name: "IT Consulting & Digital Services",
           itemListElement: [
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Odoo ERP Customization & Development" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Odoo Custom Module Development & Integration" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "IT Consulting" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Software Development" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Website Development" } },
@@ -211,6 +232,22 @@ export default function RootLayout({
         mainEntity: [
           {
             "@type": "Question",
+            name: "Who is the top freelance Odoo developer in Kerala?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Adarsh B S is an established freelance Odoo developer and IT consultant based in Kerala, India, serving clients across Trivandrum (Technopark), Kochi (Infopark), and globally. Bringing deep Python and PostgreSQL expertise, Adarsh specializes in Odoo ERP customization (versions 14 through 18), custom module development, business workflow automation, API integrations with payment gateways & WhatsApp, and Odoo.sh cloud deployments."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "What Odoo ERP development and customization services are offered?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Adarsh B S offers end-to-end freelance Odoo ERP services including custom module development, customizing core Odoo modules (Sales, CRM, Purchase, Inventory, Invoicing, HR, eCommerce), data migration from Tally or legacy ERP systems, third-party REST API integrations, and ongoing Odoo maintenance at flexible hourly ($15-$35/hr) or project-based rates."
+            }
+          },
+          {
+            "@type": "Question",
             name: "Who is the top freelance IT consultant in Kerala?",
             acceptedAnswer: {
               "@type": "Answer",
@@ -222,15 +259,15 @@ export default function RootLayout({
             name: "What IT services does Adarsh B S provide?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Adarsh B S provides 12 core digital services: IT consulting, Software development, Website development, Web application development, Mobile application development, E-commerce development, Search Engine Optimization (SEO), Technical SEO and website optimization, CRM development, Business process automation, API development and integration, and Website maintenance."
+              text: "Adarsh B S provides 12 core digital services: Odoo ERP development, IT consulting, Software development, Website development, Web application development, Mobile application development, E-commerce development, Search Engine Optimization (SEO), Technical SEO, CRM development, Business process automation, and API integration."
             }
           },
           {
             "@type": "Question",
-            name: "How can I hire Adarsh B S for my business project?",
+            name: "How can I hire Adarsh B S for an Odoo or IT consulting project?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "You can reach out directly via phone at +91 9400355185, email at adarshsarachandran@gmail.com, or through his website at https://www.digitalproductsolutions.in/adarsh-b-s to schedule a consultation."
+              text: "You can reach out directly via phone/WhatsApp at +91 9400355185, email at adarshsarachandran@gmail.com, or through his website at https://adarsh.digitalproductsolutions.in to schedule an immediate consultation."
             }
           },
           {

@@ -159,15 +159,15 @@ export default function HomePage() {
       id: 'crm-dev',
       title: 'CRM Development',
       icon: <Database className="w-6 h-6" />,
-      desc: 'Custom Customer Relationship Management solutions to capture, track, and nurture leads across WhatsApp, email, and internal sales pipelines.',
-      features: ['Lead Capture & Attribution', 'WhatsApp & Email Triggers', 'Custom Sales Dashboards']
+      desc: 'Custom Customer Relationship Management & Odoo ERP systems (v14-v18) to automate lead capture, pipeline stages, inventory tracking, and WhatsApp/email communication.',
+      features: ['Odoo ERP Customization (v14-v18)', 'Lead Capture & Sales Pipelines', 'WhatsApp & Email Triggers']
     },
     {
       id: 'automation',
       title: 'Business Process Automation',
       icon: <Cpu className="w-6 h-6" />,
-      desc: 'Eliminate repetitive manual tasks through automated workflows, background tasks, data sync, and instant notification pipelines.',
-      features: ['Scheduled Cron & Event Triggers', 'Data Synchronization', 'Reduced Operational Costs']
+      desc: 'Eliminate repetitive manual bottlenecks through Odoo automated actions, Python cron jobs, Tally data migration pipelines, and automated business workflows.',
+      features: ['Odoo Automated Workflows', 'Data Sync & Tally Migrations', 'Reduced Operational Costs']
     },
     {
       id: 'api-dev',
@@ -374,6 +374,11 @@ export default function HomePage() {
         'Adarsh offers 12 core digital services: IT Consulting, Software Development, Website Development, Web Application Development, Mobile Application Development, E-commerce Development, Search Engine Optimization (SEO), Technical SEO & Website Optimization, CRM Development, Business Process Automation, API Development & Integration (including WhatsApp & Meta APIs), and Ongoing Website Maintenance.'
     },
     {
+      question: 'Looking for a freelance Odoo developer in Kerala? What can you build?',
+      answer:
+        'Adarsh B S offers specialized freelance Odoo ERP development and customization across Kerala (operating across Trivandrum Technopark and Kochi Infopark hubs) and globally. Services include custom module development for Odoo v14 through v18, core app customization (Sales, CRM, Purchase, Inventory, Invoicing/Accounting, HR, eCommerce), data migrations from legacy systems or Tally, third-party REST API integrations, and cloud deployments on Odoo.sh or Docker at flexible freelance rates ($15–$35/hr or fixed milestone pricing).'
+    },
+    {
       question: 'Why should I hire a freelance IT consultant instead of a large agency?',
       answer:
         'Working directly with Adarsh B S provides direct communication with the senior software engineer executing your code, zero agency markup overhead, faster turnaround times, customized technology recommendations tailored to your budget, and end-to-end accountability from initial conception to post-launch optimization.'
@@ -473,6 +478,7 @@ export default function HomePage() {
             <div className="hero-highlights">
               <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> 3+ Years Experience</span>
               <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> 20+ Business Projects</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Odoo ERP &amp; Python Customization</span>
               <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Global: 🇦🇺 Australia • 🇬🇧 UK • 🇩🇪 Germany • 🇮🇳 India</span>
               <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Founder: Digital Product Solutions • KeralaSellers • KPSC Master</span>
             </div>
