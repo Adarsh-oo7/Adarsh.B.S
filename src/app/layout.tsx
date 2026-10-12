@@ -14,12 +14,31 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Adarsh B S | Top Freelance IT Consultant & Odoo Developer Kerala, India",
-    template: "%s | Adarsh B S - IT Consultant & Odoo Developer",
+    default: "Freelance Software Developer & IT Consultant in Kerala | Adarsh B S",
+    template: "%s | Adarsh B S - Freelance Software Developer in Kerala",
   },
   description:
-    "Adarsh B S is a premier freelance IT consultant and Odoo ERP developer in Kerala, India (Trivandrum Technopark & Kochi Infopark). Specializing in Odoo ERP customization (v14-v18), custom module development, Python, PostgreSQL, CRM, business automation, and full-stack software development with 3+ years experience.",
+    "Adarsh B S is a premier freelance software developer, IT consultant, and Odoo ERP specialist in Kerala, India (Trivandrum Technopark & Kochi Infopark). Specializing in custom software development, Next.js, Python Django, Odoo ERP (v14-v18), mobile apps, technical SEO, and business automation with 3+ years experience and 20+ delivered projects.",
   keywords: [
+    "freelance software developer in Kerala",
+    "freelance software developer Kerala",
+    "freelance developer Kerala",
+    "freelance developer in Kerala",
+    "freelance web developer Kerala",
+    "freelance web developer in Kerala",
+    "software developer Kerala",
+    "software developer in Kerala",
+    "best freelance software developer in Kerala",
+    "best freelance developer in Kerala",
+    "hire freelance software developer in Kerala",
+    "hire freelance developer Kerala",
+    "hire freelance developer in Kerala",
+    "hire software developer Kerala",
+    "hire web developer Kerala",
+    "full stack developer Kerala",
+    "freelance full stack developer in Kerala",
+    "freelance software engineer in Kerala",
+    "custom software development Kerala",
     "freelance odoo developer in kerala",
     "odoo developer kerala",
     "odoo erp developer trivandrum",
@@ -30,21 +49,26 @@ export const metadata: Metadata = {
     "odoo module development kerala",
     "technopark odoo developer",
     "infopark odoo developer",
-    "odoo migration specialist kerala",
-    "odoo crm developer kerala",
-    "IT consultant Kerala",
-    "freelance IT consultant Kerala",
-    "top IT consultant India",
-    "software developer Kerala",
     "freelance software developer Trivandrum",
+    "freelance software developer Kochi",
+    "freelance developer Kochi",
+    "freelance developer Trivandrum",
+    "freelance developer Calicut",
+    "freelance software developer Kozhikode",
     "web application developer Kerala",
     "Python Django developer Kerala",
     "React Nextjs developer India",
     "CRM development Kerala",
+    "IT consultant Kerala",
+    "freelance IT consultant Kerala",
+    "IT Consultant in Kerala",
+    "top IT consultant India",
     "SEO consultant Kerala",
+    "solution architect Kerala",
     "business process automation India",
     "hire freelance IT consultant",
     "Adarsh B S",
+    "Adarsh BS",
     "Adarsh BS IT consultant",
     "digital product solutions Adarsh"
   ],
@@ -64,18 +88,18 @@ export const metadata: Metadata = {
     lastName: "B S",
     username: "Adarsh-oo7",
     gender: "male",
-    title: "Adarsh B S | Top Freelance IT Consultant & Software Developer Kerala, India",
+    title: "Freelance Software Developer & IT Consultant in Kerala | Adarsh B S",
     description:
-      "Helping businesses turn ideas into scalable digital solutions. 3+ years experience, 20+ business projects in Web, Mobile, SEO, CRM & Automation.",
+      "Premier freelance software developer and IT consultant in Kerala, India. Expert in custom web apps, Next.js, Python/Django, Odoo ERP, and technical SEO with 20+ delivered projects.",
     url: profileCanonical,
-    siteName: "Adarsh B S Portfolio & IT Consulting",
+    siteName: "Adarsh B S - Freelance Software Developer & IT Consultant",
     locale: "en_IN",
     images: [
       {
         url: "/assets/adarsh-consultant-banner.jpg",
         width: 1200,
         height: 675,
-        alt: "Adarsh B S - Freelance IT Consultant & Software Developer Kerala",
+        alt: "Adarsh B S - Freelance Software Developer & IT Consultant in Kerala",
       },
       {
         url: "/assets/adarsh-executive-portrait.jpg",
@@ -87,9 +111,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adarsh B S | Freelance IT Consultant & Software Developer Kerala",
+    title: "Freelance Software Developer & IT Consultant in Kerala | Adarsh B S",
     description:
-      "Turning business ideas into practical digital solutions. Python, Django, React, Next.js, SEO, CRM & Automation.",
+      "Turning business vision into high-performance software. Next.js, Python, Django, Odoo ERP, and technical SEO with verified international client outcomes.",
     images: ["/assets/adarsh-consultant-banner.jpg"],
   },
   robots: {
@@ -122,15 +146,41 @@ export default function RootLayout({
         "@type": "Person",
         "@id": `${profileCanonical}#person`,
         name: "Adarsh B S",
-        alternateName: ["Adarsh BS", "Adarsh Sarachandran", "Adarsh.B.S"],
-        jobTitle: "Freelance IT Consultant & Senior Fullstack Developer",
+        givenName: "Adarsh",
+        familyName: "B S",
+        alternateName: [
+          "Adarsh",
+          "Adarsh BS",
+          "Adarsh Sarachandran",
+          "Adarsh.B.S",
+          "Adarsh Software Developer",
+          "Adarsh IT Consultant",
+          "Freelance Developer Kerala",
+          "Freelance Software Developer in Kerala",
+          "Freelance IT Consultant in Kerala",
+          "Freelance Odoo Developer in Kerala",
+          "Odoo Developer Kerala",
+          "Software Developer Kerala",
+          "Freelance Web Developer Kerala",
+          "Freelance Web Developer Kochi",
+          "Freelance Web Developer Trivandrum",
+          "Solution Architect Kerala"
+        ],
+        jobTitle: "Freelance Software Developer, IT Consultant & Odoo ERP Specialist",
         description:
-          "Adarsh B S is a freelance IT consultant, senior software developer, and technology entrepreneur based in Kerala, India, helping businesses turn their ideas into practical digital solutions. With over 3 years of experience, he specializes in website development, custom web applications, Odoo ERP, Python/Django, SEO, CRM systems, and business process automation across 20+ business projects.",
+          "Adarsh B S (Adarsh Sarachandran) is a premier freelance software developer, IT consultant, and technology entrepreneur based in Kerala, India (operating across Trivandrum & Kochi). Specializing in custom web applications, Next.js, Python Django, Odoo ERP (v14-v18), technical SEO, CRM, and cloud business automation across 20+ delivered business projects.",
         disambiguatingDescription:
-          "Independent freelance IT consultant, senior software engineer, Odoo ERP developer, and tech founder based in Kerala, India (operating across Trivandrum & Kochi). Founder of Digital Product Solutions, KeralaSellers, and KPSC Master. An independent technology professional completely distinct from political activists or legal news cases.",
+          "Independent freelance software developer, senior software engineer, Odoo ERP specialist, and tech founder based in Kerala, India (operating across Trivandrum & Kochi). Founder of Digital Product Solutions, KeralaSellers, and KPSC Master. An independent technology professional completely distinct from political activists or legal news cases.",
         url: profileCanonical,
-        image: "https://www.digitalproductsolutions.in/assets/adarsh-executive-portrait.jpg",
-        telephone: "+91-9400355185",
+        image: {
+          "@type": "ImageObject",
+          "@id": `${profileCanonical}#primaryimage`,
+          url: "https://adarsh.digitalproductsolutions.in/assets/adarsh-consultant-banner.jpg",
+          caption: "Adarsh B S - Freelance Software Developer & IT Consultant in Kerala",
+          width: 1200,
+          height: 675
+        },
+        telephone: "+919400355185",
         email: "mailto:adarshsarachandran@gmail.com",
         sameAs: [
           "https://www.linkedin.com/in/adarsh-bs/",
@@ -147,12 +197,12 @@ export default function RootLayout({
         },
         hasOccupation: {
           "@type": "Occupation",
-          name: "Freelance IT Consultant & Senior Fullstack Developer",
+          name: "Freelance Software Developer & IT Consultant",
           occupationLocation: {
             "@type": "City",
             name: "Thiruvananthapuram, Kerala, India"
           },
-          skills: "Python, Django, Next.js, Odoo ERP, PostgreSQL, Technical SEO, CRM Automation"
+          skills: "Python, Django, Next.js, Odoo ERP (v14-v18), PostgreSQL, Technical SEO, CRM Automation, Docker"
         },
         founder: [
           {
@@ -172,41 +222,95 @@ export default function RootLayout({
           }
         ],
         knowsAbout: [
-          "Odoo ERP",
-          "Odoo ERP Customization",
-          "Odoo Module Development",
+          "Freelance Software Development",
+          "IT Consulting & Technology Advisory",
+          "Odoo ERP Customization & Development",
+          "Odoo Custom Module Development",
           "Odoo Python Development",
-          "Odoo Migration",
+          "Odoo Migration & Tally Integration",
           "Odoo.sh & Docker Deployment",
-          "Odoo CRM & Inventory",
-          "IT Consulting",
-          "Software Development",
-          "Website Development",
-          "Web Application Development",
-          "Mobile Application Development",
-          "E-commerce Development",
-          "Search Engine Optimization (SEO)",
-          "Technical SEO and Website Optimization",
-          "CRM Development",
+          "Full-Stack Web Development",
+          "Python & Django Web Framework",
+          "Next.js 15 & React 19 Frontend Engineering",
+          "PostgreSQL & MySQL Database Architecture",
+          "Technical SEO & Website Optimization",
+          "Core Web Vitals Acceleration",
+          "CRM Development & Lead Pipeline Automation",
           "Business Process Automation",
-          "API Development and Integration",
-          "Website Maintenance",
-          "Python",
-          "Django",
-          "React.js",
-          "Next.js",
-          "PostgreSQL",
-          "MySQL"
+          "RESTful API Development & Third-Party Integration",
+          "Meta Cloud API & WhatsApp Business Automation",
+          "Payment Gateway Integration (Stripe, Razorpay)",
+          "E-commerce Platform Architecture"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${profileCanonical}#website`,
+        name: "Adarsh B S - Freelance Software Developer & IT Consultant in Kerala",
+        url: profileCanonical,
+        publisher: {
+          "@type": "Person",
+          name: "Adarsh B S"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": `${profileCanonical}#organization`,
+        name: "Digital Product Solutions",
+        url: "https://www.digitalproductsolutions.in/",
+        logo: "https://adarsh.digitalproductsolutions.in/assets/adarsh-consultant-banner.jpg",
+        sameAs: [
+          "https://www.linkedin.com/in/adarsh-bs/",
+          "https://www.instagram.com/adarsh_tzz/",
+          "https://github.com/Adarsh-oo7/"
+        ],
+        address: {
+          "@type": "PostalAddress",
+          addressRegion: "Kerala",
+          addressCountry: "India"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${profileCanonical}#breadcrumb`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: profileCanonical
+          }
         ]
       },
       {
         "@type": "ProfessionalService",
         "@id": `${profileCanonical}#business`,
-        name: "Adarsh B S - Freelance IT Consulting & Odoo ERP Development",
-        image: "https://www.digitalproductsolutions.in/assets/adarsh-consultant-banner.jpg",
+        name: "Adarsh B S - Freelance Software Developer & IT Consulting Kerala",
+        image: "https://adarsh.digitalproductsolutions.in/assets/adarsh-consultant-banner.jpg",
         url: profileCanonical,
         telephone: "+919400355185",
         priceRange: "$$",
+        currenciesAccepted: "INR, USD, EUR, AUD, AED, GBP",
+        paymentAccepted: "Bank Transfer, UPI, Stripe, Razorpay, Wire Transfer",
+        serviceType: [
+          "Freelance Software Development",
+          "IT Consulting & Technology Advisory",
+          "Odoo ERP Customization & Development",
+          "Full Stack Web Development",
+          "Next.js & React Frontend Engineering",
+          "Python Django Backend Architecture",
+          "Mobile Application Development",
+          "Technical SEO & Website Optimization",
+          "CRM & Business Process Automation",
+          "API Development & Integration"
+        ],
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "5.0",
+          reviewCount: "24",
+          bestRating: "5",
+          worstRating: "1"
+        },
         address: {
           "@type": "PostalAddress",
           addressRegion: "Kerala",
@@ -219,6 +323,9 @@ export default function RootLayout({
         },
         areaServed: [
           { "@type": "AdministrativeArea", name: "Kerala" },
+          { "@type": "City", name: "Thiruvananthapuram" },
+          { "@type": "City", name: "Kochi" },
+          { "@type": "City", name: "Kozhikode" },
           { "@type": "Country", name: "India" },
           { "@type": "Country", name: "Australia" },
           { "@type": "Country", name: "United Kingdom" },
@@ -337,6 +444,9 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
           rel="stylesheet"
         />
+        {/* LLM Direct Context Feeds */}
+        <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM Summary Context" />
+        <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Full LLM Architecture Context" />
         {/* Schema.org Structured Data */}
         <script
           type="application/ld+json"

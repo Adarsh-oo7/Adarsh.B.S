@@ -488,11 +488,11 @@ export default function HomePage() {
             </div>
 
             <h1 className="hero-title">
-              Top Freelance <span className="text-gradient">IT Consultant</span> & Software Developer in Kerala
+              Freelance <span className="text-gradient">Software Developer</span> &amp; IT Consultant in Kerala
             </h1>
 
             <p className="hero-subtitle">
-              Helping businesses turn ambitious ideas into practical, scalable digital solutions. Specializing in high-performance web applications, Python/Django architectures, SEO dominance, and custom CRM automation.
+              <strong style={{ color: 'var(--text-primary)' }}>Adarsh B S</strong> is a premier freelance software developer, Odoo ERP specialist, and IT consultant based in Kerala, India (operating across Trivandrum &amp; Kochi). Architecting custom software, Next.js web applications, Python/Django backends, and organic SEO growth for businesses in Kerala and globally.
             </p>
 
             <div className="hero-highlights">
