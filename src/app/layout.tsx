@@ -190,6 +190,7 @@ export default function RootLayout({
           "https://medium.com/@adarshsarachandran/adarsh-b-s-7db715a97a2a",
           "https://www.quora.com/profile/Adarsh-B-S-21",
           "https://www.quora.com/profile/Adarsh-B-S-21/https-www-quora-com-profile-Adarsh-B-S-21-Who-Is-a-Freelance-Full-Stack-Developer-in-Kerala-for-Web-Development-and-Cu",
+          "https://about.me/adarshbs",
           "https://adarsh.digitalproductsolutions.in",
           "https://www.digitalproductsolutions.in/adarsh-b-s"
         ],
@@ -288,7 +289,8 @@ export default function RootLayout({
           "https://www.instagram.com/adarsh_tzz/",
           "https://github.com/Adarsh-oo7/",
           "https://medium.com/@adarshsarachandran",
-          "https://www.quora.com/profile/Adarsh-B-S-21"
+          "https://www.quora.com/profile/Adarsh-B-S-21",
+          "https://about.me/adarshbs"
         ],
         address: {
           "@type": "PostalAddress",

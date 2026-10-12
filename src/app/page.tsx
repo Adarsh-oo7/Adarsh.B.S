@@ -78,6 +78,14 @@ function QuoraIcon({ className = "w-5 h-5" }: { className?: string }) {
   );
 }
 
+function AboutMeIcon({ className = "w-5 h-5" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm-1-7.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm6 7.25h-2v-3.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v3.5h-2v-6h2v.85c.62-.64 1.51-1.05 2.5-1.05 1.93 0 3.5 1.57 3.5 3.5v2.7z" />
+    </svg>
+  );
+}
+
 export default function HomePage() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -584,6 +592,15 @@ export default function HomePage() {
                   title="Read Adarsh B S on Quora"
                 >
                   <QuoraIcon className="w-4 h-4 text-orange-500" /> Quora
+                </a>
+                <a
+                  href="https://about.me/adarshbs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-badge"
+                  title="View Verified Profile on About.me"
+                >
+                  <AboutMeIcon className="w-4 h-4 text-orange-500" /> about.me
                 </a>
               </div>
             </div>
@@ -1238,6 +1255,15 @@ export default function HomePage() {
                 >
                   <QuoraIcon className="w-5 h-5 text-orange-500" /> Quora
                 </a>
+                <a
+                  href="https://about.me/adarshbs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary"
+                  style={{ justifyContent: 'center' }}
+                >
+                  <AboutMeIcon className="w-5 h-5 text-orange-500" /> about.me
+                </a>
               </div>
             </div>
 
@@ -1404,6 +1430,15 @@ export default function HomePage() {
                   title="Quora Profile & Answers"
                 >
                   <QuoraIcon className="w-4 h-4" />
+                </a>
+                <a
+                  href="https://about.me/adarshbs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social-link"
+                  title="About.me Verified Profile"
+                >
+                  <AboutMeIcon className="w-4 h-4" />
                 </a>
               </div>
             </div>
