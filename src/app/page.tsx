@@ -36,25 +36,25 @@ import {
   MessageSquare
 } from 'lucide-react';
 
-function GithubIcon({ className = "w-5 h-5" }: { className?: string }) {
+function GithubIcon({ className = "w-5 h-5", style }: { className?: string; style?: React.CSSProperties }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <svg width={20} height={20} style={{ width: '20px', height: '20px', minWidth: '20px', minHeight: '20px', flexShrink: 0, ...style }} className={className} viewBox="0 0 24 24" fill="currentColor">
       <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
     </svg>
   );
 }
 
-function LinkedinIcon({ className = "w-5 h-5" }: { className?: string }) {
+function LinkedinIcon({ className = "w-5 h-5", style }: { className?: string; style?: React.CSSProperties }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <svg width={20} height={20} style={{ width: '20px', height: '20px', minWidth: '20px', minHeight: '20px', flexShrink: 0, ...style }} className={className} viewBox="0 0 24 24" fill="currentColor">
       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
     </svg>
   );
 }
 
-function InstagramIcon({ className = "w-5 h-5" }: { className?: string }) {
+function InstagramIcon({ className = "w-5 h-5", style }: { className?: string; style?: React.CSSProperties }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width={20} height={20} style={{ width: '20px', height: '20px', minWidth: '20px', minHeight: '20px', flexShrink: 0, ...style }} className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
       <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
@@ -62,25 +62,25 @@ function InstagramIcon({ className = "w-5 h-5" }: { className?: string }) {
   );
 }
 
-function MediumIcon({ className = "w-5 h-5" }: { className?: string }) {
+function MediumIcon({ className = "w-5 h-5", style }: { className?: string; style?: React.CSSProperties }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <svg width={20} height={20} style={{ width: '20px', height: '20px', minWidth: '20px', minHeight: '20px', flexShrink: 0, ...style }} className={className} viewBox="0 0 24 24" fill="currentColor">
       <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
     </svg>
   );
 }
 
-function QuoraIcon({ className = "w-5 h-5" }: { className?: string }) {
+function QuoraIcon({ className = "w-5 h-5", style }: { className?: string; style?: React.CSSProperties }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <svg width={20} height={20} style={{ width: '20px', height: '20px', minWidth: '20px', minHeight: '20px', flexShrink: 0, ...style }} className={className} viewBox="0 0 24 24" fill="currentColor">
       <path d="M12.784 19.467c-.64 0-1.233-.146-1.776-.44a7.925 7.925 0 01-1.393 1.144c-.754.49-1.558.826-2.414 1.008l-.201-.482c.983-.757 1.838-1.688 2.564-2.793a6.568 6.568 0 01-1.464-4.227c0-1.876.688-3.468 2.062-4.777 1.375-1.309 3.064-1.964 5.067-1.964 2.003 0 3.692.655 5.067 1.964 1.374 1.309 2.061 2.901 2.061 4.777s-.687 3.469-2.061 4.778c-1.375 1.308-3.064 1.963-5.067 1.963zm.001-1.922c1.47 0 2.685-.494 3.645-1.482.96-.988 1.44-2.227 1.44-3.716 0-1.49-.48-2.729-1.44-3.717-.96-.988-2.175-1.482-3.645-1.482s-2.685.494-3.645 1.482c-.96.988-1.44 2.227-1.44 3.717 0 1.489.48 2.728 1.44 3.716.96.988 2.175 1.482 3.645 1.482z" />
     </svg>
   );
 }
 
-function AboutMeIcon({ className = "w-5 h-5" }: { className?: string }) {
+function AboutMeIcon({ className = "w-5 h-5", style }: { className?: string; style?: React.CSSProperties }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <svg width={20} height={20} style={{ width: '20px', height: '20px', minWidth: '20px', minHeight: '20px', flexShrink: 0, ...style }} className={className} viewBox="0 0 24 24" fill="currentColor">
       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm-1-7.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm6 7.25h-2v-3.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v3.5h-2v-6h2v.85c.62-.64 1.51-1.05 2.5-1.05 1.93 0 3.5 1.57 3.5 3.5v2.7z" />
     </svg>
   );
@@ -803,15 +803,15 @@ export default function HomePage() {
             {/* Verified Technical Thought Leadership & Publications */}
             <div style={{
               marginTop: '24px',
-              padding: '16px 20px',
+              padding: '18px 20px',
               borderRadius: '14px',
-              background: 'var(--card-bg)',
+              background: 'var(--bg-card)',
               border: '1px solid var(--border-color)',
             }}>
-              <h4 style={{ fontSize: '0.95rem', fontWeight: 700, marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <Sparkles className="w-4 h-4 text-orange-500" /> Published Engineering Articles &amp; Insights
+              <h4 style={{ fontSize: '0.95rem', fontWeight: 700, marginBottom: '14px', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-primary)' }}>
+                <Sparkles style={{ width: '16px', height: '16px', color: 'var(--accent-orange)', flexShrink: 0 }} /> Published Engineering Articles &amp; Insights
               </h4>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '12px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '14px' }}>
                 <a
                   href="https://medium.com/@adarshsarachandran/adarsh-b-s-7db715a97a2a"
                   target="_blank"
@@ -820,22 +820,37 @@ export default function HomePage() {
                   style={{
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '12px',
-                    padding: '12px 14px',
-                    borderRadius: '10px',
+                    gap: '14px',
+                    padding: '14px 16px',
+                    borderRadius: '12px',
                     background: 'var(--bg-secondary)',
                     border: '1px solid var(--border-color)',
                     textDecoration: 'none',
                     color: 'inherit',
-                    transition: 'all 0.2s ease'
+                    transition: 'all 0.2s ease',
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.03)'
                   }}
                 >
-                  <MediumIcon className="w-5 h-5 text-orange-500" />
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-primary)' }}>Medium Publication</div>
-                    <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Adarsh B S — Software Engineering in Kerala</div>
+                  <div style={{
+                    width: '40px',
+                    height: '40px',
+                    minWidth: '40px',
+                    minHeight: '40px',
+                    borderRadius: '10px',
+                    background: 'rgba(255, 85, 0, 0.12)',
+                    color: 'var(--accent-orange)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0
+                  }}>
+                    <MediumIcon style={{ width: '20px', height: '20px', color: 'var(--accent-orange)', flexShrink: 0 }} />
                   </div>
-                  <ArrowUpRight className="w-4 h-4 text-orange-500 shrink-0" />
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-primary)', lineHeight: 1.3 }}>Medium Publication</div>
+                    <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', marginTop: '3px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Adarsh B S — Software Engineering in Kerala</div>
+                  </div>
+                  <ArrowUpRight style={{ width: '16px', height: '16px', color: 'var(--accent-orange)', flexShrink: 0 }} />
                 </a>
 
                 <a
@@ -846,22 +861,37 @@ export default function HomePage() {
                   style={{
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '12px',
-                    padding: '12px 14px',
-                    borderRadius: '10px',
+                    gap: '14px',
+                    padding: '14px 16px',
+                    borderRadius: '12px',
                     background: 'var(--bg-secondary)',
                     border: '1px solid var(--border-color)',
                     textDecoration: 'none',
                     color: 'inherit',
-                    transition: 'all 0.2s ease'
+                    transition: 'all 0.2s ease',
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.03)'
                   }}
                 >
-                  <QuoraIcon className="w-5 h-5 text-orange-500" />
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-primary)' }}>Quora Publication</div>
-                    <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Freelance Full-Stack Developer in Kerala Guide</div>
+                  <div style={{
+                    width: '40px',
+                    height: '40px',
+                    minWidth: '40px',
+                    minHeight: '40px',
+                    borderRadius: '10px',
+                    background: 'rgba(255, 85, 0, 0.12)',
+                    color: 'var(--accent-orange)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0
+                  }}>
+                    <QuoraIcon style={{ width: '20px', height: '20px', color: 'var(--accent-orange)', flexShrink: 0 }} />
                   </div>
-                  <ArrowUpRight className="w-4 h-4 text-orange-500 shrink-0" />
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-primary)', lineHeight: 1.3 }}>Quora Publication</div>
+                    <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', marginTop: '3px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Freelance Full-Stack Developer in Kerala Guide</div>
+                  </div>
+                  <ArrowUpRight style={{ width: '16px', height: '16px', color: 'var(--accent-orange)', flexShrink: 0 }} />
                 </a>
               </div>
             </div>
