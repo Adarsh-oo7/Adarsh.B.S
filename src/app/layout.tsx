@@ -96,6 +96,12 @@ export const metadata: Metadata = {
     locale: "en_IN",
     images: [
       {
+        url: "/assets/adarsh-consulting-meeting.jpg",
+        width: 1024,
+        height: 682,
+        alt: "Adarsh B S - Senior IT Consultant & Software Developer presenting custom web solutions to clients",
+      },
+      {
         url: "/assets/adarsh-consultant-banner.jpg",
         width: 1200,
         height: 675,

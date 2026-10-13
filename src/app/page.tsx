@@ -630,10 +630,10 @@ export default function HomePage() {
             <div className="avatar-frame">
               <div className="avatar-inner">
                 <Image
-                  src="/assets/adarsh-executive-portrait.jpg"
-                  alt="Adarsh B S - Freelance IT Consultant and Software Developer"
-                  width={600}
-                  height={800}
+                  src="/assets/adarsh-consulting-meeting.jpg"
+                  alt="Adarsh B S - Senior IT Consultant & Full Stack Software Engineer presenting custom web and enterprise solutions"
+                  width={1024}
+                  height={682}
                   priority
                   className="avatar-image"
                 />
@@ -642,7 +642,7 @@ export default function HomePage() {
               <div className="floating-badge">
                 <div className="badge-info">
                   <h4>Adarsh B S</h4>
-                  <p>Freelance IT Consultant & Developer</p>
+                  <p>Senior IT Consultant & Full Stack Developer</p>
                 </div>
                 <div className="verified-icon">
                   <ShieldCheck className="w-7 h-7 text-orange-500" />
