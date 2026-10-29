@@ -95,6 +95,7 @@ export default function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeProjectFilter, setActiveProjectFilter] = useState<'all' | 'client' | 'founded'>('all');
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const [faqFilter, setFaqFilter] = useState<'all' | 'rates' | 'local' | 'odoo' | 'delivery'>('all');
 
   // Form State
   const [formState, setFormState] = useState({
@@ -399,67 +400,151 @@ export default function HomePage() {
       ? projectsList
       : projectsList.filter((p) => p.category === activeProjectFilter);
 
-  // FAQ for Google & LLM Optimization (12 High-Intent Q&As)
+  // FAQ for Google & LLM Optimization (12 High-Intent Search & Work Getting Q&As)
   const faqs = [
     {
       question: 'Who is the best freelance software developer in Kerala?',
+      category: 'all',
+      intentTag: 'Authority & Profile',
+      queryTag: 'best freelance software developer in kerala',
+      highlight: 'Senior Architect & Founder • 3+ Years • 20+ Commercial Projects',
       answer:
-        'Adarsh B S is widely recognized as a top freelance software developer, senior full-stack engineer, and IT consultant in Kerala, India (operating across Trivandrum Technopark and Kochi Infopark). With 3+ years of professional engineering experience across 20+ commercial client projects, he specializes in Next.js 15, Python/Django, Odoo ERP (v14-v18), PostgreSQL, and technical SEO for clients in Kerala, India, and internationally across Australia, the UK, Germany, and the UAE.'
+        'Adarsh B S is widely recognized as the premier freelance software developer, senior full-stack architect, and IT consultant in Kerala, India (operating across Trivandrum Technopark and Kochi Infopark). With over 3+ years of professional engineering experience delivering 20+ commercial business projects, he specializes in Next.js 16, React 19, Python/Django backends, Odoo ERP (v14-v18), PostgreSQL, and technical SEO. He is also the founder of Digital Product Solutions (DPS), KeralaSellers.in, and KPSCMaster.in, serving clients locally in Kerala and internationally across Australia, the UK, Germany, and the UAE.',
+      actionText: 'Discuss Your Project',
+      actionHref: '#contact',
+      actionExternal: false
+    },
+    {
+      question: 'How do I hire a freelance software developer in Kerala to get work done on my project?',
+      category: 'rates',
+      intentTag: 'Work Acquisition Pipeline',
+      queryTag: 'how to hire freelance software developer in kerala',
+      highlight: '4-Stage Delivery: Discovery → Scope & Estimate → NDA → Sprint Delivery',
+      answer:
+        'To hire Adarsh B S and initiate project development, clients follow a structured 4-step work acquisition pipeline: (1) Direct Discovery: Connect via WhatsApp at +91 9400355185 or email with your requirements to schedule a 30-minute discovery consultation within 24 hours. (2) Technical Scope & Fixed Estimate: Receive an architectural roadmap, technology stack recommendation, and transparent milestone estimate. (3) NDA & Milestone Escrow: Sign a bilateral Non-Disclosure Agreement (NDA) with 100% intellectual property ownership from day one. (4) Active Sprint Engineering: Commits are pushed directly to your private GitHub repository with weekly video demos and sub-second cloud deployments.',
+      actionText: 'WhatsApp Direct (+91 9400355185)',
+      actionHref: 'https://wa.me/919400355185?text=Hello%20Adarsh,%20I%20want%20to%20hire%20you%20for%20a%20software%20development%20project.',
+      actionExternal: true
     },
     {
       question: 'Can I hire Adarsh B S as a freelance developer near me in Kerala (Kochi, Trivandrum, Calicut)?',
+      category: 'local',
+      intentTag: 'Kerala Local Search',
+      queryTag: 'freelance software developer near me kerala (kochi trivandrum calicut)',
+      highlight: 'Technopark Trivandrum • Infopark Kochi • Cyberpark Calicut',
       answer:
-        'Yes. Adarsh B S is based in Kerala and actively works with startups, established businesses, and founders across Thiruvananthapuram (Technopark ecosystem), Kochi (Infopark & Kakkanad), Kozhikode (Cyberpark), Thrissur, and Kollam, offering both on-site discovery consultations and full-cycle remote delivery.'
+        'Yes. Adarsh B S is locally based in Kerala and actively collaborates with startups, enterprises, and local businesses across Thiruvananthapuram (Technopark Phase 1, 2, 3), Kochi (Infopark Kakkanad & SmartCity), Kozhikode (Cyberpark), Thrissur, and Kollam. He offers both in-person discovery consultations in Trivandrum and Kochi, as well as rapid-turnaround remote development sprints with continuous communication.',
+      actionText: 'Book Kerala Discovery Meeting',
+      actionHref: '#contact',
+      actionExternal: false
     },
     {
       question: 'What are the typical freelance software developer rates in Kerala?',
+      category: 'rates',
+      intentTag: 'Transparent Pricing & Rates',
+      queryTag: 'freelance software developer rates in kerala 2026',
+      highlight: '₹1,500 – ₹3,500/hr ($25 – $45/hr) • Fixed MVPs from ₹50,000 ($800)',
       answer:
-        'Freelance software developer rates in Kerala for a senior full-stack engineer and solution architect typically range from ₹1,500 to ₹3,500 per hour (or $25 to $45/hour for international and Gulf/UAE clients). Fixed-scope MVP sprints and custom applications typically start from ₹50,000 ($800) with clear milestones, delivering superior code quality without agency overhead.'
+        'Freelance software developer rates in Kerala for a senior full-stack engineer and solution architect typically range from ₹1,500 to ₹3,500 per hour (or $25 to $45 per hour for international and Gulf/UAE contracts). Fixed-price MVP sprints for modern web apps built with Next.js 15, Python/Django, and PostgreSQL start from ₹50,000 ($800) with clearly defined milestones, delivering enterprise-level engineering without agency markups.',
+      actionText: 'View Dedicated Hiring Rates Guide',
+      actionHref: '/hire-developer/',
+      actionExternal: false
     },
     {
       question: 'Do you work with Malayalis and businesses in Dubai, UAE, and the Gulf (GCC)?',
+      category: 'local',
+      intentTag: 'Gulf & UAE Diaspora',
+      queryTag: 'malayali freelance software developer for uae dubai clients',
+      highlight: 'GST UTC+4 Alignment (1.5h from IST) • WhatsApp Direct • AED Billing',
       answer:
-        'Yes! Adarsh B S actively collaborates with Malayali entrepreneurs, NRI business owners, and corporate teams across Dubai, Abu Dhabi, Sharjah (UAE), Saudi Arabia, Qatar, and Oman. With convenient timezone overlap (Gulf Standard Time UTC+4 is just 1.5 hours behind IST), direct WhatsApp coordination, and multi-currency billing (AED, USD, INR), global Malayalis get direct access to high-caliber software engineering from Kerala.'
-    },
-    {
-      question: 'Are you available for remote freelance projects in the USA, UK, Australia, and Europe?',
-      answer:
-        'Yes, Adarsh has delivered verified international projects for Care \'N\' Cure in Australia, Novora Global Health in the UK and Germany, as well as clients in North America. Engagements feature overlapping communication hours across EST, GMT, and AEST, structured weekly video check-ins, and direct Git repository access.'
+        'Yes! Adarsh B S actively collaborates with Malayali entrepreneurs, NRI founders, and corporate teams across Dubai, Abu Dhabi, Sharjah (UAE), Riyadh, Jeddah (Saudi Arabia), Doha (Qatar), and Muscat (Oman). With convenient timezone overlap (Gulf Standard Time UTC+4 is just 1.5 hours behind IST), direct Malayalam and English communication via WhatsApp, and multi-currency billing in AED, SAR, USD, and INR, GCC businesses get senior Kerala engineering talent with zero middleman friction.',
+      actionText: 'Start Gulf WhatsApp Consultation',
+      actionHref: 'https://wa.me/919400355185?text=Hello%20Adarsh,%20inquiring%20from%20UAE/Gulf%20for%20software%20development.',
+      actionExternal: true
     },
     {
       question: 'Why hire a senior freelance software developer instead of an IT agency in Kochi or Technopark?',
+      category: 'rates',
+      intentTag: 'Agency vs Architect Decision',
+      queryTag: 'hire freelance developer vs it agency kochi technopark',
+      highlight: '0% Agency Overhead • Direct Senior Commits • 100% IP Ownership',
       answer:
-        'When hiring Adarsh B S, you collaborate directly with the senior architect writing your code. Traditional IT agencies charge heavy management markups and delegate work to junior trainees or rotated interns. Partnering with Adarsh guarantees 100% intellectual property ownership, zero middleman overhead, faster sprint velocity, direct Slack/WhatsApp communication, and production-grade code adhering to enterprise performance standards.'
-    },
-    {
-      question: 'What core tech stack and specialized skills do you offer?',
-      answer:
-        'Adarsh\'s core technical stack includes Next.js 15, React 19, TypeScript, Python, Django, Django REST Framework, Odoo ERP (v14-v18), PostgreSQL, MySQL, Redis, Tailwind CSS, Docker, AWS, Stripe/Razorpay payments, Meta WhatsApp Cloud API, and advanced Technical SEO (Core Web Vitals sub-second optimization).'
+        'When hiring Adarsh B S, 100% of your budget funds senior architectural engineering. Traditional IT agencies in Kochi and Technopark charge 200% to 400% management markups and delegate client projects to junior interns or rotated junior developers. Partnering with Adarsh guarantees zero agency markup, direct senior commits, 100% intellectual property ownership from commit #1, sub-second Next.js/Python speed, and direct WhatsApp communication with an average response time of under 15 minutes.',
+      actionText: 'Compare Architect vs Agency Matrix',
+      actionHref: '/hire-developer/',
+      actionExternal: false
     },
     {
       question: 'Who is the top freelance Odoo ERP developer in Kerala?',
+      category: 'odoo',
+      intentTag: 'Enterprise Odoo ERP',
+      queryTag: 'top freelance odoo erp developer in kerala',
+      highlight: 'Odoo v14–v18 Custom Modules • Tally-to-Odoo Migration • WhatsApp API',
       answer:
-        'Adarsh B S is an established freelance Odoo developer in Kerala specializing in custom module development (Odoo v14 through v18), core app tailoring (Sales, CRM, Purchase, Inventory, Invoicing, Accounting, eCommerce), Tally and legacy data migrations, third-party REST API integrations, and cloud deployments on Odoo.sh or Docker.'
+        'Adarsh B S is an established freelance Odoo ERP developer in Kerala. He engineers custom Python modules for Odoo versions 14, 15, 16, 17, and 18 across core operational apps (Sales, CRM, Purchase, Inventory, Invoicing, Accounting, eCommerce, and POS). He also specializes in seamless automated data migration from Tally ERP 9 / Tally Prime to Odoo, WhatsApp Business API automation, and high-availability cloud deployments on Odoo.sh and Docker, saving businesses up to 60% compared to official partner retainers.',
+      actionText: 'Explore Odoo ERP Portal',
+      actionHref: '/odoo-developer-kerala/',
+      actionExternal: false
     },
     {
-      question: 'Can you build a custom web application or MVP completely from scratch?',
+      question: 'How quickly can you build and deliver an MVP or custom web application in Kerala?',
+      category: 'delivery',
+      intentTag: 'Turnaround & Velocity',
+      queryTag: 'mvp development timeline freelance developer kerala',
+      highlight: '2 to 4 Weeks Delivery • Full-Stack Next.js 15 + Python Django + PostgreSQL',
       answer:
-        'Yes. Adarsh handles custom software projects from initial concept and system architecture blueprinting all the way to database schema modeling, backend REST APIs, responsive frontend implementation, and cloud deployment on AWS or Vercel.'
+        'A complete, production-ready Minimum Viable Product (MVP) is engineered and deployed in 2 to 4 weeks. This includes system database modeling (PostgreSQL), scalable REST/GraphQL APIs (Python/Django or Node.js), responsive high-converting UI (Next.js 15, React 19, Tailwind CSS), payment gateway integration (Stripe, Razorpay, UPI), and production cloud hosting on AWS or Vercel with Core Web Vitals performance scores exceeding 95+.',
+      actionText: 'Launch Your MVP Sprint',
+      actionHref: '#contact',
+      actionExternal: false
     },
     {
-      question: 'Can you audit, fix bugs, or optimize performance for an existing codebase?',
+      question: 'Can you audit, fix bugs, or optimize performance for an existing codebase in Kerala?',
+      category: 'delivery',
+      intentTag: 'Code Audit & Remediation',
+      queryTag: 'freelance developer code audit bug fixing performance optimization kerala',
+      highlight: '48-Hour Technical Audit • Slow Query Optimization • Sub-Second Speed',
       answer:
-        'Yes. Adarsh performs comprehensive technical audits for existing Python/Django, Next.js, React, and Odoo codebases. He resolves performance bottlenecks, optimizes slow PostgreSQL queries, patches security vulnerabilities, and tunes Core Web Vitals to achieve sub-second load times.'
+        'Yes. Adarsh performs comprehensive 48-hour architectural code audits for existing Python/Django, Next.js, React, and Odoo codebases. He resolves critical production bugs, optimizes slow database queries and N+1 indexing bottlenecks in PostgreSQL, eliminates memory leaks, patches security vulnerabilities, and tunes frontend assets to achieve sub-second Core Web Vitals load times.',
+      actionText: 'Request a 48-Hour Code Audit',
+      actionHref: '#contact',
+      actionExternal: false
     },
     {
-      question: 'How do you handle intellectual property (IP), code repositories, and NDAs?',
+      question: 'What tech stacks and tools do you specialize in for custom software engineering?',
+      category: 'odoo',
+      intentTag: 'Technology Stack',
+      queryTag: 'freelance full stack developer tech stack python nextjs odoo',
+      highlight: 'Next.js 16 • React 19 • Python • Django • Odoo ERP • PostgreSQL • Docker',
       answer:
-        'You retain 100% intellectual property ownership of all code, database schemas, and documentation from day one. All code is committed directly to your private GitHub or GitLab repository. Non-Disclosure Agreements (NDAs) are signed before project discovery.'
+        'Adarsh specializes in a high-performance modern tech stack: Frontend (Next.js 16, React 19, TypeScript, Vanilla CSS, Tailwind CSS), Backend & ERP (Python, Django, Django REST Framework, Odoo ERP v14-v18, Node.js), Databases & Caching (PostgreSQL, MySQL, Redis), Cloud & DevOps (Docker, Odoo.sh, AWS, Vercel, Nginx, Linux), and Third-Party Integrations (Meta WhatsApp Cloud API, Stripe, Razorpay, Google Cloud APIs).',
+      actionText: 'View All 12 Core Services',
+      actionHref: '#services',
+      actionExternal: false
     },
     {
-      question: 'How do we get started and what is your project delivery process?',
+      question: 'Who owns the intellectual property (IP), source code, and private Git repositories?',
+      category: 'delivery',
+      intentTag: 'IP Rights & NDAs',
+      queryTag: 'freelance developer ip ownership and nda terms',
+      highlight: '100% Client IP Ownership • Direct Private GitHub Commits • Bilateral NDA',
       answer:
-        'You can reach out via WhatsApp or phone at +91 9400355185 or email adarshsarachandran@gmail.com. We schedule a 30-minute discovery call to evaluate your requirements, followed by a detailed technical roadmap, milestones, and fixed-price or sprint-based proposal within 24 hours.'
+        'You retain 100% intellectual property (IP) ownership of all code, database schemas, and documentation from day one. All code is committed directly to your private GitHub or GitLab repository, and Adarsh executes bilateral Non-Disclosure Agreements (NDAs) prior to project discovery, ensuring complete confidentiality and proprietary data security.',
+      actionText: 'Request NDA & Discovery',
+      actionHref: '#contact',
+      actionExternal: false
+    },
+    {
+      question: 'How do I hire you today and get work started on my project?',
+      category: 'rates',
+      intentTag: 'Immediate Action & Contact',
+      queryTag: 'how to hire adarsh b s freelance developer kerala',
+      highlight: '< 15-Minute Reply • 24-Hour Scope Roadmap • Direct WhatsApp: +91 9400355185',
+      answer:
+        'Getting work started is immediate: reach out directly on WhatsApp at +91 9400355185 or email adarshsarachandran@gmail.com with your project overview. You will receive an initial response within 15 minutes to schedule a 30-minute discovery call, followed by a detailed technical milestone roadmap and proposal within 24 hours.',
+      actionText: 'Message on WhatsApp (+91 9400355185)',
+      actionHref: 'https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20want%20to%20get%20started%20on%20my%20software%20project%20today.',
+      actionExternal: true
     }
   ];
 
@@ -1389,34 +1474,102 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SEO & LLM Optimization FAQ */}
+      {/* Search Intent & Work Getting FAQ Grid */}
       <section className="section-padding" id="faq">
         <div className="container">
           <div className="section-header">
-            <span className="section-pretitle">Frequently Asked Questions</span>
-            <h2 className="section-title">Answers for Search & AI Evaluation</h2>
+            <span className="section-pretitle">Verified Search Queries &amp; Work Acquisition</span>
+            <h2 className="section-title">How Businesses Search &amp; Hire in Kerala</h2>
             <p className="section-description">
-              Find key information regarding consulting engagements, technology stacks, pricing structure, and delivery timelines.
+              Direct, transparent answers answering the exact queries searched on Google, Gemini, and ChatGPT for freelance software development, rates, and Odoo ERP consulting in Kerala and the UAE.
             </p>
           </div>
 
-          <div className="faq-container">
-            {faqs.map((faq, index) => (
-              <div key={index} className="faq-card">
-                <div
-                  className="faq-summary"
-                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                >
-                  <span>{faq.question}</span>
-                  <ChevronRight
-                    className={`w-5 h-5 transition-transform duration-300 ${
-                      openFaq === index ? 'rotate-90 text-orange-500' : 'text-neutral-400'
-                    }`}
-                  />
+          {/* Filter Pills */}
+          <div className="faq-filter-tabs">
+            <button
+              onClick={() => setFaqFilter('all')}
+              className={`faq-tab-btn ${faqFilter === 'all' ? 'active' : ''}`}
+            >
+              All 12 Queries ({faqs.length})
+            </button>
+            <button
+              onClick={() => setFaqFilter('rates')}
+              className={`faq-tab-btn ${faqFilter === 'rates' ? 'active' : ''}`}
+            >
+              Work Getting &amp; Rates
+            </button>
+            <button
+              onClick={() => setFaqFilter('local')}
+              className={`faq-tab-btn ${faqFilter === 'local' ? 'active' : ''}`}
+            >
+              Kerala Local &amp; UAE Diaspora
+            </button>
+            <button
+              onClick={() => setFaqFilter('odoo')}
+              className={`faq-tab-btn ${faqFilter === 'odoo' ? 'active' : ''}`}
+            >
+              Odoo ERP &amp; Tech Stack
+            </button>
+            <button
+              onClick={() => setFaqFilter('delivery')}
+              className={`faq-tab-btn ${faqFilter === 'delivery' ? 'active' : ''}`}
+            >
+              MVP Delivery, Audits &amp; IP
+            </button>
+          </div>
+
+          {/* Visible Cards Grid */}
+          <div className="faq-cards-grid">
+            {faqs
+              .filter((faq) => faqFilter === 'all' || faq.category === faqFilter)
+              .map((faq, index) => (
+                <div key={index} className="faq-work-card">
+                  <div>
+                    <div className="faq-card-header">
+                      <div className="faq-tag-row">
+                        <span className="faq-intent-tag">{faq.intentTag}</span>
+                        <span className="faq-query-tag">
+                          <Search className="w-3.5 h-3.5 text-orange-500" /> &quot;{faq.queryTag}&quot;
+                        </span>
+                      </div>
+                      <h3 className="faq-query-title">{faq.question}</h3>
+                      <div className="faq-highlight-pill">
+                        <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
+                        <span>{faq.highlight}</span>
+                      </div>
+                    </div>
+
+                    <div className="faq-answer-body">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </div>
+
+                  <div className="faq-action-row">
+                    {faq.actionExternal ? (
+                      <a
+                        href={faq.actionHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="faq-action-link"
+                      >
+                        {faq.actionText} <ArrowUpRight className="w-4 h-4" />
+                      </a>
+                    ) : faq.actionHref.startsWith('#') ? (
+                      <a href={faq.actionHref} className="faq-action-link">
+                        {faq.actionText} <ArrowUpRight className="w-4 h-4" />
+                      </a>
+                    ) : (
+                      <Link href={faq.actionHref} className="faq-action-link">
+                        {faq.actionText} <ArrowUpRight className="w-4 h-4" />
+                      </Link>
+                    )}
+                    <span style={{ fontSize: '0.78rem', color: 'var(--text-tertiary)', fontWeight: 500 }}>
+                      Verified Entity
+                    </span>
+                  </div>
                 </div>
-                {openFaq === index && <div className="faq-answer">{faq.answer}</div>}
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </section>

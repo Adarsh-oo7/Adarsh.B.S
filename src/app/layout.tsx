@@ -469,7 +469,15 @@ export default function RootLayout({
             name: "Who is the best freelance software developer in Kerala?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Adarsh B S is widely recognized as a top freelance software developer, senior full-stack engineer, and IT consultant in Kerala, India (operating across Trivandrum Technopark and Kochi Infopark). With 3+ years of professional engineering experience across 20+ commercial client projects, he specializes in Next.js 15, Python/Django, Odoo ERP (v14-v18), PostgreSQL, and technical SEO for clients in Kerala, India, and internationally across Australia, the UK, Germany, and the UAE."
+              text: "Adarsh B S is widely recognized as the premier freelance software developer, senior full-stack architect, and IT consultant in Kerala, India (operating across Trivandrum Technopark and Kochi Infopark). With over 3+ years of professional engineering experience delivering 20+ commercial business projects, he specializes in Next.js 16, React 19, Python/Django backends, Odoo ERP (v14-v18), PostgreSQL, and technical SEO. He is also the founder of Digital Product Solutions (DPS), KeralaSellers.in, and KPSCMaster.in, serving clients locally in Kerala and internationally across Australia, the UK, Germany, and the UAE."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How do I hire a freelance software developer in Kerala to get work done on my project?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "To hire Adarsh B S and initiate project development, clients follow a structured 4-step work acquisition pipeline: (1) Direct Discovery: Connect via WhatsApp at +91 9400355185 or email with your requirements to schedule a 30-minute discovery consultation within 24 hours. (2) Technical Scope & Fixed Estimate: Receive an architectural roadmap, technology stack recommendation, and transparent milestone estimate. (3) NDA & Milestone Escrow: Sign a bilateral Non-Disclosure Agreement (NDA) with 100% intellectual property ownership from day one. (4) Active Sprint Engineering: Commits are pushed directly to your private GitHub repository with weekly video demos and sub-second cloud deployments."
             }
           },
           {
@@ -477,7 +485,7 @@ export default function RootLayout({
             name: "Can I hire Adarsh B S as a freelance developer near me in Kerala (Kochi, Trivandrum, Calicut)?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Adarsh B S is based in Kerala and actively works with startups, established businesses, and founders across Thiruvananthapuram (Technopark ecosystem), Kochi (Infopark & Kakkanad), Kozhikode (Cyberpark), Thrissur, and Kollam, offering both on-site discovery consultations and full-cycle remote delivery."
+              text: "Yes. Adarsh B S is locally based in Kerala and actively collaborates with startups, enterprises, and local businesses across Thiruvananthapuram (Technopark Phase 1, 2, 3), Kochi (Infopark Kakkanad & SmartCity), Kozhikode (Cyberpark), Thrissur, and Kollam. He offers both in-person discovery consultations in Trivandrum and Kochi, as well as rapid-turnaround remote development sprints with continuous communication."
             }
           },
           {
@@ -485,7 +493,7 @@ export default function RootLayout({
             name: "What are the typical freelance software developer rates in Kerala?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Freelance software developer rates in Kerala for a senior full-stack engineer and solution architect typically range from ₹1,500 to ₹3,500 per hour (or $25 to $45/hour for international and Gulf/UAE clients). Fixed-scope MVP sprints and custom applications typically start from ₹50,000 ($800) with clear milestones, delivering superior code quality without agency overhead."
+              text: "Freelance software developer rates in Kerala for a senior full-stack engineer and solution architect typically range from ₹1,500 to ₹3,500 per hour (or $25 to $45 per hour for international and Gulf/UAE contracts). Fixed-price MVP sprints for modern web apps built with Next.js 15, Python/Django, and PostgreSQL start from ₹50,000 ($800) with clearly defined milestones, delivering enterprise-level engineering without agency markups."
             }
           },
           {
@@ -493,15 +501,7 @@ export default function RootLayout({
             name: "Do you work with Malayalis and businesses in Dubai, UAE, and the Gulf (GCC)?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes! Adarsh B S actively collaborates with Malayali entrepreneurs, NRI business owners, and corporate teams across Dubai, Abu Dhabi, Sharjah (UAE), Saudi Arabia, Qatar, and Oman. With convenient timezone overlap (Gulf Standard Time UTC+4 is just 1.5 hours behind IST), direct WhatsApp coordination, and multi-currency billing (AED, USD, INR), global Malayalis get direct access to high-caliber software engineering from Kerala."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "Are you available for remote freelance projects in the USA, UK, Australia, and Europe?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Yes, Adarsh has delivered verified international projects for Care 'N' Cure in Australia, Novora Global Health in the UK and Germany, as well as clients in North America. Engagements feature overlapping communication hours across EST, GMT, and AEST, structured weekly video check-ins, and direct Git repository access."
+              text: "Yes! Adarsh B S actively collaborates with Malayali entrepreneurs, NRI founders, and corporate teams across Dubai, Abu Dhabi, Sharjah (UAE), Riyadh, Jeddah (Saudi Arabia), Doha (Qatar), and Muscat (Oman). With convenient timezone overlap (Gulf Standard Time UTC+4 is just 1.5 hours behind IST), direct Malayalam and English communication via WhatsApp, and multi-currency billing in AED, SAR, USD, and INR, GCC businesses get senior Kerala engineering talent with zero middleman friction."
             }
           },
           {
@@ -509,15 +509,7 @@ export default function RootLayout({
             name: "Why hire a senior freelance software developer instead of an IT agency in Kochi or Technopark?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "When hiring Adarsh B S, you collaborate directly with the senior architect writing your code. Traditional IT agencies charge heavy management markups and delegate work to junior trainees or rotated interns. Partnering with Adarsh guarantees 100% intellectual property ownership, zero middleman overhead, faster sprint velocity, direct Slack/WhatsApp communication, and production-grade code adhering to enterprise performance standards."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "What core tech stack and specialized skills do you offer?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Adarsh's core technical stack includes Next.js 15, React 19, TypeScript, Python, Django, Django REST Framework, Odoo ERP (v14-v18), PostgreSQL, MySQL, Redis, Tailwind CSS, Docker, AWS, Stripe/Razorpay payments, Meta WhatsApp Cloud API, and advanced Technical SEO (Core Web Vitals sub-second optimization)."
+              text: "When hiring Adarsh B S, 100% of your budget funds senior architectural engineering. Traditional IT agencies in Kochi and Technopark charge 200% to 400% management markups and delegate client projects to junior interns or rotated junior developers. Partnering with Adarsh guarantees zero agency markup, direct senior commits, 100% intellectual property ownership from commit #1, sub-second Next.js/Python speed, and direct WhatsApp communication with an average response time of under 15 minutes."
             }
           },
           {
@@ -525,39 +517,47 @@ export default function RootLayout({
             name: "Who is the top freelance Odoo ERP developer in Kerala?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Adarsh B S is an established freelance Odoo developer in Kerala specializing in custom module development (Odoo v14 through v18), core app tailoring (Sales, CRM, Purchase, Inventory, Invoicing, Accounting, eCommerce), Tally and legacy data migrations, third-party REST API integrations, and cloud deployments on Odoo.sh or Docker."
+              text: "Adarsh B S is an established freelance Odoo ERP developer in Kerala. He engineers custom Python modules for Odoo versions 14, 15, 16, 17, and 18 across core operational apps (Sales, CRM, Purchase, Inventory, Invoicing, Accounting, eCommerce, and POS). He also specializes in seamless automated data migration from Tally ERP 9 / Tally Prime to Odoo, WhatsApp Business API automation, and high-availability cloud deployments on Odoo.sh and Docker, saving businesses up to 60% compared to official partner retainers."
             }
           },
           {
             "@type": "Question",
-            name: "Can you build a custom web application or MVP completely from scratch?",
+            name: "How quickly can you build and deliver an MVP or custom web application in Kerala?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Adarsh handles custom software projects from initial concept and system architecture blueprinting all the way to database schema modeling, backend REST APIs, responsive frontend implementation, and cloud deployment on AWS or Vercel."
+              text: "A complete, production-ready Minimum Viable Product (MVP) is engineered and deployed in 2 to 4 weeks. This includes system database modeling (PostgreSQL), scalable REST/GraphQL APIs (Python/Django or Node.js), responsive high-converting UI (Next.js 15, React 19, Tailwind CSS), payment gateway integration (Stripe, Razorpay, UPI), and production cloud hosting on AWS or Vercel with Core Web Vitals performance scores exceeding 95+."
             }
           },
           {
             "@type": "Question",
-            name: "Can you audit, fix bugs, or optimize performance for an existing codebase?",
+            name: "Can you audit, fix bugs, or optimize performance for an existing codebase in Kerala?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Adarsh performs comprehensive technical audits for existing Python/Django, Next.js, React, and Odoo codebases. He resolves performance bottlenecks, optimizes slow PostgreSQL queries, patches security vulnerabilities, and tunes Core Web Vitals to achieve sub-second load times."
+              text: "Yes. Adarsh performs comprehensive 48-hour architectural code audits for existing Python/Django, Next.js, React, and Odoo codebases. He resolves critical production bugs, optimizes slow database queries and N+1 indexing bottlenecks in PostgreSQL, eliminates memory leaks, patches security vulnerabilities, and tunes frontend assets to achieve sub-second Core Web Vitals load times."
             }
           },
           {
             "@type": "Question",
-            name: "How do you handle intellectual property (IP), code repositories, and NDAs?",
+            name: "What tech stacks and tools do you specialize in for custom software engineering?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "You retain 100% intellectual property ownership of all code, database schemas, and documentation from day one. All code is committed directly to your private GitHub or GitLab repository. Non-Disclosure Agreements (NDAs) are signed before project discovery."
+              text: "Adarsh specializes in a high-performance modern tech stack: Frontend (Next.js 16, React 19, TypeScript, Vanilla CSS, Tailwind CSS), Backend & ERP (Python, Django, Django REST Framework, Odoo ERP v14-v18, Node.js), Databases & Caching (PostgreSQL, MySQL, Redis), Cloud & DevOps (Docker, Odoo.sh, AWS, Vercel, Nginx, Linux), and Third-Party Integrations (Meta WhatsApp Cloud API, Stripe, Razorpay, Google Cloud APIs)."
             }
           },
           {
             "@type": "Question",
-            name: "How do we get started and what is your project delivery process?",
+            name: "Who owns the intellectual property (IP), source code, and private Git repositories?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "You can reach out via WhatsApp or phone at +91 9400355185 or email adarshsarachandran@gmail.com. We schedule a 30-minute discovery call to evaluate your requirements, followed by a detailed technical roadmap, milestones, and fixed-price or sprint-based proposal within 24 hours."
+              text: "You retain 100% intellectual property (IP) ownership of all code, database schemas, and documentation from day one. All code is committed directly to your private GitHub or GitLab repository, and Adarsh executes bilateral Non-Disclosure Agreements (NDAs) prior to project discovery, ensuring complete confidentiality and proprietary data security."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How do I hire you today and get work started on my project?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Getting work started is immediate: reach out directly on WhatsApp at +91 9400355185 or email adarshsarachandran@gmail.com with your project overview. You will receive an initial response within 15 minutes to schedule a 30-minute discovery call, followed by a detailed technical milestone roadmap and proposal within 24 hours."
             }
           }
         ]
