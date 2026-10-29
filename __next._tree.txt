@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/38ab-ymtjt9dp.css","style"]
+:HL["/_next/static/chunks/2tk8at63c57dx.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap","style"]
 1:[["children",{"s":"__PAGE__","h":128}]]
-0:{"b":"Oik41bWF3T0Kbskb1aGkj","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"YZaRpkyln533zeJZs37Zy","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
