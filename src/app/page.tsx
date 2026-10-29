@@ -476,6 +476,8 @@ export default function HomePage() {
           <ul className="nav-links">
             <li><a href="#about" className="nav-link">About</a></li>
             <li><a href="#services" className="nav-link">Services</a></li>
+            <li><Link href="/hire-developer/" className="nav-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Hire Dev</Link></li>
+            <li><Link href="/odoo-developer-kerala/" className="nav-link">Odoo ERP</Link></li>
             <li><a href="#clients" className="nav-link">Clients</a></li>
             <li><a href="#experience" className="nav-link">Experience</a></li>
             <li><a href="#projects" className="nav-link">Projects</a></li>
@@ -512,12 +514,14 @@ export default function HomePage() {
         <div className={`mobile-nav-drawer ${mobileMenuOpen ? 'open' : ''}`}>
           <a href="#about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About</a>
           <a href="#services" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Services (12)</a>
-          <a href="#clients" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Clients & Ventures</a>
+          <Link href="/hire-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Hire Developer (Rates &amp; Scope)</Link>
+          <Link href="/odoo-developer-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Odoo ERP Consultant</Link>
+          <a href="#clients" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Clients &amp; Ventures</a>
           <a href="#experience" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Experience</a>
           <a href="#projects" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Projects</a>
           <a href="#testimonials" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Client Reviews</a>
           <a href="#faq" className="nav-link" onClick={() => setMobileMenuOpen(false)}>FAQ</a>
-          <a href="#contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Contact & Quote</a>
+          <a href="#contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Contact &amp; Quote</a>
         </div>
       </nav>
 
@@ -551,6 +555,9 @@ export default function HomePage() {
               <a href="#contact" className="btn btn-primary">
                 <Sparkles className="w-5 h-5" /> Discuss Your Project
               </a>
+              <Link href="/hire-developer/" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)', background: 'rgba(255, 94, 0, 0.06)' }}>
+                <Briefcase className="w-5 h-5" /> Hire Dev Rates
+              </Link>
               <a href="/assets/cv.pdf" download="Adarsh_BS_CV.pdf" className="btn btn-secondary">
                 <Download className="w-5 h-5" /> Download CV
               </a>
@@ -1729,6 +1736,8 @@ export default function HomePage() {
             <div>
               <h4 className="footer-title">Navigation & Compliance</h4>
               <ul className="footer-links">
+                <li><Link href="/hire-developer/" className="footer-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Hire Developer (Rates &amp; Terms)</Link></li>
+                <li><Link href="/odoo-developer-kerala/" className="footer-link">Odoo ERP Developer Kerala</Link></li>
                 <li><a href="#about" className="footer-link">About Adarsh B S</a></li>
                 <li><a href="#clients" className="footer-link">Clients & Ventures</a></li>
                 <li><a href="#projects" className="footer-link">Portfolio & Demos</a></li>
