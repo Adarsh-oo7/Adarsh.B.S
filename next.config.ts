@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
+  experimental: {
+    agentUpgrade: "security",
+  } as any,
 };
 
 export default nextConfig;
