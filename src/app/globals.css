@@ -1613,3 +1613,210 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Diaspora & Global Collaboration Grid */
+.diaspora-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.diaspora-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  padding: 28px 24px;
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.diaspora-card:hover {
+  border-color: rgba(255, 85, 0, 0.4);
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow), var(--accent-glow);
+}
+
+.diaspora-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.diaspora-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255, 85, 0, 0.1);
+  border: 1px solid rgba(255, 85, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-orange);
+  font-size: 1.25rem;
+}
+
+.diaspora-title {
+  font-size: 1.15rem;
+  font-weight: 750;
+  color: var(--text-primary);
+}
+
+.diaspora-subtitle {
+  font-size: 0.78rem;
+  color: var(--accent-orange-bright);
+  font-family: monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.diaspora-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.diaspora-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.diaspora-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.diaspora-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* Comparison Table */
+.comparison-wrapper {
+  margin-top: 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.92rem;
+}
+
+.comparison-table th {
+  background: rgba(255, 255, 255, 0.03);
+  font-weight: 750;
+  color: var(--text-primary);
+  font-size: 0.98rem;
+}
+
+.comparison-table th.highlight-col,
+.comparison-table td.highlight-col {
+  background: rgba(255, 85, 0, 0.06);
+  border-left: 1px solid rgba(255, 85, 0, 0.2);
+  border-right: 1px solid rgba(255, 85, 0, 0.2);
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.feature-title {
+  font-weight: 700;
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 3px;
+}
+
+.feature-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.rate-banner-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: linear-gradient(135deg, rgba(255, 85, 0, 0.12) 0%, rgba(255, 140, 0, 0.04) 100%);
+  border: 1px solid rgba(255, 85, 0, 0.3);
+  border-radius: 16px;
+  padding: 18px 26px;
+  margin-top: 32px;
+}
+
+.rate-banner-info h4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.rate-banner-info p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.rate-pills-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.rate-pill-badge {
+  background: rgba(10, 10, 12, 0.9);
+  border: 1px solid rgba(255, 85, 0, 0.35);
+  color: var(--accent-orange-bright);
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 750;
+  font-family: monospace;
+}
+
+@media (max-width: 1024px) {
+  .diaspora-grid {
+    grid-template-columns: 1fr;
+  }
+  .comparison-wrapper {
+    overflow-x: auto;
+  }
+  .comparison-table {
+    min-width: 640px;
+  }
+}

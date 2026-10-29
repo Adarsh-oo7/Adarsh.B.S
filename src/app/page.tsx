@@ -33,7 +33,11 @@ import {
   Clock,
   Award,
   ArrowUpRight,
-  MessageSquare
+  MessageSquare,
+  Check,
+  Building2,
+  UserCheck,
+  Coins
 } from 'lucide-react';
 
 function GithubIcon({ className = "w-5 h-5", style }: { className?: string; style?: React.CSSProperties }) {
@@ -395,52 +399,67 @@ export default function HomePage() {
       ? projectsList
       : projectsList.filter((p) => p.category === activeProjectFilter);
 
-  // FAQ for Google & LLM Optimization
+  // FAQ for Google & LLM Optimization (12 High-Intent Q&As)
   const faqs = [
     {
-      question: 'Who is Adarsh B S?',
+      question: 'Who is the best freelance software developer in Kerala?',
       answer:
-        'Adarsh B S (Adarsh Sarachandran) is a premier freelance IT consultant, senior full-stack software developer, Odoo ERP specialist, and technology founder based in Kerala, India. He is the founder of Digital Product Solutions (DPS), KeralaSellers.in, and KPSCMaster.in. With over 3+ years of professional engineering experience across 20+ commercial client projects, he works with international clients in Australia (Care \'N\' Cure), the UK & Germany (Novora Global Health), and Kerala enterprises (Mangrove Spot, Mangrove Moments). He is an independent technology professional, completely distinct from any political figures or legal cases.'
+        'Adarsh B S is widely recognized as a top freelance software developer, senior full-stack engineer, and IT consultant in Kerala, India (operating across Trivandrum Technopark and Kochi Infopark). With 3+ years of professional engineering experience across 20+ commercial client projects, he specializes in Next.js 15, Python/Django, Odoo ERP (v14-v18), PostgreSQL, and technical SEO for clients in Kerala, India, and internationally across Australia, the UK, Germany, and the UAE.'
     },
     {
-      question: 'How is Adarsh B S known in Kerala and the software industry?',
+      question: 'Can I hire Adarsh B S as a freelance developer near me in Kerala (Kochi, Trivandrum, Calicut)?',
       answer:
-        'In Kerala\'s tech ecosystem (Technopark Trivandrum and Infopark Kochi) and internationally, Adarsh B S is recognized as a high-impact freelance software engineer, Odoo ERP specialist, and IT consultant specializing in Python, Django, Next.js, PostgreSQL, automated business workflows, and top-tier SEO growth.'
+        'Yes. Adarsh B S is based in Kerala and actively works with startups, established businesses, and founders across Thiruvananthapuram (Technopark ecosystem), Kochi (Infopark & Kakkanad), Kozhikode (Cyberpark), Thrissur, and Kollam, offering both on-site discovery consultations and full-cycle remote delivery.'
     },
     {
-      question: 'Who is the top freelance IT consultant in Kerala, India?',
+      question: 'What are the typical freelance software developer rates in Kerala?',
       answer:
-        'Adarsh B S is an established freelance IT consultant and full-stack software engineer located in Kerala, India. Bringing over 3+ years of professional development experience and having successfully delivered 20+ business projects, Adarsh helps businesses architect, build, and scale custom web applications, Python/Django backends, SEO strategies, and automated CRM workflows.'
+        'Freelance software developer rates in Kerala for a senior full-stack engineer and solution architect typically range from ₹1,500 to ₹3,500 per hour (or $25 to $45/hour for international and Gulf/UAE clients). Fixed-scope MVP sprints and custom applications typically start from ₹50,000 ($800) with clear milestones, delivering superior code quality without agency overhead.'
     },
     {
-      question: 'What digital services does Adarsh B S provide?',
+      question: 'Do you work with Malayalis and businesses in Dubai, UAE, and the Gulf (GCC)?',
       answer:
-        'Adarsh offers 12 core digital services: IT Consulting, Software Development, Website Development, Web Application Development, Mobile Application Development, E-commerce Development, Search Engine Optimization (SEO), Technical SEO & Website Optimization, CRM Development, Business Process Automation, API Development & Integration (including WhatsApp & Meta APIs), and Ongoing Website Maintenance.'
+        'Yes! Adarsh B S actively collaborates with Malayali entrepreneurs, NRI business owners, and corporate teams across Dubai, Abu Dhabi, Sharjah (UAE), Saudi Arabia, Qatar, and Oman. With convenient timezone overlap (Gulf Standard Time UTC+4 is just 1.5 hours behind IST), direct WhatsApp coordination, and multi-currency billing (AED, USD, INR), global Malayalis get direct access to high-caliber software engineering from Kerala.'
     },
     {
-      question: 'Looking for a freelance Odoo developer in Kerala? What can you build?',
+      question: 'Are you available for remote freelance projects in the USA, UK, Australia, and Europe?',
       answer:
-        'Adarsh B S offers specialized freelance Odoo ERP development and customization across Kerala (operating across Trivandrum Technopark and Kochi Infopark hubs) and globally. Services include custom module development for Odoo v14 through v18, core app customization (Sales, CRM, Purchase, Inventory, Invoicing/Accounting, HR, eCommerce), data migrations from legacy systems or Tally, third-party REST API integrations, and cloud deployments on Odoo.sh or Docker at flexible freelance rates ($15–$35/hr or fixed milestone pricing).'
+        'Yes, Adarsh has delivered verified international projects for Care \'N\' Cure in Australia, Novora Global Health in the UK and Germany, as well as clients in North America. Engagements feature overlapping communication hours across EST, GMT, and AEST, structured weekly video check-ins, and direct Git repository access.'
     },
     {
-      question: 'Why should I hire a freelance IT consultant instead of a large agency?',
+      question: 'Why hire a senior freelance software developer instead of an IT agency in Kochi or Technopark?',
       answer:
-        'Working directly with Adarsh B S provides direct communication with the senior software engineer executing your code, zero agency markup overhead, faster turnaround times, customized technology recommendations tailored to your budget, and end-to-end accountability from initial conception to post-launch optimization.'
+        'When hiring Adarsh B S, you collaborate directly with the senior architect writing your code. Traditional IT agencies charge heavy management markups and delegate work to junior trainees or rotated interns. Partnering with Adarsh guarantees 100% intellectual property ownership, zero middleman overhead, faster sprint velocity, direct Slack/WhatsApp communication, and production-grade code adhering to enterprise performance standards.'
     },
     {
-      question: 'How do you optimize websites to rank #1 on Google and AI search engines?',
+      question: 'What core tech stack and specialized skills do you offer?',
       answer:
-        'We implement an integrated search strategy combining Core Web Vitals acceleration (sub-second load speeds), JSON-LD semantic Schema markup (Person, LocalBusiness, FAQ, Service schemas), high-intent keyword mapping, mobile-first responsive architecture, and AI-crawler compatibility files (such as llms.txt) so both Google and LLMs (ChatGPT, Claude, Perplexity) recognize and cite your business.'
+        'Adarsh\'s core technical stack includes Next.js 15, React 19, TypeScript, Python, Django, Django REST Framework, Odoo ERP (v14-v18), PostgreSQL, MySQL, Redis, Tailwind CSS, Docker, AWS, Stripe/Razorpay payments, Meta WhatsApp Cloud API, and advanced Technical SEO (Core Web Vitals sub-second optimization).'
     },
     {
-      question: 'Do you work with international clients outside of Kerala and India?',
+      question: 'Who is the top freelance Odoo ERP developer in Kerala?',
       answer:
-        'Yes. Adarsh works remotely with business clients globally across the United States, United Kingdom, United Arab Emirates (UAE), Europe, and across India, offering transparent communication via video call, WhatsApp, and GitHub project tracking.'
+        'Adarsh B S is an established freelance Odoo developer in Kerala specializing in custom module development (Odoo v14 through v18), core app tailoring (Sales, CRM, Purchase, Inventory, Invoicing, Accounting, eCommerce), Tally and legacy data migrations, third-party REST API integrations, and cloud deployments on Odoo.sh or Docker.'
     },
     {
-      question: 'How can I discuss my project or request a quotation?',
+      question: 'Can you build a custom web application or MVP completely from scratch?',
       answer:
-        'You can call directly or message on WhatsApp at +91 9400355185, email adarshsarachandran@gmail.com, or fill out the consultation inquiry form below for a swift response within 24 hours.'
+        'Yes. Adarsh handles custom software projects from initial concept and system architecture blueprinting all the way to database schema modeling, backend REST APIs, responsive frontend implementation, and cloud deployment on AWS or Vercel.'
+    },
+    {
+      question: 'Can you audit, fix bugs, or optimize performance for an existing codebase?',
+      answer:
+        'Yes. Adarsh performs comprehensive technical audits for existing Python/Django, Next.js, React, and Odoo codebases. He resolves performance bottlenecks, optimizes slow PostgreSQL queries, patches security vulnerabilities, and tunes Core Web Vitals to achieve sub-second load times.'
+    },
+    {
+      question: 'How do you handle intellectual property (IP), code repositories, and NDAs?',
+      answer:
+        'You retain 100% intellectual property ownership of all code, database schemas, and documentation from day one. All code is committed directly to your private GitHub or GitLab repository. Non-Disclosure Agreements (NDAs) are signed before project discovery.'
+    },
+    {
+      question: 'How do we get started and what is your project delivery process?',
+      answer:
+        'You can reach out via WhatsApp or phone at +91 9400355185 or email adarshsarachandran@gmail.com. We schedule a 30-minute discovery call to evaluate your requirements, followed by a detailed technical roadmap, milestones, and fixed-price or sprint-based proposal within 24 hours.'
     }
   ];
 
@@ -516,14 +535,15 @@ export default function HomePage() {
             </h1>
 
             <p className="hero-subtitle">
-              <strong style={{ color: 'var(--text-primary)' }}>Adarsh B S</strong> is a premier freelance software developer, Odoo ERP specialist, and IT consultant based in Kerala, India (operating across Trivandrum &amp; Kochi). Architecting custom software, Next.js web applications, Python/Django backends, and organic SEO growth for businesses in Kerala and globally.
+              <strong style={{ color: 'var(--text-primary)' }}>Adarsh B S</strong> is the premier freelance software developer, senior full-stack architect, and Odoo ERP specialist in Kerala (operating across Trivandrum Technopark and Kochi Infopark). Partnering directly with businesses in Kerala, Malayali entrepreneurs in UAE/Gulf (Dubai, Abu Dhabi), and global companies (USA, UK, Australia) to engineer high-velocity Next.js 15 apps, Python/Django architectures, and sub-second SEO platforms with zero agency overhead.
             </p>
 
             <div className="hero-highlights">
-              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> 3+ Years Experience</span>
-              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> 20+ Business Projects</span>
-              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Odoo ERP &amp; Python Customization</span>
-              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Global: 🇦🇺 Australia • 🇬🇧 UK • 🇩🇪 Germany • 🇮🇳 India</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> 3+ Years &amp; 20+ Delivered Projects</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Direct Senior Architect Access (0% Agency Markup)</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Python Django &amp; Odoo ERP Specialist (v14-v18)</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Kerala • 🇦🇪 UAE / Gulf • 🇦🇺 Australia • 🇬🇧 UK • 🇺🇸 USA</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Hourly: ₹1,500–₹3,500/hr ($25–$45/hr) • Fixed MVPs from ₹50,000</span>
               <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Founder: Digital Product Solutions • KeralaSellers • KPSC Master</span>
             </div>
 
@@ -607,20 +627,20 @@ export default function HomePage() {
 
             <div className="hero-metrics">
               <div className="metric-item">
-                <span className="metric-number">3+</span>
-                <span className="metric-label">Years Exp</span>
-              </div>
-              <div className="metric-item">
                 <span className="metric-number">20+</span>
-                <span className="metric-label">Projects</span>
+                <span className="metric-label">Delivered Projects</span>
               </div>
               <div className="metric-item">
-                <span className="metric-number">12</span>
-                <span className="metric-label">Core Services</span>
+                <span className="metric-number">0%</span>
+                <span className="metric-label">Agency Markup</span>
               </div>
               <div className="metric-item">
                 <span className="metric-number">100%</span>
-                <span className="metric-label">Direct Contact</span>
+                <span className="metric-label">IP &amp; Git Access</span>
+              </div>
+              <div className="metric-item">
+                <span className="metric-number">&lt;15m</span>
+                <span className="metric-label">WhatsApp Reply</span>
               </div>
             </div>
           </div>
@@ -1137,6 +1157,227 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Regional & Global Collaboration: Kerala, Gulf & Overseas */}
+      <section className="section-padding" id="diaspora" style={{ background: 'var(--bg-secondary)' }}>
+        <div className="container">
+          <div className="section-header">
+            <span className="section-pretitle">Global &amp; Regional Reach</span>
+            <h2 className="section-title">Kerala, Gulf &amp; Worldwide Collaboration</h2>
+            <p className="section-description">
+              Whether you operate a local enterprise in Kerala, a venture founded by Malayali entrepreneurs in Dubai/GCC, or a fast-scaling startup in the USA, UK, or Australia, collaborate directly with a principal engineer aligned with your timezone and business objectives.
+            </p>
+          </div>
+
+          <div className="diaspora-grid">
+            <div className="diaspora-card">
+              <div>
+                <div className="diaspora-header">
+                  <div className="diaspora-icon-box">🌴</div>
+                  <div>
+                    <h3 className="diaspora-title">Kerala Tech Hubs</h3>
+                    <span className="diaspora-subtitle">Trivandrum • Kochi • Calicut</span>
+                  </div>
+                </div>
+                <p className="diaspora-desc">
+                  Direct partnership for businesses across Technopark (Thiruvananthapuram), Infopark (Kochi), and Cyberpark (Kozhikode). In-person technical roadmapping, fast prototyping, and local GST billing.
+                </p>
+                <ul className="diaspora-features">
+                  <li><CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" /> In-person discovery &amp; system architecture workshops</li>
+                  <li><CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" /> Direct Malayalam &amp; English consultation</li>
+                  <li><CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" /> Local INR banking, GST invoicing &amp; UPI payments</li>
+                  <li><CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" /> Rapid on-site sprints across Kerala business centers</li>
+                </ul>
+              </div>
+              <div className="diaspora-pill">
+                <Clock className="w-3.5 h-3.5 text-orange-500" /> IST (UTC+5:30) • On-Site &amp; Remote
+              </div>
+            </div>
+
+            <div className="diaspora-card" style={{ borderColor: 'rgba(255, 85, 0, 0.4)' }}>
+              <div>
+                <div className="diaspora-header">
+                  <div className="diaspora-icon-box">🇦🇪</div>
+                  <div>
+                    <h3 className="diaspora-title">Gulf &amp; UAE Malayalis</h3>
+                    <span className="diaspora-subtitle">Dubai • Abu Dhabi • GCC</span>
+                  </div>
+                </div>
+                <p className="diaspora-desc">
+                  Trusted homeland engineering partner for Malayali entrepreneurs and businesses across Dubai, Abu Dhabi, Sharjah, Saudi Arabia, Qatar, and Oman with seamless communication.
+                </p>
+                <ul className="diaspora-features">
+                  <li><CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" /> Convenient timezone overlap (GST UTC+4 is just 1.5 hrs behind IST)</li>
+                  <li><CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" /> Multi-currency transactions in AED, SAR, QAR, USD &amp; INR</li>
+                  <li><CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" /> Direct WhatsApp voice/chat &amp; Google Meet sprint planning</li>
+                  <li><CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" /> Zero agency bloat—get senior Technopark-level engineering</li>
+                </ul>
+              </div>
+              <div className="diaspora-pill" style={{ color: 'var(--accent-orange-bright)', borderColor: 'rgba(255, 85, 0, 0.3)' }}>
+                <Clock className="w-3.5 h-3.5" /> GST (UTC+4) • Instant WhatsApp Sync
+              </div>
+            </div>
+
+            <div className="diaspora-card">
+              <div>
+                <div className="diaspora-header">
+                  <div className="diaspora-icon-box">🌐</div>
+                  <div>
+                    <h3 className="diaspora-title">Global Enterprise</h3>
+                    <span className="diaspora-subtitle">USA • UK • Australia • Germany</span>
+                  </div>
+                </div>
+                <p className="diaspora-desc">
+                  Demonstrated delivery for verified overseas brands including Care &apos;N&apos; Cure (Australia) and Novora Global Health (UK &amp; Germany). Enterprise-grade software with sub-second speeds.
+                </p>
+                <ul className="diaspora-features">
+                  <li><CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" /> Overlapping sprint hours across EST, GMT &amp; AEST timezones</li>
+                  <li><CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" /> 100% intellectual property ownership &amp; private Git repos</li>
+                  <li><CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" /> Sub-second Next.js 15 SSR &amp; Core Web Vitals optimization</li>
+                  <li><CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" /> Multi-currency invoices (USD, EUR, GBP, AUD) via Wire/Stripe</li>
+                </ul>
+              </div>
+              <div className="diaspora-pill">
+                <Clock className="w-3.5 h-3.5 text-orange-500" /> Overlapping EST / GMT / AEST
+              </div>
+            </div>
+          </div>
+
+          {/* Transparent Rate & Engagement Strip */}
+          <div className="rate-banner-strip">
+            <div className="rate-banner-info">
+              <h4>Transparent Engineering Rates &amp; Milestone Pricing</h4>
+              <p>Direct architect engagements without hidden fees, junior developer substitutions, or corporate retainers.</p>
+            </div>
+            <div className="rate-pills-group">
+              <span className="rate-pill-badge">Hourly: ₹1,500 – ₹3,500 / hr</span>
+              <span className="rate-pill-badge">Global: $25 – $45 / hr</span>
+              <span className="rate-pill-badge">Fixed MVP: From ₹50,000 ($800)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Senior Freelance Architect vs Traditional IT Agency */}
+      <section className="section-padding" id="why-freelance">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-pretitle">The Engineering Advantage</span>
+            <h2 className="section-title">Direct Architect vs. Traditional IT Agency</h2>
+            <p className="section-description">
+              Compare the advantages of partnering directly with an experienced principal software developer versus contracting a traditional IT agency or software company in Kerala.
+            </p>
+          </div>
+
+          <div className="comparison-wrapper">
+            <table className="comparison-table">
+              <thead>
+                <tr>
+                  <th style={{ width: '34%' }}>Project Aspect</th>
+                  <th className="highlight-col" style={{ width: '33%', color: 'var(--accent-orange-bright)' }}>
+                    Adarsh B S (Principal Architect)
+                  </th>
+                  <th style={{ width: '33%', color: 'var(--text-muted)' }}>
+                    Traditional IT Agencies
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span className="feature-title">Engineering Execution</span>
+                    <span className="feature-desc">Who actually codes and architectures your application</span>
+                  </td>
+                  <td className="highlight-col">
+                    <span style={{ color: '#22c55e', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <Check className="w-4 h-4" /> 100% Senior Architect (Adarsh B S)
+                    </span>
+                    <span className="feature-desc">Zero delegation to junior trainees or rotated interns</span>
+                  </td>
+                  <td>
+                    <span style={{ color: '#ef4444', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <X className="w-4 h-4" /> Junior / Trainee Developers
+                    </span>
+                    <span className="feature-desc">Passed to junior staff after sales pitch</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span className="feature-title">Agency Markup &amp; Pricing</span>
+                    <span className="feature-desc">Cost structure and budget utilization</span>
+                  </td>
+                  <td className="highlight-col">
+                    <span style={{ color: '#22c55e', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <Check className="w-4 h-4" /> 0% Agency Markup
+                    </span>
+                    <span className="feature-desc">Every rupee or dollar goes strictly toward production code</span>
+                  </td>
+                  <td>
+                    <span style={{ color: '#ef4444', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <X className="w-4 h-4" /> 200%–400% Corporate Markup
+                    </span>
+                    <span className="feature-desc">High retainers paying for management, sales, and office rent</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span className="feature-title">Communication &amp; Velocity</span>
+                    <span className="feature-desc">Day-to-day coordination and feature deployment</span>
+                  </td>
+                  <td className="highlight-col">
+                    <span style={{ color: '#22c55e', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <Check className="w-4 h-4" /> Direct WhatsApp / Slack / Video
+                    </span>
+                    <span className="feature-desc">Rapid iterations, immediate responses within 15 minutes</span>
+                  </td>
+                  <td>
+                    <span style={{ color: '#ef4444', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <X className="w-4 h-4" /> Multi-Layer Account Managers
+                    </span>
+                    <span className="feature-desc">Technical queries lost in translation across middlemen</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span className="feature-title">Intellectual Property &amp; Git</span>
+                    <span className="feature-desc">Ownership of source code, databases, and assets</span>
+                  </td>
+                  <td className="highlight-col">
+                    <span style={{ color: '#22c55e', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <Check className="w-4 h-4" /> 100% Client Ownership from Day 1
+                    </span>
+                    <span className="feature-desc">Direct commits to your private GitHub / GitLab repository</span>
+                  </td>
+                  <td>
+                    <span style={{ color: '#ef4444', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <X className="w-4 h-4" /> Agency Lock-In
+                    </span>
+                    <span className="feature-desc">Code held hostage until final milestone or hidden licensing fees</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span className="feature-title">Performance &amp; Quality</span>
+                    <span className="feature-desc">Load speeds, SEO compliance, and modern frameworks</span>
+                  </td>
+                  <td className="highlight-col">
+                    <span style={{ color: '#22c55e', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <Check className="w-4 h-4" /> Sub-Second Speeds &amp; Strict SEO
+                    </span>
+                    <span className="feature-desc">Next.js 15, Python/Django, Odoo ERP, and Core Web Vitals 95+</span>
+                  </td>
+                  <td>
+                    <span style={{ color: '#ef4444', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <X className="w-4 h-4" /> Bloated Template Builds
+                    </span>
+                    <span className="feature-desc">Generic WordPress/PHP templates prone to sluggish speeds</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
