@@ -848,17 +848,33 @@ export default function HomePage() {
       {
         '@type': 'ProfessionalService',
         '@id': 'https://adarsh.digitalproductsolutions.in/#business',
-        name: 'Adarsh B S - Freelance Web Developer & Software Developer in Kerala',
+        name: 'Adarsh B S - Freelance IT Consultant & Software Developer',
         alternateName: [
+          'Adarsh B S - Freelance Web Developer & Software Developer in Kerala',
           'Freelance Web Developer in Kerala',
           'Software Developer in Kerala',
           'Web Developer in Kerala',
           'Freelance Software Developer in Kerala',
           'AI Automation Developer Kerala'
         ],
+        identifier: {
+          '@type': 'PropertyValue',
+          propertyID: 'kgmid',
+          value: '/g/11p1sd2yc4'
+        },
+        sameAs: [
+          'https://share.google/VsxBg59mQGmC3Cznu',
+          'https://www.google.com/search?kgmid=/g/11p1sd2yc4',
+          'https://www.linkedin.com/in/adarsh-bs/',
+          'https://github.com/Adarsh-oo7/'
+        ],
+        hasMap: 'https://share.google/VsxBg59mQGmC3Cznu',
+        publicAccess: false,
+        isAccessibleForFree: true,
         image: 'https://adarsh.digitalproductsolutions.in/assets/adarsh-consulting-meeting.jpg',
         url: 'https://adarsh.digitalproductsolutions.in/',
         telephone: '+919400355185',
+        email: 'adarshsarachandran@gmail.com',
         priceRange: '₹15,000 – ₹1,80,000 ($250 – $3,500)',
         currenciesAccepted: 'INR, AED, USD, EUR, AUD, GBP, SAR, QAR',
         paymentAccepted: 'Bank Transfer, UPI, Stripe, Razorpay, Wire Transfer',
@@ -871,15 +887,21 @@ export default function HomePage() {
         },
         address: {
           '@type': 'PostalAddress',
-          addressLocality: 'Thiruvananthapuram',
+          addressLocality: 'Thiruvananthapuram, Kochi',
           addressRegion: 'Kerala',
           addressCountry: 'IN'
         },
-        geo: {
-          '@type': 'GeoCoordinates',
-          latitude: '8.5241',
-          longitude: '76.9366'
-        }
+        areaServed: [
+          { '@type': 'State', name: 'Kerala' },
+          { '@type': 'City', name: 'Thiruvananthapuram' },
+          { '@type': 'City', name: 'Kochi' },
+          { '@type': 'City', name: 'Kozhikode' },
+          { '@type': 'Country', name: 'India' },
+          { '@type': 'Country', name: 'United Arab Emirates' },
+          { '@type': 'Country', name: 'United Kingdom' },
+          { '@type': 'Country', name: 'Australia' },
+          { '@type': 'Country', name: 'United States' }
+        ]
       },
       {
         '@type': 'ItemList',
@@ -1035,9 +1057,16 @@ export default function HomePage() {
                   <Code2 className="w-4 h-4 text-orange-500" /> 100% IP &amp; Git Ownership Day 1
                 </span>
                 <span>•</span>
-                <span className="psych-risk-item">
-                  <Star className="w-4 h-4 text-yellow-400" /> 5.0★ Google Verified (28+ Reviews)
-                </span>
+                <a
+                  href="https://share.google/VsxBg59mQGmC3Cznu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="psych-risk-item"
+                  style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}
+                  title="View Official Google Business Profile"
+                >
+                  <Star className="w-4 h-4 text-yellow-400" /> 5.0★ Google Business Profile (28+ Reviews) ↗
+                </a>
               </div>
 
               {/* Specialized Solution Quick-Jump Pills */}
@@ -1068,6 +1097,16 @@ export default function HomePage() {
             <div className="hero-social-connect">
               <span className="social-label">Connect:</span>
               <div className="hero-social-badges">
+                <a
+                  href="https://share.google/VsxBg59mQGmC3Cznu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-badge"
+                  style={{ borderColor: 'rgba(255, 85, 0, 0.45)', background: 'rgba(255, 85, 0, 0.1)', color: 'var(--text-primary)' }}
+                  title="Official Google Business Profile — Adarsh B S - Freelance IT Consultant & Software Developer"
+                >
+                  <Star className="w-4 h-4 text-yellow-400" /> Google Business
+                </a>
                 <a
                   href="https://www.linkedin.com/in/adarsh-bs/"
                   target="_blank"
@@ -2215,6 +2254,17 @@ export default function HomePage() {
             <p className="section-description">
               Backed by 28+ verified 5.0★ Google Business reviews across Digital Product Solutions and named enterprise engagements in Australia, the UK, Germany, UAE, and Kerala.
             </p>
+            <div style={{ marginTop: '14px', display: 'flex', justifyContent: 'center' }}>
+              <a
+                href="https://share.google/VsxBg59mQGmC3Cznu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary btn-small"
+                style={{ borderColor: 'rgba(255, 85, 0, 0.4)' }}
+              >
+                <Star className="w-4 h-4 text-yellow-400" /> Verify Official Google Business Profile (Adarsh B S) <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            </div>
           </div>
 
           <div className="reviews-grid">
@@ -2705,18 +2755,32 @@ export default function HomePage() {
                   </div>
                 </a>
 
-                <div className="contact-channel-item">
+                <a
+                  href="https://share.google/VsxBg59mQGmC3Cznu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-channel-item"
+                >
                   <div className="channel-icon">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div className="channel-info">
-                    <h5>Location & Service Area</h5>
-                    <p>Kerala, India (Remote & Global Clients)</p>
+                    <h5>Google Business &amp; Service Area</h5>
+                    <p>Online &amp; Service-Area Consultant • Kerala &amp; Global ↗</p>
                   </div>
-                </div>
+                </a>
               </div>
 
               <div className="contact-social-grid mt-8">
+                <a
+                  href="https://share.google/VsxBg59mQGmC3Cznu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary"
+                  style={{ justifyContent: 'center', borderColor: 'rgba(255, 85, 0, 0.45)' }}
+                >
+                  <Star className="w-5 h-5 text-yellow-400" /> Google Profile
+                </a>
                 <a
                   href="https://www.linkedin.com/in/adarsh-bs/"
                   target="_blank"
@@ -2898,10 +2962,20 @@ export default function HomePage() {
                 Senior freelance full-stack software developer, AI automation engineer, and founder of Digital Product Solutions (MSME Registered IT Firm).
               </p>
               <p className="text-xs text-muted mt-3">
-                📍 <strong>HQ:</strong> Korani, Thiruvananthapuram (Technopark Corridor), Kerala 695104, India<br />
-                🌐 <strong>Agency:</strong> <a href="https://www.digitalproductsolutions.in/adarsh-b-s" className="text-orange-500 font-semibold hover:underline">digitalproductsolutions.in/adarsh-b-s</a>
+                🌐 <strong>Operating Model:</strong> Online &amp; Service-Area IT Consultant (Serving Thiruvananthapuram, Kochi, Kozhikode, Kerala &amp; Worldwide Remote — No Physical Walk-In Storefront)<br />
+                ⭐ <strong>Google Business Profile:</strong> <a href="https://share.google/VsxBg59mQGmC3Cznu" target="_blank" rel="noopener noreferrer" className="text-orange-500 font-semibold hover:underline">Adarsh B S - Freelance IT Consultant &amp; Software Developer ↗</a><br />
+                🏢 <strong>Agency:</strong> <a href="https://www.digitalproductsolutions.in/adarsh-b-s" className="text-orange-500 font-semibold hover:underline">digitalproductsolutions.in/adarsh-b-s</a>
               </p>
               <div className="footer-social-links" style={{ display: 'flex', gap: '10px', marginTop: '16px' }}>
+                <a
+                  href="https://share.google/VsxBg59mQGmC3Cznu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social-link"
+                  title="Official Google Business Profile"
+                >
+                  <Star className="w-4 h-4 text-yellow-400" />
+                </a>
                 <a
                   href="https://www.linkedin.com/in/adarsh-bs/"
                   target="_blank"
@@ -2990,7 +3064,7 @@ export default function HomePage() {
 
           <div className="footer-bottom">
             <p>&copy; 2026 Adarsh B S &amp; Digital Product Solutions. All rights reserved.</p>
-            <p>Korani, Thiruvananthapuram, Kerala 695104, India • Serving UK, Australia, UAE, USA &amp; India</p>
+            <p>Online &amp; Service-Area Business • Thiruvananthapuram, Kochi, Kerala &amp; Global Remote (UK, Australia, UAE, USA &amp; India)</p>
           </div>
         </div>
       </footer>

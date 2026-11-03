@@ -182,6 +182,7 @@ export default function RootLayout({
           "Adarsh BS",
           "Adarsh Sarachandran",
           "Adarsh.B.S",
+          "Adarsh B S - Freelance IT Consultant & Software Developer",
           "Freelance Web Developer in Kerala",
           "Software Developer in Kerala",
           "Web Developer in Kerala",
@@ -215,7 +216,14 @@ export default function RootLayout({
         },
         telephone: "+919400355185",
         email: "mailto:adarshsarachandran@gmail.com",
+        identifier: {
+          "@type": "PropertyValue",
+          propertyID: "kgmid",
+          value: "/g/11p1sd2yc4"
+        },
         sameAs: [
+          "https://share.google/VsxBg59mQGmC3Cznu",
+          "https://www.google.com/search?kgmid=/g/11p1sd2yc4",
           "https://www.linkedin.com/in/adarsh-bs/",
           "https://www.instagram.com/adarsh_tzz/",
           "https://github.com/Adarsh-oo7/",
@@ -322,6 +330,8 @@ export default function RootLayout({
         url: "https://www.digitalproductsolutions.in/",
         logo: "https://adarsh.digitalproductsolutions.in/assets/adarsh-consulting-meeting.jpg",
         sameAs: [
+          "https://share.google/VsxBg59mQGmC3Cznu",
+          "https://www.google.com/search?kgmid=/g/11p1sd2yc4",
           "https://www.linkedin.com/in/adarsh-bs/",
           "https://www.instagram.com/adarsh_tzz/",
           "https://github.com/Adarsh-oo7/",
