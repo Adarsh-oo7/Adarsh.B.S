@@ -160,21 +160,30 @@ export default function SaasMvpClient() {
               <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Fixed-Scope MVPs from $850 (£680 • ₹55,000)</span>
             </div>
 
-            <div className="hero-cta-group">
-              <a
-                href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20would%20like%20to%20book%20a%20free%2030-minute%20SaaS%20MVP%20Scoping%20Call."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary"
-              >
-                <MessageSquare className="w-5 h-5" /> Book Free 30-Min MVP Scoping Call
-              </a>
-              <a href="#pricing" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)' }}>
-                <Zap className="w-5 h-5" /> View Fixed-Scope MVP Pricing
-              </a>
-              <a href="#roadmap" className="btn btn-secondary">
-                <Layers className="w-5 h-5" /> See 4-Week Build Roadmap
-              </a>
+            <div className="psych-cta-box" style={{ marginBottom: '10px' }}>
+              <div className="psych-primary-row">
+                <a
+                  href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20would%20like%20to%20book%20a%20free%2030-minute%20SaaS%20MVP%20Scoping%20Call."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-psych-primary"
+                >
+                  <MessageSquare className="w-5 h-5" /> Book Free 30-Min MVP Scoping Call (&lt;15m Reply)
+                </a>
+                <a href="#pricing" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)' }}>
+                  <Zap className="w-5 h-5" /> View Fixed-Scope MVP Pricing
+                </a>
+                <a href="#roadmap" className="btn btn-secondary">
+                  <Layers className="w-5 h-5" /> See 4-Week Build Roadmap
+                </a>
+              </div>
+              <div className="psych-risk-strip">
+                <span className="psych-risk-item"><ShieldCheck className="w-4 h-4 text-orange-500" /> 100% Bilateral NDA</span>
+                <span>•</span>
+                <span className="psych-risk-item"><CheckCircle2 className="w-4 h-4 text-emerald-500" /> Free 24h DB Schema &amp; Cost Blueprint</span>
+                <span>•</span>
+                <span className="psych-risk-item"><Code2 className="w-4 h-4 text-orange-500" /> 100% GitHub IP Ownership from Day 1</span>
+              </div>
             </div>
           </div>
         </div>
@@ -484,3 +493,4 @@ export default function SaasMvpClient() {
     </>
   );
 }
+

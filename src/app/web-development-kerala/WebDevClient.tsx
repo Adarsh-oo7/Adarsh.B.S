@@ -414,24 +414,32 @@ export default function WebDevClient() {
               <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Outside India Alignment: UAE (AED) • Australia • UK • USA</span>
             </div>
 
-            <div className="hero-cta-group">
-              <a
-                href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20am%20looking%20to%20hire%20a%20web%20developer%20or%20web%20development%20company%20in%20Kerala."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary"
-              >
-                <MessageSquare className="w-5 h-5" /> WhatsApp Instant Discovery
-              </a>
-              <a href="#cost" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)' }}>
-                <Coins className="w-5 h-5" /> View Development Cost
-              </a>
-              <a href="#dual-track" className="btn btn-secondary">
-                <Globe className="w-5 h-5" /> Outside India vs Kerala Hiring
-              </a>
-              <Link href="/hire-developer/" className="btn btn-outline">
-                <Briefcase className="w-5 h-5" /> Hourly Developer Rates
-              </Link>
+            <div className="psych-cta-box" style={{ marginBottom: '10px' }}>
+              <div className="psych-primary-row">
+                <a
+                  href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20am%20looking%20to%20hire%20a%20web%20developer%20or%20web%20development%20company%20in%20Kerala%20and%20would%20like%20a%20free%2024h%20project%20estimate."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-psych-primary"
+                >
+                  <MessageSquare className="w-5 h-5" /> Get Free 24h Cost Estimate on WhatsApp (&lt;15m Reply)
+                </a>
+                <a href="#cost" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)' }}>
+                  <Coins className="w-5 h-5" /> View Transparent Cost Packages
+                </a>
+                <a href="#dual-track" className="btn btn-secondary">
+                  <Globe className="w-5 h-5" /> Outside India vs Kerala Hiring
+                </a>
+              </div>
+              <div className="psych-risk-strip">
+                <span className="psych-risk-item"><ShieldCheck className="w-4 h-4 text-orange-500" /> 100% Bilateral NDA</span>
+                <span>•</span>
+                <span className="psych-risk-item"><CheckCircle2 className="w-4 h-4 text-emerald-500" /> ₹0 / $0 Upfront Scoping</span>
+                <span>•</span>
+                <span className="psych-risk-item"><Code2 className="w-4 h-4 text-orange-500" /> 100% GitHub IP Ownership Day 1</span>
+                <span>•</span>
+                <span className="psych-risk-item"><Star className="w-4 h-4 text-yellow-400" /> 5.0★ Verified (28+ Reviews)</span>
+              </div>
             </div>
           </div>
         </div>

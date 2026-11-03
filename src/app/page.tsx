@@ -93,9 +93,172 @@ function AboutMeIcon({ className = "w-5 h-5", style }: { className?: string; sty
 export default function HomePage() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeNeed, setActiveNeed] = useState<'website' | 'webapp' | 'ai' | 'ecommerce' | 'odoo' | 'global'>('website');
   const [activeProjectFilter, setActiveProjectFilter] = useState<'all' | 'web' | 'ecommerce' | 'enterprise' | 'founded'>('all');
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [faqFilter, setFaqFilter] = useState<'all' | 'rates' | 'local' | 'odoo' | 'delivery'>('all');
+
+  // Interactive Visitor Need & Solution Matcher Data
+  const visitorNeeds = [
+    {
+      id: 'website' as const,
+      shortTag: 'Need #1 • Business Website & SEO',
+      tabTitle: 'I need a High-Converting Business Website & #1 Google Ranking',
+      icon: <Globe className="w-5 h-5" />,
+      badge: 'Ideal for Kerala Businesses, Clinics, Builders, Hospitality & Global Brands',
+      headline: 'Sub-Second Next.js 16 Business Website + Local & International SEO Engine',
+      problem: 'Your current website looks outdated, loads slowly on mobile, or is invisible when customers search on Google for your services in Kerala, UAE, UK, or Australia.',
+      deliverables: [
+        'Custom Next.js 16 & React 19 SSR Architecture (<0.8s Load Speed & 98+ Core Web Vitals)',
+        'Conversion Psychology UI/UX with Instant WhatsApp Lead Capture & Automated Quote Forms',
+        'Complete On-Page & Technical SEO + JSON-LD Schema + Google Business Profile Dominance',
+        'Mobile-First Responsive Layout + Cloud Hosting Setup (Vercel/AWS) + Free SSL'
+      ],
+      stack: ['Next.js 16', 'React 19', 'Tailwind CSS', 'Technical SEO', 'WhatsApp Cloud API', 'Schema.org'],
+      cost: '₹15,000 – ₹45,000 ($250 – $650 / AED 900 – 2,400)',
+      timeline: '1 to 2 Weeks Guaranteed Delivery',
+      whyPsych: 'Skip slow WordPress templates that get hacked and fail Google Core Web Vitals. Get custom-coded enterprise speed at a fixed, transparent milestone price.',
+      proofName: 'BuilDwellz Construction & Care \'N\' Cure Australia',
+      proofDesc: 'Delivered sub-second corporate web portals & multi-fold organic search growth across Kerala & Sydney/Melbourne.',
+      proofUrl: 'https://carencure.com.au/',
+      proofLabel: 'Verify Live: carencure.com.au',
+      dedicatedUrl: '/web-development-kerala/',
+      dedicatedLabel: 'Explore Web Development Kerala Guide',
+      whatsappText: 'Hello Adarsh, I visited your website and need a high-converting business website & SEO solution. Can we discuss my project?'
+    },
+    {
+      id: 'webapp' as const,
+      shortTag: 'Need #2 • SaaS MVP & Web App',
+      tabTitle: 'I want to build a Custom Web App, Client Portal, or SaaS MVP',
+      icon: <Layout className="w-5 h-5" />,
+      badge: 'Ideal for Startup Founders, B2B Platforms & Custom Business Portals',
+      headline: 'Production-Ready Full-Stack SaaS MVP & Custom Web Application in 2–6 Weeks',
+      problem: 'You have a validated software idea or internal operational workflow, but agencies quote $25,000+ and 6 months—or junior freelancers leave you with broken, unscalable code.',
+      deliverables: [
+        'Multi-Tenant Next.js 16 Frontend + Scalable Python (Django/FastAPI) or Node.js Backend',
+        'PostgreSQL Database Architecture, Role-Based Access Control (RBAC), & Auth (Clerk/NextAuth)',
+        'Stripe, Razorpay, or LemonSqueezy Subscription Billing + Automated Email/WhatsApp Triggers',
+        'Private GitHub Repo from Day 1, CI/CD Docker Deployment, & 30-Day Bug-Free Warranty'
+      ],
+      stack: ['Next.js 16', 'Python / Django', 'FastAPI', 'PostgreSQL', 'Stripe / Razorpay', 'Docker / AWS'],
+      cost: '₹50,000 – ₹1,80,000 ($800 – $3,500 / £650 – £2,800)',
+      timeline: '2 to 5 Weeks Sprint Delivery',
+      whyPsych: '100% of your budget goes directly to a Senior Full-Stack Architect. You own 100% of the GitHub code and IP from Commit #1 with weekly live video demos.',
+      proofName: 'Novora Global Health (UK/DE) & KPSC Master',
+      proofDesc: 'Architected multi-region UK/German healthcare platforms and high-concurrency EdTech apps serving thousands of active users.',
+      proofUrl: 'https://novoraglobalhealth.com/',
+      proofLabel: 'Verify Live: novoraglobalhealth.com',
+      dedicatedUrl: '/saas-mvp-developer/',
+      dedicatedLabel: 'Explore SaaS & MVP Engineering Guide',
+      whatsappText: 'Hello Adarsh, I want to build a custom Web Application / SaaS MVP and would like a free 24h technical blueprint and cost estimate.'
+    },
+    {
+      id: 'ai' as const,
+      shortTag: 'Need #3 • AI Agents & Automation',
+      tabTitle: 'I want AI Automation, Custom Chatbots, or 24/7 WhatsApp Lead Bots',
+      icon: <Cpu className="w-5 h-5" />,
+      badge: 'Ideal for Operations-Heavy Businesses, Clinics, Real Estate & Agencies',
+      headline: 'Custom AI Agents, RAG Knowledge Chatbots & n8n / WhatsApp Business Automation',
+      problem: 'Your team wastes 20+ hours a week manually answering repetitive WhatsApp/website inquiries, copying leads into spreadsheets, or generating quotes and invoices.',
+      deliverables: [
+        '24/7 AI WhatsApp & Web Concierge Trained on Your Exact Business Data (OpenAI / Claude RAG)',
+        'End-to-End n8n & Python Workflow Automation Connecting CRM, Google Sheets, Email & ERP',
+        'Automated Lead Qualification, Appointment Booking, & Instant PDF Quote Generation',
+        'Private Vector Database Setup (pgvector/Pinecone) with Zero Data Leakage & Full Audit Logs'
+      ],
+      stack: ['OpenAI / Claude API', 'LangChain / RAG', 'n8n Workflows', 'WhatsApp Cloud API', 'Python FastAPI', 'pgvector'],
+      cost: '₹35,000 – ₹1,20,000 ($600 – $2,500 / AED 2,200 – 9,000)',
+      timeline: '1 to 3 Weeks Rapid Deployment',
+      whyPsych: 'Replace 40+ hours/week of manual staff overhead with deterministic AI pipelines that reply to leads in 2 seconds, 24/7, in English, Malayalam, or Arabic.',
+      proofName: 'Lemon Caters Quote Engine & DPS AI Workflows',
+      proofDesc: 'Automated instant multi-tier event quote calculation, WhatsApp lead routing, and CRM synchronization.',
+      proofUrl: 'https://www.digitalproductsolutions.in/portfolio',
+      proofLabel: 'Verify Live: DPS Automation Portfolio',
+      dedicatedUrl: '/ai-automation-developer/',
+      dedicatedLabel: 'Explore AI Automation & Agents Page',
+      whatsappText: 'Hello Adarsh, I am interested in AI Automation / WhatsApp AI Bot / n8n workflows for my business. Let us discuss!'
+    },
+    {
+      id: 'ecommerce' as const,
+      shortTag: 'Need #4 • E-Commerce & D2C Store',
+      tabTitle: 'I need an E-Commerce Store with Online Payments & WhatsApp Orders',
+      icon: <ShoppingCart className="w-5 h-5" />,
+      badge: 'Ideal for D2C Brands, Retail Stores, F&B, Boutiques & B2B Marketplaces',
+      headline: 'High-Converting Custom E-Commerce & Multi-Vendor Marketplace Architecture',
+      problem: 'High Shopify monthly app fees are eating your margins, or slow WooCommerce checkouts are causing mobile shoppers to abandon their carts before paying.',
+      deliverables: [
+        'Blazing-Fast Mobile Storefront with Dynamic Product Catalog, Filters, & Variant Management',
+        '1-Click Checkout via Razorpay, UPI, Stripe, Tabby/Paymob (UAE) + Direct WhatsApp Order Flow',
+        'Real-Time Inventory Tracking, Automated GST/VAT PDF Invoicing, & Shiprocket/Courier Sync',
+        'Programmatic Product SEO Schema so Your Products Rank Directly on Google Shopping & Search'
+      ],
+      stack: ['Next.js Commerce', 'Razorpay / Stripe', 'WhatsApp Order API', 'PostgreSQL', 'Admin Dashboard', 'Inventory Sync'],
+      cost: '₹30,000 – ₹95,000 ($500 – $1,800 / AED 1,800 – 6,500)',
+      timeline: '2 to 4 Weeks Store Launch',
+      whyPsych: 'Zero recurring revenue-share commissions. Built for mobile thumb-zone ergonomics to maximize checkout completion and repeat WhatsApp orders.',
+      proofName: 'Kerala Sellers Marketplace & Squeeze Berriez D2C',
+      proofDesc: 'Founded statewide B2B/B2C vendor marketplace (keralasellers.in) and built D2C instant-order commerce platforms.',
+      proofUrl: 'https://www.keralasellers.in/',
+      proofLabel: 'Verify Live: keralasellers.in',
+      dedicatedUrl: '/web-development-kerala/',
+      dedicatedLabel: 'Explore E-Commerce Solutions',
+      whatsappText: 'Hello Adarsh, I need an E-Commerce website / online store with payment gateway and WhatsApp order integration.'
+    },
+    {
+      id: 'odoo' as const,
+      shortTag: 'Need #5 • Odoo ERP & CRM',
+      tabTitle: 'I need Odoo ERP Customization, Custom CRM, or Tally Migration',
+      icon: <Database className="w-5 h-5" />,
+      badge: 'Ideal for Trading, Manufacturing, Distribution, Retail & Service Enterprises',
+      headline: 'Custom Odoo ERP (v14–v18) Modules, Tally Data Migration & CRM Automation',
+      problem: 'Your sales, inventory, accounting, and billing are scattered across Tally, Excel, and WhatsApp—and official Odoo agencies charge ₹5 Lakhs+ for basic customizations.',
+      deliverables: [
+        'Custom Python Modules for Odoo v14–v18 (Sales, CRM, Inventory, Purchase, Accounting & POS)',
+        '100% Validated Historical Master & Voucher Migration from Tally ERP 9 / Tally Prime to Odoo',
+        'Bi-Directional WhatsApp Business API Integration for Automated Invoices & Payment Reminders',
+        'High-Availability Cloud Hosting on Odoo.sh, AWS, or DigitalOcean Docker with Automated Backups'
+      ],
+      stack: ['Odoo v14–v18', 'Python', 'PostgreSQL', 'XML / OWL JS', 'Tally Migration', 'Odoo.sh / Docker'],
+      cost: '₹25,000 – ₹1,20,000 ($400 – $2,200) or ₹1,800/hr',
+      timeline: '1 to 4 Weeks Module / ERP Rollout',
+      whyPsych: 'Save up to 60% compared to large Odoo gold partners while working directly with a senior Python & Odoo architect.',
+      proofName: 'Enterprise Odoo & CRM Deployments across Kerala & GCC',
+      proofDesc: 'Engineered automated sales pipelines, GST/VAT invoicing modules, and custom inventory triggers.',
+      proofUrl: '/odoo-developer-kerala/',
+      proofLabel: 'View Odoo ERP Case Capabilities',
+      dedicatedUrl: '/odoo-developer-kerala/',
+      dedicatedLabel: 'Explore Dedicated Odoo ERP Page',
+      whatsappText: 'Hello Adarsh, I need Odoo ERP customization / CRM / Tally migration for my company. Can we schedule a discovery call?'
+    },
+    {
+      id: 'global' as const,
+      shortTag: 'Need #6 • Global / Dedicated Hire',
+      tabTitle: 'I am in UAE, UK, Australia, or US Hiring a Senior Developer / Partner',
+      icon: <Briefcase className="w-5 h-5" />,
+      badge: 'Ideal for Overseas Founders, CTOs, Gulf/NRI Entrepreneurs & Digital Agencies',
+      headline: 'Direct Senior Full-Stack Engineer & Technical Partner (0% Agency Markup)',
+      problem: 'Hiring locally in London, Sydney, Dubai, or New York costs $120+/hr (£90+/hr), while generic offshore agencies hand your project to junior interns with poor communication.',
+      deliverables: [
+        'Direct Senior Architect Execution — The Exact Engineer on Your Call Writes Your Production Code',
+        'Seamless Timezone Overlap for UAE/Gulf (GST), UK/Europe (GMT/BST), Australia (AEST) & US',
+        'Flexible Engagement: Fixed-Price Milestone Sprints, Hourly ($25–$55/hr), or Monthly Retainer',
+        'Bilateral NDA Protection, Multi-Currency Invoicing (USD, GBP, EUR, AUD, AED), & Daily Git Commits'
+      ],
+      stack: ['Direct Senior Dev', 'Daily Slack/WhatsApp', 'GitHub CI/CD', 'Multi-Currency Billing', '100% IP Ownership'],
+      cost: '$25 – $55/hr (£22 – £42/hr • AED 95 – 200/hr • ₹1,500 – ₹3,500/hr)',
+      timeline: 'Immediate Onboarding Within 24–48 Hours',
+      whyPsych: 'Tested and trusted by live healthcare and enterprise brands in Australia, the UK, Germany, and the UAE.',
+      proofName: 'Care \'N\' Cure (Australia) & Novora Global Health (UK/DE)',
+      proofDesc: 'Long-term international technical consulting, multi-region web engineering, and organic search expansion.',
+      proofUrl: 'https://novoraglobalhealth.co.uk/',
+      proofLabel: 'Verify Live: novoraglobalhealth.co.uk',
+      dedicatedUrl: '/hire-developer/',
+      dedicatedLabel: 'View Global Rate Card & Hiring Guide',
+      whatsappText: 'Hello Adarsh, I am inquiring from overseas (UAE / UK / AU / US) to hire you as a dedicated senior developer for our project.'
+    }
+  ];
+
+  const currentNeed = visitorNeeds.find((n) => n.id === activeNeed) || visitorNeeds[0];
 
   // Form State
   const [formState, setFormState] = useState({
@@ -663,16 +826,14 @@ export default function HomePage() {
           </Link>
 
           <ul className="nav-links">
-            <li><a href="#about" className="nav-link">About</a></li>
-            <li><Link href="/ai-automation-developer/" className="nav-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>AI Automation</Link></li>
-            <li><Link href="/saas-mvp-developer/" className="nav-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>SaaS MVP</Link></li>
-            <li><Link href="/web-development-kerala/" className="nav-link">Web Dev</Link></li>
-            <li><Link href="/hire-developer/" className="nav-link">Hire Dev</Link></li>
+            <li><a href="#find-your-solution" className="nav-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 700 }}>Find Your Solution</a></li>
+            <li><Link href="/ai-automation-developer/" className="nav-link">AI Automation</Link></li>
+            <li><Link href="/saas-mvp-developer/" className="nav-link">SaaS MVP</Link></li>
+            <li><Link href="/web-development-kerala/" className="nav-link">Web Dev Kerala</Link></li>
             <li><Link href="/odoo-developer-kerala/" className="nav-link">Odoo ERP</Link></li>
-            <li><a href="#clients" className="nav-link">Clients</a></li>
-            <li><a href="#projects" className="nav-link">Projects</a></li>
+            <li><Link href="/hire-developer/" className="nav-link">Rates &amp; Hire</Link></li>
+            <li><a href="#projects" className="nav-link">Proof (20+)</a></li>
             <li><a href="#testimonials" className="nav-link">Reviews</a></li>
-            <li><a href="#faq" className="nav-link">FAQ</a></li>
             <li><a href="#contact" className="nav-link">Contact</a></li>
           </ul>
 
@@ -702,12 +863,13 @@ export default function HomePage() {
 
         {/* Mobile Nav Drawer */}
         <div className={`mobile-nav-drawer ${mobileMenuOpen ? 'open' : ''}`}>
-          <a href="#about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About</a>
-          <Link href="/ai-automation-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>AI Automation &amp; Agents</Link>
-          <Link href="/saas-mvp-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>SaaS &amp; MVP Developer</Link>
-          <Link href="/web-development-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Web Development Kerala</Link>
-          <Link href="/hire-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Hire Developer (Rates &amp; Scope)</Link>
-          <Link href="/odoo-developer-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Odoo ERP Consultant</Link>
+          <a href="#find-your-solution" className="nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--accent-orange-bright)', fontWeight: 700 }}>🎯 What Do You Need Built? (Solution Matcher)</a>
+          <Link href="/ai-automation-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>🤖 AI Automation &amp; Agents</Link>
+          <Link href="/saas-mvp-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>🚀 SaaS &amp; MVP Developer</Link>
+          <Link href="/web-development-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>🌐 Web Development Kerala</Link>
+          <Link href="/hire-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>💼 Hire Developer (Rates &amp; Scope)</Link>
+          <Link href="/odoo-developer-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>⚙️ Odoo ERP Consultant</Link>
+          <a href="#about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About Adarsh B S</a>
           <a href="#services" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Services (12)</a>
           <a href="#clients" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Clients &amp; Ventures</a>
           <a href="#projects" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Projects (11)</a>
@@ -743,30 +905,63 @@ export default function HomePage() {
               <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Rates: ₹1,500–₹3,500/hr ($25–$55/hr • £28–£45/hr) • MVPs from ₹50,000 ($800)</span>
             </div>
 
-            <div className="hero-cta-group">
-              <a href="#contact" className="btn btn-primary">
-                <Sparkles className="w-5 h-5" /> Get Free Estimate in 24h
-              </a>
-              <Link href="/ai-automation-developer/" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)', background: 'rgba(255, 94, 0, 0.08)' }}>
-                <Cpu className="w-5 h-5" /> AI Automation
-              </Link>
-              <Link href="/saas-mvp-developer/" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)', background: 'rgba(255, 94, 0, 0.06)' }}>
-                <Zap className="w-5 h-5" /> SaaS &amp; MVP
-              </Link>
-              <Link href="/web-development-kerala/" className="btn btn-outline">
-                <Globe className="w-5 h-5" /> Web Dev Kerala
-              </Link>
-              <Link href="/hire-developer/" className="btn btn-outline">
-                <Briefcase className="w-5 h-5" /> Hire &amp; Rates
-              </Link>
-              <a
-                href="https://wa.me/919400355185?text=Hello%20Adarsh,%20I%20would%20like%20to%20book%20a%20free%2030-minute%20discovery%20call%20for%20my%20software%20project."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-secondary"
-              >
-                <MessageSquare className="w-5 h-5 text-emerald-500" /> WhatsApp (&lt;15m Reply)
-              </a>
+            {/* Psychological Conversion CTA Hierarchy (Zero Overlap, High Clarity) */}
+            <div className="psych-cta-box">
+              <div className="psych-primary-row">
+                <a href="#contact" className="btn-psych-primary">
+                  <Sparkles className="w-5 h-5" /> Get My Free Project Blueprint &amp; Estimate in 24h
+                </a>
+                <a
+                  href="https://wa.me/919400355185?text=Hello%20Adarsh,%20I%20would%20like%20a%20free%20consultation%20and%20estimate%20for%20my%20project."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-psych-whatsapp"
+                >
+                  <MessageSquare className="w-5 h-5 text-emerald-400" /> WhatsApp Adarsh Directly (&lt;15m Reply)
+                </a>
+              </div>
+
+              {/* Risk Reversal & Trust Anchoring Strip */}
+              <div className="psych-risk-strip">
+                <span className="psych-risk-item">
+                  <ShieldCheck className="w-4 h-4 text-orange-500" /> 100% Bilateral NDA
+                </span>
+                <span>•</span>
+                <span className="psych-risk-item">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500" /> ₹0 / $0 Upfront Scoping
+                </span>
+                <span>•</span>
+                <span className="psych-risk-item">
+                  <Code2 className="w-4 h-4 text-orange-500" /> 100% IP &amp; Git Ownership Day 1
+                </span>
+                <span>•</span>
+                <span className="psych-risk-item">
+                  <Star className="w-4 h-4 text-yellow-400" /> 5.0★ Google Verified (28+ Reviews)
+                </span>
+              </div>
+
+              {/* Specialized Solution Quick-Jump Pills */}
+              <div className="psych-quick-links">
+                <span className="psych-quick-label">Jump to Your Need:</span>
+                <a href="#find-your-solution" className="psych-quick-pill highlight">
+                  <Sparkles className="w-3.5 h-3.5" /> Interactive Solution Matcher
+                </a>
+                <Link href="/ai-automation-developer/" className="psych-quick-pill">
+                  <Cpu className="w-3.5 h-3.5" /> AI Automation &amp; Bots
+                </Link>
+                <Link href="/saas-mvp-developer/" className="psych-quick-pill">
+                  <Zap className="w-3.5 h-3.5" /> SaaS &amp; MVP Dev
+                </Link>
+                <Link href="/web-development-kerala/" className="psych-quick-pill">
+                  <Globe className="w-3.5 h-3.5" /> Web Dev Kerala
+                </Link>
+                <Link href="/odoo-developer-kerala/" className="psych-quick-pill">
+                  <Database className="w-3.5 h-3.5" /> Odoo ERP
+                </Link>
+                <Link href="/hire-developer/" className="psych-quick-pill">
+                  <Briefcase className="w-3.5 h-3.5" /> Rates &amp; Hiring
+                </Link>
+              </div>
             </div>
 
             {/* Social Channels Connect */}
@@ -877,6 +1072,167 @@ export default function HomePage() {
           </div>
         </div>
       </header>
+
+      {/* Interactive Visitor Need & Instant Solution Matcher Section */}
+      <section className="need-matcher-section" id="find-your-solution">
+        <div className="container">
+          <div className="section-header" style={{ marginBottom: '36px' }}>
+            <span className="section-pretitle">Instant Solution &amp; Cost Diagnostic</span>
+            <h2 className="section-title">What Do You Need Built Today?</h2>
+            <p className="section-description">
+              Select your exact business goal below to immediately see the <strong style={{ color: 'var(--text-primary)' }}>technical solution we provide</strong>, <strong style={{ color: 'var(--text-primary)' }}>transparent pricing (INR / USD / AED / GBP)</strong>, <strong style={{ color: 'var(--text-primary)' }}>delivery timeline</strong>, and <strong style={{ color: 'var(--text-primary)' }}>live verifiable client proof</strong>.
+            </p>
+          </div>
+
+          {/* 6 Interactive Visitor Need Tabs */}
+          <div className="need-tabs-grid" role="tablist" aria-label="Select your project need">
+            {visitorNeeds.map((item) => (
+              <button
+                key={item.id}
+                type="button"
+                role="tab"
+                aria-selected={activeNeed === item.id}
+                onClick={() => setActiveNeed(item.id)}
+                className={`need-tab-btn ${activeNeed === item.id ? 'active' : ''}`}
+              >
+                <div className="need-tab-icon">{item.icon}</div>
+                <div>
+                  <span className="need-tab-label">{item.shortTag}</span>
+                  <div className="need-tab-title">{item.tabTitle}</div>
+                </div>
+              </button>
+            ))}
+          </div>
+
+          {/* Dynamic Solution Blueprint Panel */}
+          <div className="need-solution-panel" role="tabpanel">
+            <div className="need-solution-left">
+              <div>
+                <div className="need-solution-badge">
+                  <Sparkles className="w-4 h-4" /> {currentNeed.badge}
+                </div>
+                <h3 className="need-solution-heading">{currentNeed.headline}</h3>
+
+                <div className="need-problem-box">
+                  <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '4px' }}>
+                    🎯 The Problem We Solve For You:
+                  </strong>
+                  {currentNeed.problem}
+                </div>
+
+                <h4 style={{ fontSize: '0.92rem', fontWeight: 750, textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--accent-orange-bright)', marginBottom: '12px' }}>
+                  ✅ Exact Solution &amp; Deliverables We Provide:
+                </h4>
+                <div className="need-deliverables-grid">
+                  {currentNeed.deliverables.map((deliv, idx) => (
+                    <div key={idx} className="need-deliverable-item">
+                      <CheckCircle2 className="w-4 h-4 text-orange-500" style={{ marginTop: '2px', flexShrink: 0 }} />
+                      <span>{deliv}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '16px' }}>
+                  {currentNeed.stack.map((tech, idx) => (
+                    <span
+                      key={idx}
+                      style={{
+                        padding: '5px 12px',
+                        borderRadius: '100px',
+                        fontSize: '0.78rem',
+                        fontWeight: 650,
+                        background: 'rgba(255, 85, 0, 0.1)',
+                        border: '1px solid rgba(255, 85, 0, 0.28)',
+                        color: 'var(--accent-orange-bright)'
+                      }}
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div style={{ padding: '12px 16px', borderRadius: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid var(--border-color)', fontSize: '0.86rem', color: 'var(--text-secondary)' }}>
+                  <strong style={{ color: 'var(--text-primary)' }}>💡 Why Founders Choose This Solution: </strong>
+                  {currentNeed.whyPsych}
+                </div>
+              </div>
+            </div>
+
+            <div className="need-solution-right">
+              <div>
+                <h4 style={{ fontSize: '1.05rem', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '14px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <Coins className="w-5 h-5 text-orange-500" /> Transparent Cost &amp; Turnaround
+                </h4>
+
+                <div className="need-metric-row" style={{ marginBottom: '16px' }}>
+                  <div className="need-metric-box">
+                    <span className="need-metric-label">Estimated Investment</span>
+                    <div className="need-metric-val">{currentNeed.cost}</div>
+                  </div>
+                  <div className="need-metric-box">
+                    <span className="need-metric-label">Delivery Timeline</span>
+                    <div className="need-metric-val" style={{ color: 'var(--text-primary)' }}>{currentNeed.timeline}</div>
+                  </div>
+                </div>
+
+                <div className="need-proof-box">
+                  <div style={{ fontSize: '0.74rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: '#10b981', marginBottom: '4px' }}>
+                    ✓ Verified Live Client Proof
+                  </div>
+                  <div style={{ fontSize: '0.95rem', fontWeight: 750, color: 'var(--text-primary)', marginBottom: '4px' }}>
+                    {currentNeed.proofName}
+                  </div>
+                  <p style={{ fontSize: '0.83rem', color: 'var(--text-secondary)', marginBottom: '10px', lineHeight: 1.5 }}>
+                    {currentNeed.proofDesc}
+                  </p>
+                  <a
+                    href={currentNeed.proofUrl}
+                    target={currentNeed.proofUrl.startsWith('http') ? '_blank' : undefined}
+                    rel={currentNeed.proofUrl.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '0.82rem', fontWeight: 700, color: '#10b981', textDecoration: 'underline' }}
+                  >
+                    {currentNeed.proofLabel} <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <a
+                  href={`https://wa.me/919400355185?text=${encodeURIComponent(currentNeed.whatsappText)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-psych-primary"
+                  style={{ width: '100%', padding: '14px 20px', fontSize: '0.94rem' }}
+                >
+                  <MessageSquare className="w-4 h-4" /> Discuss This Solution on WhatsApp (&lt;15m)
+                </a>
+
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                  <a
+                    href="#contact"
+                    onClick={() => {
+                      setFormState((prev) => ({ ...prev, service: currentNeed.headline }));
+                    }}
+                    className="btn btn-outline"
+                    style={{ padding: '11px 14px', fontSize: '0.84rem', textAlign: 'center', justifyContent: 'center' }}
+                  >
+                    Get 24h Written Quote
+                  </a>
+                  <Link
+                    href={currentNeed.dedicatedUrl}
+                    className="btn btn-outline"
+                    style={{ padding: '11px 14px', fontSize: '0.84rem', textAlign: 'center', justifyContent: 'center', borderColor: 'rgba(255, 85, 0, 0.4)', color: 'var(--accent-orange-bright)' }}
+                  >
+                    Full Solution Page <ArrowUpRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* 12 Recommended Services Section */}
       <section className="section-padding" id="services" style={{ background: 'var(--bg-secondary)' }}>

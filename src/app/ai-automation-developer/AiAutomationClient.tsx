@@ -172,21 +172,30 @@ export default function AiAutomationClient() {
               <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Rates: $35–$55/hr (£28–£45/hr • ₹2,000–₹3,500/hr)</span>
             </div>
 
-            <div className="hero-cta-group">
-              <a
-                href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20would%20like%20to%20book%20a%20free%2030-minute%20AI%20Automation%20Strategy%20Call."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary"
-              >
-                <MessageSquare className="w-5 h-5" /> Book Free 30-Min AI Strategy Call
-              </a>
-              <a href="#pricing" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)' }}>
-                <Zap className="w-5 h-5" /> View AI Sprint Pricing
-              </a>
-              <a href="#process" className="btn btn-secondary">
-                <Layers className="w-5 h-5" /> 5-Stage Shadow-Run Process
-              </a>
+            <div className="psych-cta-box" style={{ marginBottom: '10px' }}>
+              <div className="psych-primary-row">
+                <a
+                  href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20would%20like%20to%20book%20a%20free%2030-minute%20AI%20Automation%20Strategy%20Call."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-psych-primary"
+                >
+                  <MessageSquare className="w-5 h-5" /> Book Free 30-Min AI Strategy Call (&lt;15m Reply)
+                </a>
+                <a href="#pricing" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)' }}>
+                  <Zap className="w-5 h-5" /> View AI Sprint Pricing
+                </a>
+                <a href="#process" className="btn btn-secondary">
+                  <Layers className="w-5 h-5" /> 5-Stage Shadow-Run Process
+                </a>
+              </div>
+              <div className="psych-risk-strip">
+                <span className="psych-risk-item"><ShieldCheck className="w-4 h-4 text-orange-500" /> 100% Data Privacy &amp; NDA</span>
+                <span>•</span>
+                <span className="psych-risk-item"><CheckCircle2 className="w-4 h-4 text-emerald-500" /> Zero Model Training on Client Data</span>
+                <span>•</span>
+                <span className="psych-risk-item"><Code2 className="w-4 h-4 text-orange-500" /> Deployed on Your Own Cloud &amp; API Keys</span>
+              </div>
             </div>
           </div>
         </div>
@@ -602,3 +611,4 @@ export default function AiAutomationClient() {
     </>
   );
 }
+
