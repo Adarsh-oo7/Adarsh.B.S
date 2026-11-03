@@ -132,29 +132,53 @@ Adarsh B S is an independent software engineer, IT consultant, and tech founder 
 - **Scope**: Multi-regional domain architecture, international healthcare life-sciences digital consulting, and enterprise technical SEO for UK and European markets.
 - **Outcome**: Flawless cross-border multi-lingual SEO indexing and executive digital presence.
 
-### 3. Mangrove Spot
+### 3. BuilDwellz Construction & Infra
+- **Client Portfolio URL**: https://www.digitalproductsolutions.in/portfolio
+- **Region**: Kerala, India
+- **Scope**: Corporate web platform engineering, civil engineering portfolio showcase, WhatsApp lead integration, and localized technical SEO.
+- **Outcome**: 98+ PageSpeed score, rapid 2-week MVP delivery, and high search placement for Kerala construction queries.
+
+### 4. Crystal Knot Films
+- **Client Portfolio URL**: https://www.digitalproductsolutions.in/portfolio
+- **Region**: Kerala, India & UAE
+- **Scope**: Wedding cinematography studio showcase, 4K video embedding, Cloudinary CDN asset delivery, and mobile inquiry pipeline.
+- **Outcome**: Sub-second visual loading, frictionless booking experience for high-ticket destination weddings.
+
+### 5. Squeeze Berriez
+- **Client Portfolio URL**: https://www.digitalproductsolutions.in/portfolio
+- **Region**: Kerala, India
+- **Scope**: Direct-to-consumer gourmet beverage brand platform, digital product catalog, and WhatsApp direct checkout.
+- **Outcome**: Instant mobile order conversions, zero checkout friction, modern brand storytelling.
+
+### 6. Lemon Caters & Events
+- **Client Portfolio URL**: https://www.digitalproductsolutions.in/portfolio
+- **Region**: Kerala, India
+- **Scope**: Full-scale event catering logistics platform, dynamic per-plate quote calculator, custom menu customizer, and booking workflow.
+- **Outcome**: Automated quote generation, multi-tier event scheduling, local search dominance for event catering.
+
+### 7. Mangrove Spot
 - **Client Website**: https://www.mangrovespot.in/
 - **Region**: Kerala, India
 - **Scope**: End-to-end IT consulting and proven organic business growth implementation for a premier Kerala eco-tourism venture.
 - **Outcome**: Top Google search placement for Kerala eco-tourism keywords and direct booking lead generation.
 
-### 4. Mangrove Moments
+### 8. Mangrove Moments
 - **Client Website**: https://www.mangrovemoments.com/
 - **Region**: Kerala, India
 - **Scope**: Custom high-speed website development and strategic SEO consulting driving direct customer booking conversions.
 - **Outcome**: Rapid sub-second load times, direct mobile booking inquiries, and local organic dominance.
 
-### 5. Digital Product Solutions (DPS)
+### 9. Digital Product Solutions (DPS)
 - **Website**: https://www.digitalproductsolutions.in/
 - **Role**: Founder & Lead IT Consultant
 - **Scope**: Comprehensive digital engineering agency providing web, mobile, and consulting services to startups and SMEs worldwide.
 
-### 6. Kerala Sellers
+### 10. Kerala Sellers
 - **Website**: https://www.keralasellers.in/
 - **Role**: Founder & Architect
-- **Scope**: E-commerce marketplace connecting Kerala merchants with digital consumers, optimized for extreme search visibility and local SEO.
+- **Scope**: 8-month deep product build: multi-vendor e-commerce marketplace connecting Kerala merchants with digital consumers, optimized for extreme search visibility and local SEO.
 
-### 7. KPSC Master
+### 11. KPSC Master
 - **Website**: https://www.kpscmaster.in/
 - **Role**: Founder, System Architect & SEO Specialist
 - **Scope**: High-traffic competitive exam preparation portal for Kerala PSC candidates with massive organic search dominance.

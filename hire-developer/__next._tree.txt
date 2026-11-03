@@ -1,5 +1,6 @@
-:HL["/_next/static/chunks/2tk8at63c57dx.css","style"]
+:HL["/_next/static/css/1130954eb2430e98.css","style"]
+:HL["/_next/static/css/933b568fe458176e.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"hire-developer","h":64,"c":"$Q2"}]]
-0:{"b":"YZaRpkyln533zeJZs37Zy","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"sSAJm8BnudVwruC_bEhML","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
