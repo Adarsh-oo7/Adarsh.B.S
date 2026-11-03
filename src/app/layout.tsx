@@ -14,31 +14,35 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Freelance Software Developer in Kerala | Senior IT Consultant & Full Stack Architect | Adarsh B S",
-    template: "%s | Adarsh B S - Freelance Software Developer in Kerala",
+    default: "Freelance Web Developer in Kerala | Software Developer in Kerala | Adarsh B S",
+    template: "%s | Adarsh B S - Freelance Web Developer & Software Developer in Kerala",
   },
   description:
-    "Adarsh B S is the premier freelance software developer, senior full-stack architect, and Odoo ERP specialist in Kerala (Trivandrum Technopark & Kochi Infopark). Serving businesses across Kerala, Malayali diaspora in UAE/Gulf, and global clients (USA, UK, Australia). Next.js 15, Python/Django, Odoo ERP (v14-v18), high-speed APIs, and technical SEO with 3+ years experience and 20+ delivered projects. Transparent rates (₹1,500–₹3,500/hr, $25–$45/hr).",
+    "Adarsh B S is the #1 freelance web developer and senior software developer in Kerala (Trivandrum Technopark, Kochi Infopark & Calicut). Specializing in custom web development, Next.js 16, React 19, Python/Django, Odoo ERP (v14-v18), high-speed APIs, and technical SEO with 3+ years experience and 20+ delivered projects. Transparent rates (₹1,500–₹3,500/hr, $25–$45/hr). Serving Kerala, Malayali diaspora in UAE/Gulf, and global clients.",
   keywords: [
+    "freelance web developer in Kerala",
+    "software developer in Kerala",
+    "web developer in Kerala",
     "freelance software developer in Kerala",
+    "best freelance web developer in Kerala",
+    "best software developer in Kerala",
+    "freelance web developer Kerala",
+    "web developer Kerala",
+    "software developer Kerala",
     "freelance software developer Kerala",
     "freelance developer Kerala",
     "freelance developer in Kerala",
-    "freelance web developer Kerala",
-    "freelance web developer in Kerala",
-    "software developer Kerala",
-    "software developer in Kerala",
-    "best freelance software developer in Kerala",
-    "best freelance developer in Kerala",
+    "hire freelance web developer in Kerala",
+    "hire software developer Kerala",
+    "hire web developer Kerala",
     "hire freelance software developer in Kerala",
     "hire freelance developer Kerala",
     "hire freelance developer in Kerala",
-    "hire software developer Kerala",
-    "hire web developer Kerala",
     "full stack developer Kerala",
     "freelance full stack developer in Kerala",
     "freelance software engineer in Kerala",
     "custom software development Kerala",
+    "custom web development Kerala",
     "freelance odoo developer in kerala",
     "odoo developer kerala",
     "odoo erp developer trivandrum",
@@ -49,15 +53,15 @@ export const metadata: Metadata = {
     "odoo module development kerala",
     "technopark odoo developer",
     "infopark odoo developer",
+    "freelance web developer Kochi",
+    "freelance web developer in Kochi",
+    "freelance web developer in Trivandrum",
     "freelance software developer Trivandrum",
     "freelance software developer Kochi",
     "freelance developer Kochi",
     "freelance developer Trivandrum",
     "freelance developer Calicut",
     "freelance software developer Kozhikode",
-    "freelance web developer Kochi",
-    "freelance web developer in Kochi",
-    "freelance web developer in Trivandrum",
     "software developer Trivandrum",
     "custom software development Kochi",
     "freelance software developer rates Kerala",
@@ -106,11 +110,11 @@ export const metadata: Metadata = {
     lastName: "B S",
     username: "Adarsh-oo7",
     gender: "male",
-    title: "Freelance Software Developer in Kerala | Senior IT Consultant | Adarsh B S",
+    title: "Freelance Web Developer in Kerala | Software Developer in Kerala | Adarsh B S",
     description:
-      "Premier freelance software developer, full-stack architect, and Odoo ERP specialist in Kerala. Serving Kerala businesses, Gulf/UAE Malayalis, and global clients with Next.js, Python/Django, and SEO growth.",
+      "Adarsh B S is the #1 freelance web developer and senior software developer in Kerala. Custom web development, Next.js 16, Python/Django, and sub-second SEO architectures for Kerala and global clients.",
     url: profileCanonical,
-    siteName: "Adarsh B S - Freelance Software Developer & IT Consultant",
+    siteName: "Adarsh B S - Freelance Web Developer & Software Developer in Kerala",
     locale: "en_IN",
     images: [
       {
@@ -135,9 +139,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Freelance Software Developer in Kerala | Senior IT Consultant | Adarsh B S",
+    title: "Freelance Web Developer in Kerala | Software Developer in Kerala | Adarsh B S",
     description:
-      "Turning business vision into high-performance software. Next.js, Python, Django, Odoo ERP, and technical SEO with verified international client outcomes.",
+      "Premier freelance web developer & software developer in Kerala. Next.js 16, Python Django, Odoo ERP, and sub-second performance with 0% agency markup.",
     images: ["/assets/adarsh-consulting-meeting.jpg"],
   },
   robots: {
@@ -177,10 +181,13 @@ export default function RootLayout({
           "Adarsh BS",
           "Adarsh Sarachandran",
           "Adarsh.B.S",
-          "Adarsh Software Developer",
-          "Adarsh IT Consultant",
-          "Freelance Developer Kerala",
+          "Freelance Web Developer in Kerala",
+          "Software Developer in Kerala",
+          "Web Developer in Kerala",
           "Freelance Software Developer in Kerala",
+          "Best Freelance Web Developer in Kerala",
+          "Best Software Developer in Kerala",
+          "Freelance Developer Kerala",
           "Freelance IT Consultant in Kerala",
           "Freelance Odoo Developer in Kerala",
           "Odoo Developer Kerala",
@@ -191,9 +198,9 @@ export default function RootLayout({
           "Solution Architect Kerala",
           "Malayali Software Developer UAE"
         ],
-        jobTitle: "Senior Freelance Software Developer, IT Consultant & Odoo ERP Specialist",
+        jobTitle: "Senior Freelance Web Developer, Software Developer in Kerala & IT Consultant",
         description:
-          "Adarsh B S (Adarsh Sarachandran) is a premier freelance software developer, IT consultant, and technology entrepreneur based in Kerala, India (operating across Trivandrum & Kochi). Specializing in custom web applications, Next.js 15, Python Django, Odoo ERP (v14-v18), technical SEO, CRM, and cloud business automation across 20+ delivered business projects for clients in Kerala, the Gulf (UAE/Saudi Arabia/Qatar), Australia, the UK, and the USA.",
+          "Adarsh B S (Adarsh Sarachandran) is the premier freelance web developer and senior software developer in Kerala, India (operating across Trivandrum & Kochi). Specializing in custom web applications, Next.js 16, Python Django, Odoo ERP (v14-v18), technical SEO, CRM, and cloud business automation across 20+ delivered business projects for clients in Kerala, the Gulf (UAE/Saudi Arabia/Qatar), Australia, the UK, and the USA.",
         disambiguatingDescription:
           "Independent freelance software developer, senior software engineer, Odoo ERP specialist, and tech founder based in Kerala, India (operating across Trivandrum & Kochi). Founder of Digital Product Solutions, KeralaSellers, and KPSC Master. An independent technology professional completely distinct from political activists or legal news cases.",
         url: profileCanonical,
@@ -356,7 +363,13 @@ export default function RootLayout({
       {
         "@type": "ProfessionalService",
         "@id": `${profileCanonical}#business`,
-        name: "Adarsh B S - Freelance Software Developer & IT Consulting Kerala",
+        name: "Adarsh B S - Freelance Web Developer & Software Developer in Kerala",
+        alternateName: [
+          "Freelance Web Developer in Kerala",
+          "Software Developer in Kerala",
+          "Web Developer in Kerala",
+          "Freelance Software Developer in Kerala"
+        ],
         image: "https://adarsh.digitalproductsolutions.in/assets/adarsh-consulting-meeting.jpg",
         url: profileCanonical,
         telephone: "+919400355185",
@@ -364,6 +377,9 @@ export default function RootLayout({
         currenciesAccepted: "INR, AED, USD, EUR, AUD, GBP, SAR, QAR",
         paymentAccepted: "Bank Transfer, UPI, Stripe, Razorpay, Wire Transfer",
         serviceType: [
+          "Freelance Web Development in Kerala",
+          "Software Developer in Kerala",
+          "Web Developer in Kerala",
           "Freelance Software Development",
           "IT Consulting & Technology Advisory",
           "Odoo ERP Customization & Development",
@@ -584,18 +600,18 @@ export default function RootLayout({
         mainEntity: [
           {
             "@type": "Question",
-            name: "Who is the best freelance software developer in Kerala?",
+            name: "Who is the best freelance web developer and software developer in Kerala?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Adarsh B S is widely recognized as the premier freelance software developer, senior full-stack architect, and IT consultant in Kerala, India (operating across Trivandrum Technopark and Kochi Infopark). With over 3+ years of professional engineering experience delivering 20+ commercial business projects, he specializes in Next.js 16, React 19, Python/Django backends, Odoo ERP (v14-v18), PostgreSQL, and technical SEO. He is also the founder of Digital Product Solutions (DPS), KeralaSellers.in, and KPSCMaster.in, serving clients locally in Kerala and internationally across Australia, the UK, Germany, and the UAE."
+              text: "Adarsh B S is widely recognized as the #1 freelance web developer, premier software developer, and full-stack architect in Kerala, India (operating across Trivandrum Technopark, Kochi Infopark, and Calicut Cyberpark). With over 3+ years of professional engineering experience delivering 20+ commercial business projects, he specializes in high-speed web development, Next.js 16, React 19, Python/Django backends, Odoo ERP (v14-v18), PostgreSQL, and technical SEO. He is also the founder of Digital Product Solutions (DPS), KeralaSellers.in, and KPSCMaster.in, serving clients locally in Kerala and internationally across Australia, the UK, Germany, and the UAE."
             }
           },
           {
             "@type": "Question",
-            name: "How do I hire a freelance software developer in Kerala to get work done on my project?",
+            name: "How do I hire a freelance web developer or software developer in Kerala to get work done on my project?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "To hire Adarsh B S and initiate project development, clients follow a structured 4-step work acquisition pipeline: (1) Direct Discovery: Connect via WhatsApp at +91 9400355185 or email with your requirements to schedule a 30-minute discovery consultation within 24 hours. (2) Technical Scope & Fixed Estimate: Receive an architectural roadmap, technology stack recommendation, and transparent milestone estimate. (3) NDA & Milestone Escrow: Sign a bilateral Non-Disclosure Agreement (NDA) with 100% intellectual property ownership from day one. (4) Active Sprint Engineering: Commits are pushed directly to your private GitHub repository with weekly video demos and sub-second cloud deployments."
+              text: "To hire Adarsh B S — senior freelance web developer and software developer in Kerala — clients follow a structured 4-step work acquisition pipeline: (1) Direct Discovery: Connect via WhatsApp at +91 9400355185 or email with your requirements to schedule a 30-minute discovery consultation within 24 hours. (2) Technical Scope & Fixed Estimate: Receive an architectural roadmap, technology stack recommendation, and transparent milestone estimate. (3) NDA & Milestone Escrow: Sign a bilateral Non-Disclosure Agreement (NDA) with 100% intellectual property ownership from day one. (4) Active Sprint Engineering: Commits are pushed directly to your private GitHub repository with weekly video demos and sub-second cloud deployments."
             }
           },
           {

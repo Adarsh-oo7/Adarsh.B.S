@@ -27,3 +27,4 @@ routes.forEach((route) => {
 fs.writeFileSync(path.join(outDir, 'CNAME'), 'adarsh.digitalproductsolutions.in\n');
 fs.writeFileSync(path.join(outDir, '.nojekyll'), '');
 console.log('Postbuild completed successfully: CNAME and .nojekyll verified.');
+

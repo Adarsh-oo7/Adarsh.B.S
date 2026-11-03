@@ -2,18 +2,24 @@ import type { Metadata } from 'next';
 import HireDeveloperClient from './HireDeveloperClient';
 
 export const metadata: Metadata = {
-  title: 'Hire a Freelance Software Developer in Kerala | Senior IT Consultant | Adarsh B S',
+  title: 'Hire Freelance Web Developer in Kerala | Software Developer | Adarsh B S',
   description:
-    'Hire Adarsh B S — Senior Freelance Software Developer & IT Consultant in Kerala (Trivandrum Technopark & Kochi Infopark). Specializing in Next.js 15, Python/Django, Odoo ERP, and high-speed APIs. Direct architect collaboration, 0% agency markup, 100% IP ownership, and transparent rates (₹1,500–₹3,500/hr, $25–$45/hr). Serving Kerala, Gulf/UAE Malayalis, and global clients.',
+    'Hire Adarsh B S — Senior Freelance Web Developer & Software Developer in Kerala (Trivandrum Technopark & Kochi Infopark). Specializing in Next.js 16, React 19, Python/Django, Odoo ERP, and high-speed APIs. Direct architect collaboration, 0% agency markup, 100% IP ownership, and transparent rates (₹1,500–₹3,500/hr, $25–$45/hr). Serving Kerala, Gulf/UAE Malayalis, and global clients.',
   keywords: [
+    'hire freelance web developer in kerala',
     'hire freelance software developer in kerala',
+    'freelance web developer in kerala',
+    'software developer in kerala',
+    'web developer in kerala',
+    'best freelance web developer in kerala',
+    'best software developer in kerala',
     'hire software developer kerala',
+    'hire web developer kerala',
     'hire freelance developer in kerala',
     'hire freelance developer kerala',
     'freelance software developer in kerala',
     'freelance developer in kerala',
     'hire full stack developer kerala',
-    'hire web developer kerala',
     'hire python developer kerala',
     'hire odoo developer kerala',
     'freelance software developer rates kerala',
@@ -33,25 +39,25 @@ export const metadata: Metadata = {
     canonical: 'https://adarsh.digitalproductsolutions.in/hire-developer/',
   },
   openGraph: {
-    title: 'Hire a Freelance Software Developer in Kerala | Senior Architect Adarsh B S',
+    title: 'Hire Freelance Web Developer in Kerala | Software Developer | Adarsh B S',
     description:
-      'Direct senior architect collaboration with zero agency overhead. Next.js 15, Python Django, Odoo ERP, and sub-second SEO architectures. Transparent rates from ₹1,500/hr ($25/hr) and ₹50,000 MVPs.',
+      'Direct senior architect collaboration with zero agency overhead. Next.js 16, React 19, Python Django, Odoo ERP, and sub-second SEO architectures. Transparent rates from ₹1,500/hr ($25/hr) and ₹50,000 MVPs.',
     url: 'https://adarsh.digitalproductsolutions.in/hire-developer/',
-    siteName: 'Adarsh B S - Freelance Software Developer & IT Consultant',
+    siteName: 'Adarsh B S - Freelance Web Developer & Software Developer in Kerala',
     images: [
       {
         url: '/assets/adarsh-consulting-meeting.jpg',
         width: 1024,
         height: 682,
-        alt: 'Hire Adarsh B S - Senior Freelance Software Developer in Kerala',
+        alt: 'Hire Adarsh B S - Senior Freelance Web Developer in Kerala',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hire a Freelance Software Developer in Kerala | Adarsh B S',
+    title: 'Hire Freelance Web Developer in Kerala | Software Developer | Adarsh B S',
     description:
-      'Senior freelance full-stack engineer and IT consultant in Kerala. Direct architect access, 100% IP ownership, and zero agency markup.',
+      'Senior freelance web developer, full-stack engineer and software architect in Kerala. Direct architect access, 100% IP ownership, and zero agency markup.',
     images: ['/assets/adarsh-consulting-meeting.jpg'],
   },
 };
@@ -81,7 +87,13 @@ export default function HireDeveloperPage() {
       {
         '@type': 'ProfessionalService',
         '@id': 'https://adarsh.digitalproductsolutions.in/hire-developer/#service',
-        name: 'Hire Freelance Software Developer in Kerala — Adarsh B S',
+        name: 'Hire Freelance Web Developer & Software Developer in Kerala — Adarsh B S',
+        alternateName: [
+          'Hire Freelance Web Developer in Kerala',
+          'Freelance Software Developer in Kerala',
+          'Web Developer in Kerala',
+          'Software Developer in Kerala'
+        ],
         url: 'https://adarsh.digitalproductsolutions.in/hire-developer/',
         telephone: '+919400355185',
         priceRange: '₹₹ / $$',
@@ -144,7 +156,7 @@ export default function HireDeveloperPage() {
         mainEntity: [
           {
             '@type': 'Question',
-            name: 'Why should I hire a freelance software developer in Kerala instead of an agency?',
+            name: 'Why should I hire a freelance web developer or software developer in Kerala instead of an agency?',
             acceptedAnswer: {
               '@type': 'Answer',
               text: 'Hiring Adarsh B S connects you directly with the senior architect building your product. Traditional IT agencies in Kochi and Technopark charge 200% to 400% markups and pass work to junior trainees or interns. Working directly with Adarsh guarantees 0% agency markup, 100% intellectual property ownership from day one, direct Git commit access, and sub-second Next.js and Python performance.',

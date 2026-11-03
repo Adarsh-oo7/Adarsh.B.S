@@ -2,19 +2,20 @@ import type { Metadata } from 'next';
 import WebDevClient from './WebDevClient';
 
 export const metadata: Metadata = {
-  title: 'Web Development Company in Kerala | Hire Freelance Web Developer | Adarsh B S',
+  title: 'Freelance Web Developer in Kerala | Web Developer in Kerala | Adarsh B S',
   description:
-    'Looking for premier web development in Kerala? Hire Adarsh B S — Senior Full-Stack Web Developer & Founder of Digital Product Solutions. Custom Next.js 16, React 19, Python/Django web applications, business websites, and e-commerce platforms. High-speed, SEO-first, 0% agency markup, and transparent pricing (₹15,000–₹85,000 / ₹1,500–₹3,500/hr). Serving Trivandrum Technopark, Kochi Infopark, Calicut, and UAE/GCC clients.',
+    'Looking for the top freelance web developer in Kerala? Hire Adarsh B S — Senior Web Developer & Software Developer in Kerala (Trivandrum Technopark, Kochi Infopark & Calicut). Custom Next.js 16, React 19, Python/Django web applications, business websites, and e-commerce platforms. High-speed, SEO-first, 0% agency markup, and transparent pricing (₹15,000–₹85,000 / ₹1,500–₹3,500/hr). Serving Kerala, UAE/GCC Malayalis, and global clients.',
   keywords: [
+    'freelance web developer in kerala',
+    'software developer in kerala',
+    'web developer in kerala',
+    'best freelance web developer in kerala',
+    'best web developer in kerala',
+    'freelance software developer in kerala',
+    'hire freelance web developer in kerala',
     'web development company in kerala',
     'web development kerala',
-    'web developer in kerala',
-    'freelance web developer in kerala',
-    'freelance web developer kerala',
-    'best web development company in kerala',
-    'best web developer in kerala',
     'hire web developer kerala',
-    'hire freelance web developer in kerala',
     'web development services kerala',
     'web application development kerala',
     'custom web development kerala',
@@ -38,25 +39,25 @@ export const metadata: Metadata = {
     canonical: 'https://adarsh.digitalproductsolutions.in/web-development-kerala/',
   },
   openGraph: {
-    title: 'Web Development Company in Kerala | Hire Web Developer | Adarsh B S',
+    title: 'Freelance Web Developer in Kerala | Web Developer in Kerala | Adarsh B S',
     description:
-      'Senior full-stack web developer & Digital Product Solutions founder. Next.js 16, React 19, Python Django, and sub-second SEO architectures. Transparent rates from ₹15,000 for business websites and ₹45,000 for custom web applications.',
+      'Premier freelance web developer and senior software developer in Kerala. Next.js 16, React 19, Python Django, and sub-second SEO architectures. Transparent rates from ₹15,000 for business websites and ₹45,000 for custom web applications.',
     url: 'https://adarsh.digitalproductsolutions.in/web-development-kerala/',
-    siteName: 'Adarsh B S - Freelance Software Developer & IT Consultant',
+    siteName: 'Adarsh B S - Freelance Web Developer & Software Developer in Kerala',
     images: [
       {
         url: '/assets/adarsh-consulting-meeting.jpg',
         width: 1024,
         height: 682,
-        alt: 'Web Development in Kerala - Adarsh B S & Digital Product Solutions',
+        alt: 'Freelance Web Developer in Kerala - Adarsh B S',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Web Development Company in Kerala | Adarsh B S',
+    title: 'Freelance Web Developer in Kerala | Web Developer in Kerala | Adarsh B S',
     description:
-      'Premier web development and custom web application engineering in Kerala. Next.js 16, Python/Django, sub-second speeds, and 0% agency markup.',
+      'Premier freelance web developer and software developer in Kerala. Next.js 16, Python/Django, sub-second speeds, and 0% agency markup.',
     images: ['/assets/adarsh-consulting-meeting.jpg'],
   },
 };
@@ -86,8 +87,13 @@ export default function WebDevelopmentKeralaPage() {
       {
         '@type': 'ProfessionalService',
         '@id': 'https://adarsh.digitalproductsolutions.in/web-development-kerala/#service',
-        name: 'Web Development Company in Kerala — Adarsh B S & Digital Product Solutions',
-        alternateName: 'Freelance Web Developer & Web Application Engineer in Kerala',
+        name: 'Freelance Web Developer in Kerala — Adarsh B S & Digital Product Solutions',
+        alternateName: [
+          'Freelance Web Developer in Kerala',
+          'Software Developer in Kerala',
+          'Web Developer in Kerala',
+          'Best Freelance Web Developer in Kerala'
+        ],
         url: 'https://adarsh.digitalproductsolutions.in/web-development-kerala/',
         telephone: '+919400355185',
         priceRange: '₹₹ / $$',
@@ -177,10 +183,10 @@ export default function WebDevelopmentKeralaPage() {
           },
           {
             '@type': 'Question',
-            name: 'Who is the best web developer in Kerala for custom business websites and web apps?',
+            name: 'Who is the best freelance web developer in Kerala for custom business websites and web apps?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Adarsh B S is considered one of the top web developers and full-stack software architects in Kerala. He has delivered 20+ commercial production websites and platforms across Kerala, Australia (Care N Cure), UK/Europe (Novora Global Health), and the UAE. As the founder of Digital Product Solutions, he combines modern engineering (Next.js 16, React 19, Python/Django) with technical SEO to ensure every website ranks at the top of Google and converts visitors into paying customers.',
+              text: 'Adarsh B S is widely recognized as the #1 freelance web developer and senior software developer in Kerala. He has delivered 20+ commercial production websites and platforms across Kerala, Australia (Care N Cure), UK/Europe (Novora Global Health), and the UAE. As the founder of Digital Product Solutions, he combines modern engineering (Next.js 16, React 19, Python/Django) with technical SEO to ensure every website ranks at the top of Google and converts visitors into paying customers.',
             },
           },
           {
@@ -238,3 +244,4 @@ export default function WebDevelopmentKeralaPage() {
     </>
   );
 }
+

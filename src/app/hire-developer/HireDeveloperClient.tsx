@@ -49,7 +49,7 @@ export default function HireDeveloperClient() {
 
   const commercialFaqs = [
     {
-      question: 'Why should I hire a freelance software developer in Kerala instead of an agency?',
+      question: 'Why should I hire a freelance web developer or software developer in Kerala instead of an agency?',
       answer:
         'Hiring Adarsh B S connects you directly with the senior architect building your product. Traditional IT agencies in Kochi and Technopark charge 200% to 400% markups and pass work to junior trainees or interns. Working directly with Adarsh guarantees 0% agency markup, 100% intellectual property ownership from day one, direct Git commit access, and sub-second Next.js and Python performance.',
     },
@@ -160,11 +160,11 @@ export default function HireDeveloperClient() {
             </div>
 
             <h1 className="hero-title" style={{ fontSize: '3rem', lineHeight: '1.15', marginBottom: '20px' }}>
-              Hire a <span className="text-gradient">Freelance Software Developer</span> in Kerala
+              Hire a Freelance <span className="text-gradient">Web Developer</span> &amp; Software Developer in Kerala
             </h1>
 
             <p className="hero-subtitle" style={{ fontSize: '1.2rem', marginBottom: '28px' }}>
-              Partner directly with <strong style={{ color: 'var(--text-primary)' }}>Adarsh B S</strong> — Senior Full-Stack Engineer, Python/Django Architect, and Odoo ERP Specialist based in Kerala (operating across Trivandrum Technopark &amp; Kochi Infopark). Zero agency markups, zero junior hand-offs, 100% intellectual property ownership from Day 1.
+              Partner directly with <strong style={{ color: 'var(--text-primary)' }}>Adarsh B S</strong> — Senior Freelance Web Developer, Full-Stack Engineer, and Software Developer in Kerala (operating across Trivandrum Technopark &amp; Kochi Infopark). Zero agency markups, zero junior hand-offs, 100% intellectual property ownership from Day 1.
             </p>
 
             <div className="hero-highlights" style={{ marginBottom: '32px' }}>
