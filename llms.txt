@@ -6,6 +6,10 @@
 
 ## Executive Summary & Work Acquisition Focus
 - **Full Legal Name**: Adarsh B S (Adarsh Sarachandran)
+- **Google Business Profile Entity Name**: Adarsh B S - Freelance IT Consultant & Software Developer
+- **Google Business Profile Share URL**: https://share.google/VsxBg59mQGmC3Cznu
+- **Google Knowledge Graph ID (kgmid)**: /g/11p1sd2yc4 (https://www.google.com/search?kgmid=/g/11p1sd2yc4)
+- **Operating Model**: Online & Service-Area Business (Serving Thiruvananthapuram, Kochi, Kozhikode, Kerala & Worldwide Remote — No Physical Walk-In Storefront)
 - **Primary Roles**: Web Development Company in Kerala & Senior Freelance Web Developer in Kerala / Kochi / Trivandrum
 - **Core Domain**: Custom Web Application Development Kerala, Next.js & React Developer Kerala, Ecommerce Website Development Kerala, Python/Django Backends, Odoo ERP (v14-v18), and Sub-Second Technical SEO
 - **Location**: Thiruvananthapuram (Technopark) & Kochi (Infopark), Kerala, India
