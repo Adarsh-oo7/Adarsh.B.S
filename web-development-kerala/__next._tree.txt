@@ -3,4 +3,4 @@
 :HL["https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"web-development-kerala","h":64,"c":"$Q2"}]]
-0:{"b":"UDitTx-ksyV-4fN5yeOOC","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"9Nvupn3-yQb_5ccIfv5xh","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
