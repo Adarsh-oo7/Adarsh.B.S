@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build --webpack",
+    "build": "next build --webpack && node scripts/postbuild.js",
     "start": "next start",
     "lint": "eslint",
-    "predeploy": "next build --webpack",
+    "predeploy": "next build --webpack && node scripts/postbuild.js",
     "deploy": "gh-pages -d out --dotfiles --nojekyll --cname adarsh.digitalproductsolutions.in"
   },
   "dependencies": {
