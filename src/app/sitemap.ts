@@ -20,6 +20,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: `${baseUrl}/web-development-kerala/`,
+      lastModified,
+      changeFrequency: 'daily',
+      priority: 0.98,
+    },
+    {
       url: `${baseUrl}/odoo-developer-kerala/`,
       lastModified,
       changeFrequency: 'daily',

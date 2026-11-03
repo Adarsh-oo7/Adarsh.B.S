@@ -134,6 +134,7 @@ export default function OdooClient() {
 
           <ul className="nav-links">
             <li><Link href="/" className="nav-link">Home</Link></li>
+            <li><Link href="/web-development-kerala/" className="nav-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Dev Kerala</Link></li>
             <li><Link href="/hire-developer/" className="nav-link">Hire Developer</Link></li>
             <li><Link href="/odoo-developer-kerala/" className="nav-link active" style={{ color: '#fff', fontWeight: 700 }}>Odoo ERP Kerala</Link></li>
             <li><Link href="/#services" className="nav-link">Services</Link></li>
@@ -175,6 +176,7 @@ export default function OdooClient() {
         {/* Mobile Nav Drawer */}
         <div className={`mobile-nav-drawer ${mobileMenuOpen ? 'open' : ''}`}>
           <Link href="/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+          <Link href="/web-development-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Development Kerala</Link>
           <Link href="/odoo-developer-kerala/" className="nav-link active" onClick={() => setMobileMenuOpen(false)}>Odoo ERP Development</Link>
           <Link href="/hire-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Hire Developer (Kerala &amp; Global)</Link>
           <Link href="/#services" className="nav-link" onClick={() => setMobileMenuOpen(false)}>12 Core Services</Link>
@@ -471,6 +473,7 @@ export default function OdooClient() {
             <p>&copy; {new Date().getFullYear()} Adarsh B S &bull; Freelance Odoo Developer &amp; IT Consultant. All Rights Reserved.</p>
             <div className="footer-links">
               <Link href="/">Home</Link>
+              <Link href="/web-development-kerala/">Web Dev Kerala</Link>
               <Link href="/hire-developer/">Hire Developer</Link>
               <Link href="/odoo-developer-kerala/">Odoo ERP</Link>
               <Link href="/privacy-policy/">Privacy Policy</Link>

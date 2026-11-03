@@ -664,11 +664,12 @@ export default function HomePage() {
           <ul className="nav-links">
             <li><a href="#about" className="nav-link">About</a></li>
             <li><a href="#services" className="nav-link">Services</a></li>
-            <li><Link href="/hire-developer/" className="nav-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Hire Dev</Link></li>
+            <li><Link href="/web-development-kerala/" className="nav-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Dev</Link></li>
+            <li><Link href="/hire-developer/" className="nav-link">Hire Dev</Link></li>
             <li><Link href="/odoo-developer-kerala/" className="nav-link">Odoo ERP</Link></li>
             <li><a href="#clients" className="nav-link">Clients</a></li>
-            <li><a href="#experience" className="nav-link">Experience</a></li>
             <li><a href="#projects" className="nav-link">Projects</a></li>
+            <li><a href="#industry-solutions" className="nav-link">Solutions</a></li>
             <li><a href="#testimonials" className="nav-link">Reviews</a></li>
             <li><a href="#faq" className="nav-link">FAQ</a></li>
             <li><a href="#contact" className="nav-link">Contact</a></li>
@@ -702,11 +703,12 @@ export default function HomePage() {
         <div className={`mobile-nav-drawer ${mobileMenuOpen ? 'open' : ''}`}>
           <a href="#about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About</a>
           <a href="#services" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Services (12)</a>
-          <Link href="/hire-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Hire Developer (Rates &amp; Scope)</Link>
+          <Link href="/web-development-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Development Kerala</Link>
+          <Link href="/hire-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Hire Developer (Rates &amp; Scope)</Link>
           <Link href="/odoo-developer-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Odoo ERP Consultant</Link>
           <a href="#clients" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Clients &amp; Ventures</a>
-          <a href="#experience" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Experience</a>
-          <a href="#projects" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Projects</a>
+          <a href="#projects" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Projects (11)</a>
+          <a href="#industry-solutions" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Industry Solutions</a>
           <a href="#testimonials" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Client Reviews</a>
           <a href="#faq" className="nav-link" onClick={() => setMobileMenuOpen(false)}>FAQ</a>
           <a href="#contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Contact &amp; Quote</a>
@@ -743,7 +745,10 @@ export default function HomePage() {
               <a href="#contact" className="btn btn-primary">
                 <Sparkles className="w-5 h-5" /> Discuss Your Project
               </a>
-              <Link href="/hire-developer/" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)', background: 'rgba(255, 94, 0, 0.06)' }}>
+              <Link href="/web-development-kerala/" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)', background: 'rgba(255, 94, 0, 0.08)' }}>
+                <Globe className="w-5 h-5" /> Web Dev Kerala
+              </Link>
+              <Link href="/hire-developer/" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)', background: 'rgba(255, 94, 0, 0.04)' }}>
                 <Briefcase className="w-5 h-5" /> Hire Dev Rates
               </Link>
               <a href="/assets/cv.pdf" download="Adarsh_BS_CV.pdf" className="btn btn-secondary">
@@ -1295,6 +1300,447 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Industry Software Solutions & Instant Matcher (Aggressive Work Acquisition) */}
+      <section className="section-padding" id="industry-solutions" style={{ borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
+        <div className="container">
+          <div className="section-header text-center" style={{ marginBottom: '45px' }}>
+            <span className="section-badge">Industry Matcher &amp; Work Pipeline</span>
+            <h2 className="section-title">
+              Software &amp; Web Development by <span className="text-gradient">Industry</span>
+            </h2>
+            <p className="section-subtitle" style={{ maxWidth: '800px', margin: '0 auto' }}>
+              Searching for a developer who understands your specific business model? Explore proven architectural blueprints and production platforms engineered by Adarsh B S and Digital Product Solutions across core Kerala and international industries.
+            </p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px' }}>
+            {/* Card 1: Construction & Civil Engineering */}
+            <div
+              style={{
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
+                borderRadius: '16px',
+                padding: '28px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                boxShadow: 'var(--card-shadow)'
+              }}
+            >
+              <div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--accent-orange-bright)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    🏗️ Construction &amp; Engineering
+                  </span>
+                  <span style={{ fontSize: '0.75rem', background: 'rgba(255, 85, 0, 0.1)', color: 'var(--accent-orange-bright)', padding: '2px 8px', borderRadius: '6px' }}>
+                    Live: BuilDwellz
+                  </span>
+                </div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '10px' }}>
+                  Construction Portals &amp; Instant Estimation Engines
+                </h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                  Sub-second corporate showcase for civil engineering and builders. Features high-res project galleries, localized Trivandrum/Kochi SEO, and 1-click WhatsApp quote estimation.
+                </p>
+                <div style={{ background: 'rgba(255, 255, 255, 0.03)', borderRadius: '10px', padding: '12px', marginBottom: '18px' }}>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>
+                    <strong>Delivered Stack:</strong> Next.js 16, Tailwind CSS, WhatsApp Cloud API, Schema.org
+                  </div>
+                  <div style={{ fontSize: '0.82rem', color: '#22c55e', fontWeight: 600 }}>
+                    ✓ Outcome: 100% PageSpeed score &amp; automated project leads
+                  </div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                <a
+                  href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20need%20a%20website%20or%20software%20for%20a%20Construction%20or%20Engineering%20firm."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-small"
+                  style={{ flex: 1, justifyContent: 'center' }}
+                >
+                  <MessageSquare className="w-3.5 h-3.5" /> Quote for Construction
+                </a>
+                <Link href="/web-development-kerala/" className="btn btn-outline btn-small">
+                  Details
+                </Link>
+              </div>
+            </div>
+
+            {/* Card 2: Wedding Cinematography & Creative Media */}
+            <div
+              style={{
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
+                borderRadius: '16px',
+                padding: '28px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                boxShadow: 'var(--card-shadow)'
+              }}
+            >
+              <div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--accent-orange-bright)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    🎬 Wedding Media &amp; Studios
+                  </span>
+                  <span style={{ fontSize: '0.75rem', background: 'rgba(255, 85, 0, 0.1)', color: 'var(--accent-orange-bright)', padding: '2px 8px', borderRadius: '6px' }}>
+                    Live: Crystal Knot Films
+                  </span>
+                </div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '10px' }}>
+                  4K Video Portfolios &amp; Booking Pipelines
+                </h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                  High-converting visual showcase for luxury wedding cinematographers across Kerala and UAE. Includes lag-free Cloudinary video streaming and instant event date inquiry routing.
+                </p>
+                <div style={{ background: 'rgba(255, 255, 255, 0.03)', borderRadius: '10px', padding: '12px', marginBottom: '18px' }}>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>
+                    <strong>Delivered Stack:</strong> Next.js, Cloudinary Video Streaming, Lead Routing
+                  </div>
+                  <div style={{ fontSize: '0.82rem', color: '#22c55e', fontWeight: 600 }}>
+                    ✓ Outcome: 4K streaming with 0 buffer lag &amp; 3x booking inquiries
+                  </div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                <a
+                  href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20need%20a%20portfolio%20website%20for%20my%20Wedding%20Cinematography%20or%20Photography%20studio."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-small"
+                  style={{ flex: 1, justifyContent: 'center' }}
+                >
+                  <MessageSquare className="w-3.5 h-3.5" /> Quote for Studio
+                </a>
+                <Link href="/web-development-kerala/" className="btn btn-outline btn-small">
+                  Details
+                </Link>
+              </div>
+            </div>
+
+            {/* Card 3: Food & Beverage / D2C Ordering */}
+            <div
+              style={{
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
+                borderRadius: '16px',
+                padding: '28px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                boxShadow: 'var(--card-shadow)'
+              }}
+            >
+              <div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--accent-orange-bright)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    🥤 Food &amp; Beverage / D2C
+                  </span>
+                  <span style={{ fontSize: '0.75rem', background: 'rgba(255, 85, 0, 0.1)', color: 'var(--accent-orange-bright)', padding: '2px 8px', borderRadius: '6px' }}>
+                    Live: Squeeze Berriez
+                  </span>
+                </div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '10px' }}>
+                  Digital Menus &amp; Direct WhatsApp Ordering
+                </h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                  Direct-to-consumer gourmet brand platform engineered for rapid mobile conversions. Customers browse interactive digital menus and order directly to WhatsApp with 0% platform commissions.
+                </p>
+                <div style={{ background: 'rgba(255, 255, 255, 0.03)', borderRadius: '10px', padding: '12px', marginBottom: '18px' }}>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>
+                    <strong>Delivered Stack:</strong> Next.js, WhatsApp Commerce Cloud, Mobile UX
+                  </div>
+                  <div style={{ fontSize: '0.82rem', color: '#22c55e', fontWeight: 600 }}>
+                    ✓ Outcome: Zero commission cuts from Swiggy/Zomato &amp; instant repeat orders
+                  </div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                <a
+                  href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20want%20a%20digital%20menu%20and%20direct%20WhatsApp%20ordering%20platform%20for%20my%20F%26B%20business."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-small"
+                  style={{ flex: 1, justifyContent: 'center' }}
+                >
+                  <MessageSquare className="w-3.5 h-3.5" /> Quote for F&amp;B
+                </a>
+                <Link href="/web-development-kerala/" className="btn btn-outline btn-small">
+                  Details
+                </Link>
+              </div>
+            </div>
+
+            {/* Card 4: Banquet Catering & Event Planning */}
+            <div
+              style={{
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
+                borderRadius: '16px',
+                padding: '28px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                boxShadow: 'var(--card-shadow)'
+              }}
+            >
+              <div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--accent-orange-bright)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    🍽️ Catering &amp; Events
+                  </span>
+                  <span style={{ fontSize: '0.75rem', background: 'rgba(255, 85, 0, 0.1)', color: 'var(--accent-orange-bright)', padding: '2px 8px', borderRadius: '6px' }}>
+                    Live: Lemon Caters
+                  </span>
+                </div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '10px' }}>
+                  Interactive Menu Builders &amp; Per-Plate Calculators
+                </h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                  Banquet and event catering booking platform with interactive multi-course menu builders, instant per-head price calculators, and localized event SEO for Kerala weddings and corporate summits.
+                </p>
+                <div style={{ background: 'rgba(255, 255, 255, 0.03)', borderRadius: '10px', padding: '12px', marginBottom: '18px' }}>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>
+                    <strong>Delivered Stack:</strong> Next.js 16, Interactive Quote Calculator, Lead Sync
+                  </div>
+                  <div style={{ fontSize: '0.82rem', color: '#22c55e', fontWeight: 600 }}>
+                    ✓ Outcome: 4x increase in corporate banquet quotation submissions
+                  </div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                <a
+                  href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20need%20a%20website%20or%20booking%20calculator%20for%20a%20Catering%20or%20Events%20business."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-small"
+                  style={{ flex: 1, justifyContent: 'center' }}
+                >
+                  <MessageSquare className="w-3.5 h-3.5" /> Quote for Catering
+                </a>
+                <Link href="/web-development-kerala/" className="btn btn-outline btn-small">
+                  Details
+                </Link>
+              </div>
+            </div>
+
+            {/* Card 5: Hospitality, Resorts & Eco-Tourism */}
+            <div
+              style={{
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
+                borderRadius: '16px',
+                padding: '28px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                boxShadow: 'var(--card-shadow)'
+              }}
+            >
+              <div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--accent-orange-bright)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    🌴 Hospitality &amp; Resorts
+                  </span>
+                  <span style={{ fontSize: '0.75rem', background: 'rgba(255, 85, 0, 0.1)', color: 'var(--accent-orange-bright)', padding: '2px 8px', borderRadius: '6px' }}>
+                    Live: Mangrove Spot
+                  </span>
+                </div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '10px' }}>
+                  Direct Booking Engines &amp; Travel SEO Dominance
+                </h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                  Direct room and villa reservation platform for eco-tourism retreats. Combines sub-second Next.js architecture with localized Kerala travel schema, eliminating expensive OTA commissions (Booking.com / Airbnb).
+                </p>
+                <div style={{ background: 'rgba(255, 255, 255, 0.03)', borderRadius: '10px', padding: '12px', marginBottom: '18px' }}>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>
+                    <strong>Delivered Stack:</strong> Next.js, Custom Reservation Engine, Travel Schema
+                  </div>
+                  <div style={{ fontSize: '0.82rem', color: '#22c55e', fontWeight: 600 }}>
+                    ✓ Outcome: 300%+ surge in direct bookings with 0% OTA commission loss
+                  </div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                <a
+                  href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20need%20a%20direct%20booking%20website%20for%20my%20Resort,%20Hotel,%20or%20Homestay."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-small"
+                  style={{ flex: 1, justifyContent: 'center' }}
+                >
+                  <MessageSquare className="w-3.5 h-3.5" /> Quote for Resort
+                </a>
+                <Link href="/web-development-kerala/" className="btn btn-outline btn-small">
+                  Details
+                </Link>
+              </div>
+            </div>
+
+            {/* Card 6: Multi-Vendor E-Commerce & Retail */}
+            <div
+              style={{
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
+                borderRadius: '16px',
+                padding: '28px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                boxShadow: 'var(--card-shadow)'
+              }}
+            >
+              <div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--accent-orange-bright)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    🛍️ Marketplaces &amp; Retail
+                  </span>
+                  <span style={{ fontSize: '0.75rem', background: 'rgba(255, 85, 0, 0.1)', color: 'var(--accent-orange-bright)', padding: '2px 8px', borderRadius: '6px' }}>
+                    Live: Kerala Sellers
+                  </span>
+                </div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '10px' }}>
+                  Multi-Vendor Marketplaces &amp; D2C Stores
+                </h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                  Statewide digital marketplace connecting hundreds of local Kerala merchants with online buyers. Includes vendor product dashboards, payment escrow (Razorpay), and instant localized product search.
+                </p>
+                <div style={{ background: 'rgba(255, 255, 255, 0.03)', borderRadius: '10px', padding: '12px', marginBottom: '18px' }}>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>
+                    <strong>Delivered Stack:</strong> Multi-Vendor Marketplace, Razorpay, Elastic Search
+                  </div>
+                  <div style={{ fontSize: '0.82rem', color: '#22c55e', fontWeight: 600 }}>
+                    ✓ Outcome: 8-month enterprise build with top statewide merchant adoption
+                  </div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                <a
+                  href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20want%20to%20build%20an%20E-Commerce%20Store%20or%20Multi-Vendor%20Marketplace."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-small"
+                  style={{ flex: 1, justifyContent: 'center' }}
+                >
+                  <MessageSquare className="w-3.5 h-3.5" /> Quote for E-Commerce
+                </a>
+                <Link href="/web-development-kerala/" className="btn btn-outline btn-small">
+                  Details
+                </Link>
+              </div>
+            </div>
+
+            {/* Card 7: Healthcare & Global Life Sciences */}
+            <div
+              style={{
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
+                borderRadius: '16px',
+                padding: '28px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                boxShadow: 'var(--card-shadow)'
+              }}
+            >
+              <div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--accent-orange-bright)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    🏥 Healthcare &amp; Global Life Sciences
+                  </span>
+                  <span style={{ fontSize: '0.75rem', background: 'rgba(255, 85, 0, 0.1)', color: 'var(--accent-orange-bright)', padding: '2px 8px', borderRadius: '6px' }}>
+                    Live: Care &apos;N&apos; Cure / Novora
+                  </span>
+                </div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '10px' }}>
+                  Multi-Region Health Portals &amp; Global SEO
+                </h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                  Enterprise-grade digital health ecosystems engineered for clients in Australia, UK, and Germany. Features multi-regional domain routing, HIPAA/GDPR compliance, and organic international patient acquisition.
+                </p>
+                <div style={{ background: 'rgba(255, 255, 255, 0.03)', borderRadius: '10px', padding: '12px', marginBottom: '18px' }}>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>
+                    <strong>Delivered Stack:</strong> Multi-Region Arch (.com, .de, .co.uk), Next.js, Technical SEO
+                  </div>
+                  <div style={{ fontSize: '0.82rem', color: '#22c55e', fontWeight: 600 }}>
+                    ✓ Outcome: Sustained organic patient acquisition across Sydney &amp; London
+                  </div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                <a
+                  href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20am%20looking%20for%20Healthcare%20or%20Life-Sciences%20web%20software."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-small"
+                  style={{ flex: 1, justifyContent: 'center' }}
+                >
+                  <MessageSquare className="w-3.5 h-3.5" /> Quote for Healthcare
+                </a>
+                <Link href="/hire-developer/" className="btn btn-outline btn-small">
+                  Rates
+                </Link>
+              </div>
+            </div>
+
+            {/* Card 8: EdTech & Competitive Exam Platforms */}
+            <div
+              style={{
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
+                borderRadius: '16px',
+                padding: '28px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                boxShadow: 'var(--card-shadow)'
+              }}
+            >
+              <div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--accent-orange-bright)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    📚 EdTech &amp; Competitive Exam Prep
+                  </span>
+                  <span style={{ fontSize: '0.75rem', background: 'rgba(255, 85, 0, 0.1)', color: 'var(--accent-orange-bright)', padding: '2px 8px', borderRadius: '6px' }}>
+                    Live: KPSC Master
+                  </span>
+                </div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '10px' }}>
+                  High-Concurrency Quiz Engines &amp; Mock Tests
+                </h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                  High-traffic educational portal engineered for Kerala PSC aspirants. Handles thousands of concurrent test takers with instant score calculation, leaderboards, and dominant organic search ranks.
+                </p>
+                <div style={{ background: 'rgba(255, 255, 255, 0.03)', borderRadius: '10px', padding: '12px', marginBottom: '18px' }}>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>
+                    <strong>Delivered Stack:</strong> High-Scale Python, Redis Caching, Static Quiz Generator
+                  </div>
+                  <div style={{ fontSize: '0.82rem', color: '#22c55e', fontWeight: 600 }}>
+                    ✓ Outcome: 100,000+ candidates served with zero server lag
+                  </div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                <a
+                  href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20want%20to%20build%20an%20EdTech%20or%20Online%20Exam%20platform."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-small"
+                  style={{ flex: 1, justifyContent: 'center' }}
+                >
+                  <MessageSquare className="w-3.5 h-3.5" /> Quote for EdTech
+                </a>
+                <Link href="/web-development-kerala/" className="btn btn-outline btn-small">
+                  Details
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1992,6 +2438,7 @@ export default function HomePage() {
             <div>
               <h4 className="footer-title">12 Core Services</h4>
               <ul className="footer-links">
+                <li><Link href="/web-development-kerala/" className="footer-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Development Kerala</Link></li>
                 <li><a href="#services" className="footer-link">IT Consulting</a></li>
                 <li><a href="#services" className="footer-link">Software Development</a></li>
                 <li><a href="#services" className="footer-link">Web Application Development</a></li>
@@ -2004,11 +2451,13 @@ export default function HomePage() {
             <div>
               <h4 className="footer-title">Navigation & Compliance</h4>
               <ul className="footer-links">
-                <li><Link href="/hire-developer/" className="footer-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Hire Developer (Rates &amp; Terms)</Link></li>
+                <li><Link href="/web-development-kerala/" className="footer-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Development in Kerala</Link></li>
+                <li><Link href="/hire-developer/" className="footer-link">Hire Developer (Rates &amp; Terms)</Link></li>
                 <li><Link href="/odoo-developer-kerala/" className="footer-link">Odoo ERP Developer Kerala</Link></li>
                 <li><a href="#about" className="footer-link">About Adarsh B S</a></li>
                 <li><a href="#clients" className="footer-link">Clients & Ventures</a></li>
                 <li><a href="#projects" className="footer-link">Portfolio & Demos</a></li>
+                <li><a href="#industry-solutions" className="footer-link">Industry Solutions Matcher</a></li>
                 <li><a href="#faq" className="footer-link">FAQ & Search Intent</a></li>
                 <li><Link href="/privacy-policy" className="footer-link">Privacy Policy</Link></li>
                 <li><Link href="/terms" className="footer-link">Terms of Service</Link></li>
