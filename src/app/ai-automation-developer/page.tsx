@@ -19,7 +19,15 @@ export const metadata: Metadata = {
     'openai claude gemini API integration freelancer',
     'business workflow automation developer india',
     'custom AI chatbot developer kerala india',
-    'python AI agent developer for hire'
+    'python AI agent developer for hire',
+    'ai chatbot development kerala',
+    'ai agent builder in kochi',
+    'ai agent development company in kochi',
+    'ai agent development company in cochin',
+    'ai automation agency near me',
+    'ai business automation agency',
+    'whatsapp automation restaurants kerala',
+    'digital product automation'
   ],
   alternates: {
     canonical: 'https://adarsh.digitalproductsolutions.in/ai-automation-developer/',
@@ -175,3 +183,4 @@ export default function AiAutomationDeveloperPage() {
     </>
   );
 }
+

@@ -133,13 +133,13 @@ export default function OdooClient() {
           </Link>
 
           <ul className="nav-links">
-            <li><Link href="/" className="nav-link">Home</Link></li>
-            <li><Link href="/web-development-kerala/" className="nav-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Dev Kerala</Link></li>
-            <li><Link href="/hire-developer/" className="nav-link">Hire Developer</Link></li>
+            <li><Link href="/#find-your-solution" className="nav-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 700 }}>Find Your Solution</Link></li>
+            <li><Link href="/ai-automation-developer/" className="nav-link">AI Automation</Link></li>
+            <li><Link href="/saas-mvp-developer/" className="nav-link">SaaS MVP</Link></li>
+            <li><Link href="/web-development-kerala/" className="nav-link">Web Dev Kerala</Link></li>
             <li><Link href="/odoo-developer-kerala/" className="nav-link active" style={{ color: '#fff', fontWeight: 700 }}>Odoo ERP Kerala</Link></li>
-            <li><Link href="/#services" className="nav-link">Services</Link></li>
-            <li><Link href="/#clients" className="nav-link">Clients</Link></li>
-            <li><Link href="/#projects" className="nav-link">Projects</Link></li>
+            <li><Link href="/hire-developer/" className="nav-link">Hire Developer</Link></li>
+            <li><Link href="/#projects" className="nav-link">Proof (20+)</Link></li>
             <li><Link href="/#contact" className="nav-link">Contact</Link></li>
           </ul>
 
@@ -176,12 +176,13 @@ export default function OdooClient() {
         {/* Mobile Nav Drawer */}
         <div className={`mobile-nav-drawer ${mobileMenuOpen ? 'open' : ''}`}>
           <Link href="/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-          <Link href="/web-development-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Development Kerala</Link>
-          <Link href="/odoo-developer-kerala/" className="nav-link active" onClick={() => setMobileMenuOpen(false)}>Odoo ERP Development</Link>
-          <Link href="/hire-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Hire Developer (Kerala &amp; Global)</Link>
-          <Link href="/#services" className="nav-link" onClick={() => setMobileMenuOpen(false)}>12 Core Services</Link>
-          <Link href="/#clients" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Clients &amp; Ventures</Link>
-          <Link href="/#projects" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
+          <Link href="/#find-your-solution" className="nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--accent-orange-bright)', fontWeight: 700 }}>🎯 Find Your Solution</Link>
+          <Link href="/ai-automation-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>🤖 AI Automation &amp; Agents</Link>
+          <Link href="/saas-mvp-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>🚀 SaaS &amp; MVP Developer</Link>
+          <Link href="/web-development-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>🌐 Web Development Kerala</Link>
+          <Link href="/odoo-developer-kerala/" className="nav-link active" onClick={() => setMobileMenuOpen(false)}>⚙️ Odoo ERP Development</Link>
+          <Link href="/hire-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>💼 Hire Developer (Kerala &amp; Global)</Link>
+          <Link href="/#projects" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Projects (20+)</Link>
           <Link href="/#contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Contact &amp; Quote</Link>
         </div>
       </nav>
@@ -218,21 +219,30 @@ export default function OdooClient() {
               <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Rates: ₹1,800 – ₹3,500/hr ($25–$45) &bull; Modules from ₹25,000</span>
             </div>
 
-            <div className="hero-cta-group">
-              <a
-                href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I'm%20looking%20for%20a%20Freelance%20Odoo%20ERP%20Developer%20for%20my%20business.%20Let's%20discuss."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary"
-              >
-                <MessageSquare className="w-5 h-5 text-white" /> Discuss Odoo Project on WhatsApp
-              </a>
-              <a href="#capabilities" className="btn btn-secondary">
-                <Layers className="w-5 h-5 text-orange-500" /> Core Odoo Capabilities
-              </a>
-              <a href="/hire-developer/" className="btn btn-outline">
-                <ArrowUpRight className="w-5 h-5" /> Hire Developer Overview
-              </a>
+            <div className="psych-cta-box" style={{ marginBottom: '10px' }}>
+              <div className="psych-primary-row">
+                <a
+                  href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I'm%20looking%20for%20a%20Freelance%20Odoo%20ERP%20Developer%20for%20my%20business.%20Let's%20discuss."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-psych-primary"
+                >
+                  <MessageSquare className="w-5 h-5 text-white" /> Get Free 24h Odoo ERP Blueprint on WhatsApp (&lt;15m)
+                </a>
+                <a href="#capabilities" className="btn btn-secondary">
+                  <Layers className="w-5 h-5 text-orange-500" /> Core Odoo Capabilities
+                </a>
+                <a href="/hire-developer/" className="btn btn-outline">
+                  <ArrowUpRight className="w-5 h-5" /> Hire Developer Overview
+                </a>
+              </div>
+              <div className="psych-risk-strip">
+                <span className="psych-risk-item"><ShieldCheck className="w-4 h-4 text-orange-500" /> 100% Data Integrity &amp; NDA</span>
+                <span>•</span>
+                <span className="psych-risk-item"><CheckCircle2 className="w-4 h-4 text-emerald-500" /> Zero-Downtime Tally Migration</span>
+                <span>•</span>
+                <span className="psych-risk-item"><Code2 className="w-4 h-4 text-orange-500" /> Save 60% vs ERP Partner Retainers</span>
+              </div>
             </div>
           </div>
         </div>

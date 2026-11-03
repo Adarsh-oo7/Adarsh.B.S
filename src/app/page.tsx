@@ -815,8 +815,108 @@ export default function HomePage() {
     }
   ];
 
+  const homePageJsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        '@id': 'https://adarsh.digitalproductsolutions.in/#webpage',
+        url: 'https://adarsh.digitalproductsolutions.in/',
+        name: 'Adarsh B S — #1 Freelance Web & Software Developer in Kerala (₹15k Web / $25/hr)',
+        description:
+          'Official portfolio & client acquisition hub of Adarsh B S, premier freelance full-stack software developer, Next.js 16 & Python architect, AI automation developer, and Odoo ERP specialist in Kerala, India.',
+        speakable: {
+          '@type': 'SpeakableSpecification',
+          cssSelector: ['.hero-title', '.hero-subtitle', '#find-your-solution', '#faq', '.section-title']
+        },
+        mainEntity: {
+          '@id': 'https://adarsh.digitalproductsolutions.in#person'
+        }
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': 'https://adarsh.digitalproductsolutions.in/#breadcrumb',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://adarsh.digitalproductsolutions.in/'
+          }
+        ]
+      },
+      {
+        '@type': 'ProfessionalService',
+        '@id': 'https://adarsh.digitalproductsolutions.in/#business',
+        name: 'Adarsh B S - Freelance Web Developer & Software Developer in Kerala',
+        alternateName: [
+          'Freelance Web Developer in Kerala',
+          'Software Developer in Kerala',
+          'Web Developer in Kerala',
+          'Freelance Software Developer in Kerala',
+          'AI Automation Developer Kerala'
+        ],
+        image: 'https://adarsh.digitalproductsolutions.in/assets/adarsh-consulting-meeting.jpg',
+        url: 'https://adarsh.digitalproductsolutions.in/',
+        telephone: '+919400355185',
+        priceRange: '₹15,000 – ₹1,80,000 ($250 – $3,500)',
+        currenciesAccepted: 'INR, AED, USD, EUR, AUD, GBP, SAR, QAR',
+        paymentAccepted: 'Bank Transfer, UPI, Stripe, Razorpay, Wire Transfer',
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '5.0',
+          reviewCount: '28',
+          bestRating: '5',
+          worstRating: '1'
+        },
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Thiruvananthapuram',
+          addressRegion: 'Kerala',
+          addressCountry: 'IN'
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: '8.5241',
+          longitude: '76.9366'
+        }
+      },
+      {
+        '@type': 'ItemList',
+        '@id': 'https://adarsh.digitalproductsolutions.in/#portfolio',
+        name: 'Featured Software & Web Development Projects by Adarsh B S & Digital Product Solutions',
+        itemListElement: projectsList.map((proj, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          item: {
+            '@type': 'CreativeWork',
+            name: proj.title,
+            url: proj.demo,
+            description: proj.desc
+          }
+        }))
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://adarsh.digitalproductsolutions.in/#faq',
+        mainEntity: faqs.map((f) => ({
+          '@type': 'Question',
+          name: f.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: f.answer
+          }
+        }))
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homePageJsonLd) }}
+      />
       {/* Navbar */}
       <nav className="navbar" id="top-nav">
         <div className="container nav-wrapper">

@@ -91,13 +91,13 @@ export default function HireDeveloperClient() {
           </Link>
 
           <ul className="nav-links">
-            <li><Link href="/#about" className="nav-link">About</Link></li>
-            <li><Link href="/#services" className="nav-link">Services</Link></li>
-            <li><Link href="/web-development-kerala/" className="nav-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Dev Kerala</Link></li>
+            <li><Link href="/#find-your-solution" className="nav-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 700 }}>Find Your Solution</Link></li>
+            <li><Link href="/ai-automation-developer/" className="nav-link">AI Automation</Link></li>
+            <li><Link href="/saas-mvp-developer/" className="nav-link">SaaS MVP</Link></li>
+            <li><Link href="/web-development-kerala/" className="nav-link">Web Dev Kerala</Link></li>
             <li><Link href="/odoo-developer-kerala/" className="nav-link">Odoo ERP</Link></li>
             <li><Link href="/hire-developer/" className="nav-link active" style={{ color: '#fff', fontWeight: 700 }}>Hire Developer</Link></li>
-            <li><Link href="/#clients" className="nav-link">Clients</Link></li>
-            <li><Link href="/#projects" className="nav-link">Projects</Link></li>
+            <li><Link href="/#projects" className="nav-link">Proof (20+)</Link></li>
             <li><Link href="/#contact" className="nav-link">Contact</Link></li>
           </ul>
 
@@ -134,12 +134,13 @@ export default function HireDeveloperClient() {
         {/* Mobile Nav Drawer */}
         <div className={`mobile-nav-drawer ${mobileMenuOpen ? 'open' : ''}`}>
           <Link href="/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-          <Link href="/web-development-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Development Kerala</Link>
-          <Link href="/hire-developer/" className="nav-link active" onClick={() => setMobileMenuOpen(false)}>Hire Developer (Kerala &amp; Global)</Link>
-          <Link href="/odoo-developer-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Odoo ERP Development</Link>
-          <Link href="/#services" className="nav-link" onClick={() => setMobileMenuOpen(false)}>12 Core Services</Link>
-          <Link href="/#clients" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Clients &amp; Ventures</Link>
-          <Link href="/#projects" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
+          <Link href="/#find-your-solution" className="nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--accent-orange-bright)', fontWeight: 700 }}>🎯 Find Your Solution</Link>
+          <Link href="/ai-automation-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>🤖 AI Automation &amp; Agents</Link>
+          <Link href="/saas-mvp-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>🚀 SaaS &amp; MVP Developer</Link>
+          <Link href="/web-development-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>🌐 Web Development Kerala</Link>
+          <Link href="/hire-developer/" className="nav-link active" onClick={() => setMobileMenuOpen(false)}>💼 Hire Developer (Kerala &amp; Global)</Link>
+          <Link href="/odoo-developer-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>⚙️ Odoo ERP Development</Link>
+          <Link href="/#projects" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Projects (20+)</Link>
           <Link href="/#contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Contact &amp; Quote</Link>
         </div>
       </nav>
@@ -176,21 +177,32 @@ export default function HireDeveloperClient() {
               <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Fast Response (&lt; 15m WhatsApp Reply)</span>
             </div>
 
-            <div className="hero-cta-group">
-              <a
-                href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I'm%20interested%20in%20hiring%20you%20for%20a%20software%20development%20project.%20Can%20we%20discuss%20scope%20and%20rates%3F"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary"
-              >
-                <MessageSquare className="w-5 h-5 text-white" /> Chat on WhatsApp Direct
-              </a>
-              <a href="#engagement-models" className="btn btn-secondary">
-                <Layers className="w-5 h-5 text-orange-500" /> View Engagement Models
-              </a>
-              <a href="/assets/cv.pdf" download="Adarsh_BS_CV.pdf" className="btn btn-outline">
-                <Download className="w-5 h-5" /> Download CV
-              </a>
+            <div className="psych-cta-box" style={{ marginBottom: '10px' }}>
+              <div className="psych-primary-row">
+                <a
+                  href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I'm%20interested%20in%20hiring%20you%20for%20a%20software%20development%20project.%20Can%20we%20discuss%20scope%20and%20rates%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-psych-primary"
+                >
+                  <MessageSquare className="w-5 h-5 text-white" /> Get Free 24h Scope &amp; Estimate on WhatsApp (&lt;15m)
+                </a>
+                <a href="#engagement-models" className="btn btn-secondary">
+                  <Layers className="w-5 h-5 text-orange-500" /> View Engagement Models
+                </a>
+                <a href="/assets/cv.pdf" download="Adarsh_BS_CV.pdf" className="btn btn-outline">
+                  <Download className="w-5 h-5" /> Download CV
+                </a>
+              </div>
+              <div className="psych-risk-strip">
+                <span className="psych-risk-item"><ShieldCheck className="w-4 h-4 text-orange-500" /> 100% Bilateral NDA</span>
+                <span>•</span>
+                <span className="psych-risk-item"><CheckCircle2 className="w-4 h-4 text-emerald-500" /> ₹0 / $0 Upfront Scoping</span>
+                <span>•</span>
+                <span className="psych-risk-item"><Code2 className="w-4 h-4 text-orange-500" /> 100% GitHub IP Ownership Day 1</span>
+                <span>•</span>
+                <span className="psych-risk-item"><Sparkles className="w-4 h-4 text-yellow-400" /> 0% Agency Markup</span>
+              </div>
             </div>
           </div>
         </div>

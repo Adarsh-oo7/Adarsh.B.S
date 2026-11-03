@@ -28,7 +28,12 @@ export const metadata: Metadata = {
     'infopark web developer',
     'web developer for dubai clients kerala',
     'malayali web developer uae',
-    'hire developer from outside india in kerala'
+    'hire developer from outside india in kerala',
+    'app development cost kerala',
+    'clinic website development kerala',
+    'restaurant website online ordering kerala',
+    'crm software kerala',
+    'affordable ecommerce solutions kerala'
   ],
   alternates: {
     canonical: 'https://adarsh.digitalproductsolutions.in/web-development-kerala/',
