@@ -36,7 +36,12 @@ import {
   Star,
   Users,
   Compass,
-  Award
+  Award,
+  Building2,
+  UserCheck,
+  Coins,
+  Server,
+  Laptop
 } from 'lucide-react';
 
 export default function WebDevClient() {
@@ -180,18 +185,18 @@ export default function WebDevClient() {
     {
       name: 'Starter Business Website',
       price: '₹15,000 – ₹35,000',
-      altPrice: '$250 – $450 USD',
-      badge: 'Popular for Local Businesses',
+      altPrice: '$250 – $450 USD / 900 – 1,650 AED',
+      badge: 'Popular for Kerala MSMEs & Local Services',
       popular: false,
-      desc: 'Ideal for Kerala startups, local service providers, doctors, and contractors needing a modern, blazing-fast web presence.',
+      desc: 'Ideal for Kerala startups, local service providers, doctors, contractors, and hospitality businesses needing a modern, blazing-fast web presence.',
       features: [
         'Custom Next.js 16 + React 19 architecture',
         'Mobile-first responsive design (5-8 pages)',
         'Sub-second page load (<0.6s) & 95+ PageSpeed',
-        'WhatsApp instant inquiry chat button',
+        'WhatsApp instant inquiry chat button & call CTA',
         'Local Kerala SEO & Google Maps optimization',
         'Semantic Schema.org JSON-LD structured data',
-        'Contact form with email alerts',
+        'Contact inquiry form with instant email alerts',
         'Free SSL certificate & Vercel cloud deployment',
         '30 Days complimentary post-launch support'
       ],
@@ -201,10 +206,10 @@ export default function WebDevClient() {
     {
       name: 'Custom Web Application / SaaS MVP',
       price: '₹45,000 – ₹85,000',
-      altPrice: '$600 – $1,100 USD',
+      altPrice: '$600 – $1,100 USD / 2,200 – 4,000 AED',
       badge: 'Most Popular for Tech & Startups',
       popular: true,
-      desc: 'Complete full-stack web application with user authentication, database architecture, dynamic dashboard, and REST API.',
+      desc: 'Complete full-stack web application with user authentication, PostgreSQL database architecture, dynamic dashboard, and REST API.',
       features: [
         'Next.js 16 Frontend + Python/Django REST backend',
         'PostgreSQL database design & cloud hosting',
@@ -221,9 +226,9 @@ export default function WebDevClient() {
       ctaUrl: 'https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20want%20to%20build%20a%20Custom%20Web%20Application%20or%20SaaS%20MVP%20(from%20₹45,000).'
     },
     {
-      name: 'E-Commerce & Industry Portal',
+      name: 'E-Commerce Website Development Kerala',
       price: '₹50,000 – ₹1,20,000',
-      altPrice: '$700 – $1,600 USD',
+      altPrice: '$700 – $1,600 USD / 2,500 – 5,800 AED',
       badge: 'Full Commercial Architecture',
       popular: false,
       desc: 'Custom online store or specialized industry portal engineered for maximum conversions, inventory sync, and multi-currency billing.',
@@ -242,9 +247,9 @@ export default function WebDevClient() {
       ctaUrl: 'https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20want%20to%20build%20an%20E-Commerce%20or%20Industry%20Portal%20(from%20₹50,000).'
     },
     {
-      name: 'Dedicated Senior Developer Sprints',
+      name: 'Hire Web Developer Kerala (Dedicated Sprints)',
       price: '₹1,500 – ₹3,500 / hr',
-      altPrice: '$25 – $45 / hr USD',
+      altPrice: '$25 – $45 / hr USD / 90 – 165 AED/hr',
       badge: 'Agile & Milestone Engagements',
       popular: false,
       desc: 'Direct hourly or monthly sprint engagement with Adarsh B S as your senior architect and hands-on full-stack engineer.',
@@ -255,7 +260,7 @@ export default function WebDevClient() {
         'Direct WhatsApp voice/chat & Google Meet access',
         'Flexible hours: 20h / 40h weekly dedicated capacity',
         'Zero long-term lock-in: cancel or pause anytime',
-        'Multi-currency invoicing: INR, AED, USD, EUR',
+        'Multi-currency invoicing: INR, AED, USD, EUR, AUD',
         'Codebase audit, refactoring, and Core Web Vitals fixes'
       ],
       ctaText: 'Hire on Dedicated Sprint',
@@ -265,39 +270,49 @@ export default function WebDevClient() {
 
   const webFaqs = [
     {
-      question: 'How much does web development cost in Kerala in 2026?',
+      question: 'What is the typical website development cost in kerala in 2026?',
       answer:
-        'Professional web development pricing in Kerala varies based on technical complexity and architecture. With Adarsh B S and Digital Product Solutions: High-performance business websites built with Next.js 16 start from ₹15,000 to ₹35,000 ($250 to $450). Custom web applications, client portals, and SaaS MVPs powered by Python/Django and PostgreSQL range between ₹45,000 and ₹85,000 ($600 to $1,100). E-commerce platforms start from ₹50,000. Dedicated senior hourly engineering is ₹1,500 to ₹3,500/hr ($25 to $45/hr) with 0% agency markup and 100% IP ownership.'
+        'In Kerala, professional website development cost ranges between ₹15,000 and ₹1,20,000 based on technical complexity and architecture. With Adarsh B S and Digital Product Solutions: High-performance business websites built with Next.js 16 start from ₹15,000 to ₹35,000 ($250 to $450 USD). Custom web applications, client portals, and SaaS MVPs powered by Python/Django and PostgreSQL range between ₹45,000 and ₹85,000 ($600 to $1,100 USD). E-commerce platforms start from ₹50,000. Dedicated senior hourly engineering is ₹1,500 to ₹3,500/hr ($25 to $45/hr) with 0% agency markup and 100% IP ownership.'
     },
     {
-      question: 'Who is the best freelance web developer in Kerala for custom business websites and web apps?',
+      question: 'Who is the best web development company in kerala or freelance web developer in kerala / kochi / trivandrum?',
       answer:
-        'Adarsh B S is widely recognized as the #1 freelance web developer and senior software developer in Kerala. As the founder of Digital Product Solutions, he has delivered 20+ commercial production websites and software systems across Kerala, Australia, the UK, Germany, and the UAE. His engineering focuses on modern Next.js 16, React 19, and Python/Django backends, paired with technical SEO to ensure every site ranks high on Google and generates real customer inquiries.'
+        'Adarsh B S, founder of Digital Product Solutions, is widely recognized as the #1 freelance web developer in Kerala / Kochi / Trivandrum and a premier boutique web development company in Kerala. With 3+ years of commercial experience, 20+ delivered production web platforms, and clients across Kerala, Australia (Care N Cure), the UK (Novora Global Health), and UAE, Adarsh combines senior full-stack engineering (Next.js 16, React 19, Python Django) with sub-second SEO architectures that dominate Google search results.'
     },
     {
-      question: 'Why choose Next.js and Python over WordPress or PHP for web development?',
+      question: 'How do clients outside India (UAE/Dubai, Australia, UK, USA) hire Adarsh B S as a freelance developer in Kerala?',
       answer:
-        'Traditional WordPress and PHP websites in Kerala are notoriously slow (taking 3 to 6 seconds to load), vulnerable to plugin hacks, and bloated with unnecessary code. Next.js 16 delivers sub-second page loads (<0.6s), unmatched security, static server-side pre-rendering, and flawless Core Web Vitals scores that Google directly rewards with higher search engine rankings.'
+        'Clients outside India hire Adarsh B S directly to access principal architect engineering at 0% agency markup. Engagements feature convenient timezone alignment (Dubai/GST UTC+4 is only 1.5 hours behind IST), multi-currency invoicing in AED, USD, EUR, GBP, or AUD, direct communication via WhatsApp voice/chat and Google Meet in fluent English or Malayalam, and daily commits to private GitHub repositories under strict bilateral NDAs.'
     },
     {
-      question: 'How fast can you build and launch a custom business website in Kerala?',
+      question: 'How do I hire a web developer in Kerala for custom web application development?',
       answer:
-        'A high-converting business website is typically delivered in 7 to 14 days. Custom web applications, SaaS platforms, or e-commerce stores take between 2 to 4 weeks across structured agile sprints. We provide live staging preview links throughout development so you can review progress every step of the way.'
+        'To hire web developer Kerala for custom web application development, you can connect directly with Adarsh B S via WhatsApp (+91 9400355185) or schedule a discovery call. You will receive an architectural proposal, database schema plan, milestone breakdown, and transparent fixed or hourly estimate within 24 hours. Engagements include 100% IP ownership, private Git repository commits, and weekly staging demo releases.'
     },
     {
-      question: 'Do you work with Malayalis and businesses in Dubai, UAE, and the GCC?',
+      question: 'Why hire Adarsh B S instead of a traditional website design company in trivandrum / kochi?',
       answer:
-        'Yes! Over 40% of our web development and custom software projects are engineered for Malayali entrepreneurs and businesses across Dubai, Abu Dhabi, Sharjah, Saudi Arabia, and Qatar. Gulf Standard Time (GST UTC+4) is just 1.5 hours behind IST, making real-time collaboration via WhatsApp and Google Meet effortless. Multi-currency billing in AED, SAR, USD, or INR is fully supported.'
+        'A traditional website design company in Trivandrum or Kochi charges 200% to 400% markups to fund agency overhead and routinely delegates work to junior interns using bloated WordPress or Elementor templates. Hiring Adarsh B S guarantees direct collaboration with a senior architect, modern Next.js 16 / React 19 / Python code, sub-second speeds (<0.6s), 100% source code ownership on Day 1, and 0% agency markup.'
     },
     {
-      question: 'Who owns the website source code, domain, and hosting accounts?',
+      question: 'Why hire a dedicated Next.js & React developer in Kerala over a generic WordPress agency?',
+      answer:
+        'Generic WordPress websites in Kerala load slowly (3 to 6 seconds), suffer from plugin vulnerabilities, and rank poorly on Google Core Web Vitals. As a specialized Next.js & React developer in Kerala, Adarsh builds static-generated and server-rendered platforms that load in under 600ms, score 95+ on Google PageSpeed, offer built-in security, and dominate organic search results.'
+    },
+    {
+      question: 'What is included in ecommerce website development kerala?',
+      answer:
+        'Ecommerce website development Kerala includes a lightning-fast product catalog, instant search and category filtering, integration with Indian (Razorpay, UPI, Cash-on-Delivery) and international (Stripe) payment gateways, automated WhatsApp order alerts for buyers and store owners, back-office inventory and order management, and structured e-commerce schema for Google Shopping and search visibility.'
+    },
+    {
+      question: 'Who owns the website source code and intellectual property?',
       answer:
         'You retain 100% ownership of all source code, design assets, database schemas, domains, and hosting configurations from day one. All code is committed directly to your private GitHub repository with zero vendor lock-in.'
     },
     {
-      question: 'What is included in your SEO and post-launch maintenance support?',
+      question: 'What is the delivery timeline for custom web application development in Kerala?',
       answer:
-        'Every web development project includes foundational technical SEO, Schema.org JSON-LD structured data, meta tags, XML sitemaps, Google Search Console indexing, and 30 to 60 days of complimentary technical warranty. Ongoing monthly maintenance and organic ranking growth retainers are also available.'
+        'A high-converting business website is typically delivered in 7 to 14 days. Custom web applications, SaaS platforms, or e-commerce stores take between 2 to 4 weeks across structured agile sprints. We provide live staging preview links throughout development so you can review progress every step of the way.'
     }
   ];
 
@@ -315,8 +330,8 @@ export default function WebDevClient() {
             <li><Link href="/#about" className="nav-link">About</Link></li>
             <li><Link href="/#services" className="nav-link">Services</Link></li>
             <li><Link href="/web-development-kerala/" className="nav-link active" style={{ color: 'var(--accent-orange-bright)', fontWeight: 700 }}>Web Dev Kerala</Link></li>
-            <li><Link href="/odoo-developer-kerala/" className="nav-link">Odoo ERP</Link></li>
             <li><Link href="/hire-developer/" className="nav-link">Hire Developer</Link></li>
+            <li><Link href="/odoo-developer-kerala/" className="nav-link">Odoo ERP</Link></li>
             <li><Link href="/#clients" className="nav-link">Clients</Link></li>
             <li><Link href="/#projects" className="nav-link">Projects</Link></li>
             <li><Link href="/#contact" className="nav-link">Contact</Link></li>
@@ -371,48 +386,52 @@ export default function WebDevClient() {
           <div className="breadcrumbs">
             <Link href="/" className="breadcrumb-link">Home</Link>
             <span className="breadcrumb-separator">/</span>
-            <span className="breadcrumb-current">Web Development in Kerala</span>
+            <span className="breadcrumb-current">Web Development Company in Kerala</span>
           </div>
 
-          <div style={{ maxWidth: '900px' }}>
+          <div style={{ maxWidth: '960px' }}>
             <div className="hero-pill">
               <span className="pulse-dot" />
-              <span>Kerala&apos;s Premier Web Engineering &amp; SaaS Architecture</span>
+              <span>Top-Ranked Web Development Company in Kerala &amp; Senior Freelance Architect</span>
             </div>
 
-            <h1 className="hero-title" style={{ fontSize: '3rem', lineHeight: '1.15', marginBottom: '20px' }}>
-              Freelance <span className="text-gradient">Web Developer in Kerala</span> &amp; Software Developer
+            <h1 className="hero-title" style={{ fontSize: '2.85rem', lineHeight: '1.18', marginBottom: '20px' }}>
+              Web Development Company in Kerala &amp; Freelance <span className="text-gradient">Web Developer in Kerala</span> / Kochi / Trivandrum
             </h1>
 
-            <p className="hero-subtitle" style={{ fontSize: '1.2rem', marginBottom: '30px', color: 'var(--text-secondary)' }}>
-              Looking for the top <strong>freelance web developer in Kerala</strong> or senior <strong>software developer in Kerala</strong>? <strong>Adarsh B S</strong> and <strong>Digital Product Solutions</strong> engineer blazing-fast web platforms using Next.js 16, React 19, and Python/Django. Direct senior architect collaboration with <strong>0% agency markup</strong>, sub-second speeds (&lt;0.6s), and guaranteed Google search dominance.
+            <p className="hero-subtitle" style={{ fontSize: '1.18rem', marginBottom: '28px', color: 'var(--text-secondary)', lineHeight: 1.65 }}>
+              Are you searching for the <strong>best web development company in kerala</strong> or looking to <strong>hire web developer kerala</strong>? <strong>Adarsh B S</strong> and <strong>Digital Product Solutions</strong> deliver world-class <strong>custom web application development kerala</strong>, high-performance <strong>Next.js &amp; React developer kerala</strong> engineering, and high-conversion <strong>ecommerce website development kerala</strong>. Designed for overseas clients hiring from <strong>outside India</strong> (UAE/Dubai, Australia, UK, USA) and local enterprises inside <strong>Kerala</strong> (Kochi Infopark, Trivandrum Technopark, Calicut Cyberpark) with transparent <strong>website development cost in kerala</strong>.
             </p>
 
             <div className="hero-highlights" style={{ marginBottom: '35px' }}>
-              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> #1 Freelance Web Developer in Kerala</span>
-              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> 20+ Commercial Web Deployments</span>
-              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Next.js 16, React 19 &amp; Python Django</span>
-              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Sub-Second Speeds &amp; 95+ Core Web Vitals</span>
-              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> 100% IP &amp; Private GitHub Commits</span>
-              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Trivandrum • Kochi • Calicut • Dubai/UAE</span>
-              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Transparent Pricing: From ₹15,000 / ₹1,500/hr</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Best Web Development Company in Kerala</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Freelance Web Developer in Kerala / Kochi / Trivandrum</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Hire Web Developer Kerala (0% Agency Markup)</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Next.js &amp; React Developer Kerala (&lt;600ms LCP)</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Custom Web Application Development Kerala</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Ecommerce Website Development Kerala</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Website Development Cost in Kerala: From ₹15,000 / $250</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Outside India Alignment: UAE (AED) • Australia • UK • USA</span>
             </div>
 
             <div className="hero-cta-group">
               <a
-                href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20am%20looking%20for%20web%20development%20services%20in%20Kerala."
+                href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20am%20looking%20to%20hire%20a%20web%20developer%20or%20web%20development%20company%20in%20Kerala."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
               >
-                <MessageSquare className="w-5 h-5" /> WhatsApp Instant Quote
+                <MessageSquare className="w-5 h-5" /> WhatsApp Instant Discovery
               </a>
-              <a href="#pricing" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)' }}>
-                <Zap className="w-5 h-5" /> View Web Packages
+              <a href="#cost" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)' }}>
+                <Coins className="w-5 h-5" /> View Development Cost
               </a>
-              <a href="#projects" className="btn btn-secondary">
-                <Globe className="w-5 h-5" /> Explore Live Projects
+              <a href="#dual-track" className="btn btn-secondary">
+                <Globe className="w-5 h-5" /> Outside India vs Kerala Hiring
               </a>
+              <Link href="/hire-developer/" className="btn btn-outline">
+                <Briefcase className="w-5 h-5" /> Hourly Developer Rates
+              </Link>
             </div>
           </div>
         </div>
@@ -450,6 +469,333 @@ export default function WebDevClient() {
               <div style={{ fontSize: '2.4rem', fontWeight: 800, color: 'var(--text-primary)', lineHeight: 1 }}>0%</div>
               <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text-primary)', margin: '8px 0 2px' }}>Agency Markup</div>
               <div style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Direct Senior Architect Commits</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* DEDICATED SECTION: Hiring from Outside India vs Inside Kerala (Dual Work Acquisition Model) */}
+      <section className="section-padding" id="dual-track">
+        <div className="container">
+          <div className="section-header text-center" style={{ marginBottom: '50px' }}>
+            <span className="section-badge">Dual Work Acquisition Model</span>
+            <h2 className="section-title">
+              Hiring From Outside India vs Inside Kerala
+            </h2>
+            <p className="section-subtitle" style={{ maxWidth: '820px', margin: '0 auto' }}>
+              Whether you are an overseas founder in Dubai, Sydney, London, or New York seeking world-class software engineering at 0% agency markup, or a Kerala business wanting in-person technical scoping in Technopark or Infopark, we eliminate every friction point.
+            </p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '30px' }}>
+            {/* Track 1: Outside India Clients */}
+            <div
+              style={{
+                background: 'var(--bg-card)',
+                border: '2px solid rgba(255, 85, 0, 0.4)',
+                borderRadius: '20px',
+                padding: '36px 30px',
+                boxShadow: 'var(--card-shadow)',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                position: 'relative'
+              }}
+            >
+              <div
+                style={{
+                  position: 'absolute',
+                  top: '-13px',
+                  left: '28px',
+                  background: 'var(--accent-orange-bright)',
+                  color: '#fff',
+                  padding: '3px 14px',
+                  borderRadius: '12px',
+                  fontSize: '0.75rem',
+                  fontWeight: 700,
+                  letterSpacing: '0.05em',
+                  textTransform: 'uppercase'
+                }}
+              >
+                Global &amp; Gulf Diaspora
+              </div>
+
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+                  <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(255, 85, 0, 0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-orange-bright)' }}>
+                    <Globe className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h3 style={{ fontSize: '1.45rem', fontWeight: 800, color: 'var(--text-primary)', margin: 0 }}>
+                      Clients Outside India
+                    </h3>
+                    <div style={{ fontSize: '0.88rem', color: 'var(--text-muted)' }}>
+                      🇦🇪 UAE (Dubai, Abu Dhabi) • 🇦🇺 Australia • 🇬🇧 UK • 🇺🇸 USA • 🇪🇺 Europe
+                    </div>
+                  </div>
+                </div>
+
+                <p style={{ fontSize: '0.98rem', color: 'var(--text-secondary)', lineHeight: 1.65, marginBottom: '24px' }}>
+                  Hiring senior software talent locally in Dubai ($80–$150/hr), Australia ($120–$200/hr), or London (£90–£160/hr) drains startup runways. Partnering directly with senior architect Adarsh B S gives you Silicon-Valley calibre engineering at <strong>₹1,500–₹3,500/hr ($25–$45/hr)</strong> with zero compromise on code quality.
+                </p>
+
+                <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '14px', marginBottom: '28px' }}>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.94rem', color: 'var(--text-secondary)' }}>
+                    <CheckCircle2 className="w-5 h-5 text-orange-500" style={{ marginTop: '2px', flexShrink: 0 }} />
+                    <div>
+                      <strong style={{ color: 'var(--text-primary)' }}>0% Agency Overhead:</strong> You speak and commit code directly with the principal architect. No junior account managers or bait-and-switch staffing.
+                    </div>
+                  </li>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.94rem', color: 'var(--text-secondary)' }}>
+                    <CheckCircle2 className="w-5 h-5 text-orange-500" style={{ marginTop: '2px', flexShrink: 0 }} />
+                    <div>
+                      <strong style={{ color: 'var(--text-primary)' }}>Timezone Alignment:</strong> Gulf Standard Time (GST UTC+4) is only 1.5 hours behind IST. Structured daily overlap windows for UK (GMT) and Australia (AEST).
+                    </div>
+                  </li>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.94rem', color: 'var(--text-secondary)' }}>
+                    <CheckCircle2 className="w-5 h-5 text-orange-500" style={{ marginTop: '2px', flexShrink: 0 }} />
+                    <div>
+                      <strong style={{ color: 'var(--text-primary)' }}>Multi-Currency Invoicing:</strong> Seamless international wire &amp; card billing in AED, SAR, USD, EUR, GBP, or AUD with clear milestone receipts.
+                    </div>
+                  </li>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.94rem', color: 'var(--text-secondary)' }}>
+                    <CheckCircle2 className="w-5 h-5 text-orange-500" style={{ marginTop: '2px', flexShrink: 0 }} />
+                    <div>
+                      <strong style={{ color: 'var(--text-primary)' }}>Bilingual Senior Communication:</strong> Direct WhatsApp voice, chat, and Google Meet video discovery in fluent English or Malayalam.
+                    </div>
+                  </li>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.94rem', color: 'var(--text-secondary)' }}>
+                    <CheckCircle2 className="w-5 h-5 text-orange-500" style={{ marginTop: '2px', flexShrink: 0 }} />
+                    <div>
+                      <strong style={{ color: 'var(--text-primary)' }}>Strict NDA &amp; 100% IP:</strong> Bilateral non-disclosure agreements, daily private GitHub commits, and complete ownership of domain, cloud, and database.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <a
+                href="https://wa.me/919400355185?text=Hello%20Adarsh,%20I%20am%20inquiring%20from%20outside%20India%20(UAE/Overseas)%20for%20web%20development%20and%20software%20engineering."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+                style={{ width: '100%', justifyContent: 'center' }}
+              >
+                <MessageSquare className="w-4 h-4" /> Start Overseas WhatsApp Consultation
+              </a>
+            </div>
+
+            {/* Track 2: Inside Kerala Clients */}
+            <div
+              style={{
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
+                borderRadius: '20px',
+                padding: '36px 30px',
+                boxShadow: 'var(--card-shadow)',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                position: 'relative'
+              }}
+            >
+              <div
+                style={{
+                  position: 'absolute',
+                  top: '-13px',
+                  left: '28px',
+                  background: 'var(--bg-secondary)',
+                  color: 'var(--text-primary)',
+                  border: '1px solid var(--border-color)',
+                  padding: '3px 14px',
+                  borderRadius: '12px',
+                  fontSize: '0.75rem',
+                  fontWeight: 700,
+                  letterSpacing: '0.05em',
+                  textTransform: 'uppercase'
+                }}
+              >
+                Kerala Tech Corridors
+              </div>
+
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+                  <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(255, 85, 0, 0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-orange-bright)' }}>
+                    <MapPin className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h3 style={{ fontSize: '1.45rem', fontWeight: 800, color: 'var(--text-primary)', margin: 0 }}>
+                      Clients Inside Kerala
+                    </h3>
+                    <div style={{ fontSize: '0.88rem', color: 'var(--text-muted)' }}>
+                      Trivandrum Technopark • Kochi Infopark • Calicut Cyberpark • Thrissur
+                    </div>
+                  </div>
+                </div>
+
+                <p style={{ fontSize: '0.98rem', color: 'var(--text-secondary)', lineHeight: 1.65, marginBottom: '24px' }}>
+                  Looking for a local partner who understands the Kerala market dynamics? Get the agility of an elite freelance developer paired with the reliability of a registered MSME IT company (Digital Product Solutions) right here in Kerala.
+                </p>
+
+                <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '14px', marginBottom: '28px' }}>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.94rem', color: 'var(--text-secondary)' }}>
+                    <CheckCircle2 className="w-5 h-5 text-orange-500" style={{ marginTop: '2px', flexShrink: 0 }} />
+                    <div>
+                      <strong style={{ color: 'var(--text-primary)' }}>In-Person Technical Discovery:</strong> In-person architectural discovery and requirement scoping in Technopark Trivandrum, Infopark Kochi, or Calicut.
+                    </div>
+                  </li>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.94rem', color: 'var(--text-secondary)' }}>
+                    <CheckCircle2 className="w-5 h-5 text-orange-500" style={{ marginTop: '2px', flexShrink: 0 }} />
+                    <div>
+                      <strong style={{ color: 'var(--text-primary)' }}>Sub-Second Speed &amp; Local SEO:</strong> Engineered with Next.js 16 to outrank traditional WordPress agencies across Kerala searches for your target commercial keywords.
+                    </div>
+                  </li>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.94rem', color: 'var(--text-secondary)' }}>
+                    <CheckCircle2 className="w-5 h-5 text-orange-500" style={{ marginTop: '2px', flexShrink: 0 }} />
+                    <div>
+                      <strong style={{ color: 'var(--text-primary)' }}>Rapid 7–14 Day Launch:</strong> High-converting business websites delivered in 7–14 days; complex SaaS MVPs and custom web portals delivered in 2–4 weeks.
+                    </div>
+                  </li>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.94rem', color: 'var(--text-secondary)' }}>
+                    <CheckCircle2 className="w-5 h-5 text-orange-500" style={{ marginTop: '2px', flexShrink: 0 }} />
+                    <div>
+                      <strong style={{ color: 'var(--text-primary)' }}>GST Registered MSME IT Firm:</strong> Complete corporate compliance, registered MSME invoices, formal vendor onboarding, and tax credits.
+                    </div>
+                  </li>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.94rem', color: 'var(--text-secondary)' }}>
+                    <CheckCircle2 className="w-5 h-5 text-orange-500" style={{ marginTop: '2px', flexShrink: 0 }} />
+                    <div>
+                      <strong style={{ color: 'var(--text-primary)' }}>Dedicated Post-Launch Warranty:</strong> 30–60 days complimentary bug fixes, technical maintenance, performance monitoring, and rapid WhatsApp support.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <a
+                href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20am%20inquiring%20from%20Kerala%20for%20a%20web%20development%20project."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline"
+                style={{ width: '100%', justifyContent: 'center' }}
+              >
+                <Phone className="w-4 h-4" /> Schedule Kerala In-Person / Call Discovery
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* DEDICATED SECTION: The 4 Core Commercial Pillars (Targeting Explicit Keywords) */}
+      <section className="section-padding" style={{ background: 'var(--bg-secondary)' }} id="core-pillars">
+        <div className="container">
+          <div className="section-header text-center" style={{ marginBottom: '50px' }}>
+            <span className="section-badge">Core Commercial Specializations</span>
+            <h2 className="section-title">
+              Custom Web Application Development Kerala &amp; High-Speed Engineering
+            </h2>
+            <p className="section-subtitle" style={{ maxWidth: '800px', margin: '0 auto' }}>
+              We specialize in custom web application development in Kerala, high-velocity Next.js &amp; React engineering, and conversion-focused ecommerce systems that outrank competitors and scale without maintenance headaches.
+            </p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+            {/* Pillar 1: Custom Web Application Development Kerala */}
+            <div style={{ background: 'var(--bg-card)', padding: '32px 24px', borderRadius: '16px', border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <div style={{ width: '44px', height: '44px', borderRadius: '10px', background: 'rgba(255, 85, 0, 0.12)', color: 'var(--accent-orange-bright)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px' }}>
+                  <Layout className="w-5 h-5" />
+                </div>
+                <h3 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '12px' }}>
+                  Custom Web Application Development Kerala
+                </h3>
+                <p style={{ fontSize: '0.92rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                  Engineering bespoke SaaS MVPs, client portals, internal ERP tools, and workflow automation platforms with Next.js 16 frontends, Python/Django REST backends, and PostgreSQL databases.
+                </p>
+                <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.88rem', color: 'var(--text-muted)' }}>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Check className="w-4 h-4 text-orange-500" /> Multi-Tenant SaaS &amp; RBAC Access</li>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Check className="w-4 h-4 text-orange-500" /> Python Django REST Framework</li>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Check className="w-4 h-4 text-orange-500" /> Docker &amp; Cloud VPS Deployment</li>
+                </ul>
+              </div>
+              <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid var(--border-color)' }}>
+                <a href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20am%20looking%20for%20Custom%20Web%20Application%20Development%20in%20Kerala." target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-orange-bright)', fontSize: '0.88rem', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                  <span>Discuss Custom Web App</span> <ArrowUpRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Pillar 2: Next.js & React Developer Kerala */}
+            <div style={{ background: 'var(--bg-card)', padding: '32px 24px', borderRadius: '16px', border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <div style={{ width: '44px', height: '44px', borderRadius: '10px', background: 'rgba(255, 85, 0, 0.12)', color: 'var(--accent-orange-bright)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px' }}>
+                  <Code2 className="w-5 h-5" />
+                </div>
+                <h3 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '12px' }}>
+                  Next.js &amp; React Developer Kerala
+                </h3>
+                <p style={{ fontSize: '0.92rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                  Sub-second Core Web Vitals (&lt;600ms LCP), flawless 95+ PageSpeed scores, and SSR/ISR architecture built with Next.js 16 and React 19. Designed to outrank sluggish WordPress and PHP competitors on Google.
+                </p>
+                <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.88rem', color: 'var(--text-muted)' }}>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Check className="w-4 h-4 text-orange-500" /> Server Components (RSC) &amp; Next 16</li>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Check className="w-4 h-4 text-orange-500" /> TypeScript &amp; Tailwind Architecture</li>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Check className="w-4 h-4 text-orange-500" /> Built-in Semantic JSON-LD Schema</li>
+                </ul>
+              </div>
+              <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid var(--border-color)' }}>
+                <a href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20am%20looking%20for%20a%20Next.js%20and%20React%20Developer%20in%20Kerala." target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-orange-bright)', fontSize: '0.88rem', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                  <span>Hire Next.js Developer</span> <ArrowUpRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Pillar 3: Ecommerce Website Development Kerala */}
+            <div style={{ background: 'var(--bg-card)', padding: '32px 24px', borderRadius: '16px', border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <div style={{ width: '44px', height: '44px', borderRadius: '10px', background: 'rgba(255, 85, 0, 0.12)', color: 'var(--accent-orange-bright)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px' }}>
+                  <ShoppingCart className="w-5 h-5" />
+                </div>
+                <h3 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '12px' }}>
+                  Ecommerce Website Development Kerala
+                </h3>
+                <p style={{ fontSize: '0.92rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                  D2C digital storefronts engineered for rapid mobile conversions. Features Razorpay, Stripe, and UPI payment gateways, automated WhatsApp order alerts, and multi-currency pricing for GCC &amp; global shoppers.
+                </p>
+                <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.88rem', color: 'var(--text-muted)' }}>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Check className="w-4 h-4 text-orange-500" /> Razorpay, UPI &amp; Stripe Integrations</li>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Check className="w-4 h-4 text-orange-500" /> Automated WhatsApp Order Bot</li>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Check className="w-4 h-4 text-orange-500" /> Fast Product Filter &amp; 1-Click Cart</li>
+                </ul>
+              </div>
+              <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid var(--border-color)' }}>
+                <a href="https://wa.me/919400355185?text=Hi%20Adarsh,%20I%20am%20looking%20for%20Ecommerce%20Website%20Development%20in%20Kerala." target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-orange-bright)', fontSize: '0.88rem', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                  <span>Launch Ecommerce Store</span> <ArrowUpRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Pillar 4: Website Design Company in Trivandrum / Kochi Alternative */}
+            <div style={{ background: 'var(--bg-card)', padding: '32px 24px', borderRadius: '16px', border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <div style={{ width: '44px', height: '44px', borderRadius: '10px', background: 'rgba(255, 85, 0, 0.12)', color: 'var(--accent-orange-bright)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px' }}>
+                  <Building2 className="w-5 h-5" />
+                </div>
+                <h3 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '12px' }}>
+                  Website Design Company in Trivandrum / Kochi
+                </h3>
+                <p style={{ fontSize: '0.92rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                  Looking for a website design company in Trivandrum or Kochi? Skip the 200% agency markup and junior trainee delegation. Work directly with senior architect Adarsh B S for enterprise code, sub-second speed, and 100% IP ownership.
+                </p>
+                <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.88rem', color: 'var(--text-muted)' }}>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Check className="w-4 h-4 text-orange-500" /> 0% Middleman Agency Overhead</li>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Check className="w-4 h-4 text-orange-500" /> Direct Senior Commits to Private GitHub</li>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Check className="w-4 h-4 text-orange-500" /> Technopark &amp; Infopark In-Person Reviews</li>
+                </ul>
+              </div>
+              <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid var(--border-color)' }}>
+                <Link href="/hire-developer/" style={{ color: 'var(--accent-orange-bright)', fontSize: '0.88rem', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                  <span>Compare Agency vs Architect</span> <ArrowUpRight className="w-4 h-4" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -649,7 +995,7 @@ export default function WebDevClient() {
                   <td style={{ padding: '16px 24px', color: 'var(--text-primary)', borderLeft: '1px solid var(--border-color)', borderRight: '1px solid var(--border-color)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                       <Check className="w-5 h-5 text-emerald-400" />
-                      <strong>0% Agency Markup. Transparent rates from ₹15,000</strong>
+                      <strong>0% Agency Markup. Transparent rates from ₹15,000 / $250</strong>
                     </div>
                   </td>
                   <td style={{ padding: '16px 24px', color: 'var(--text-muted)' }}>
@@ -860,20 +1206,20 @@ export default function WebDevClient() {
         </div>
       </section>
 
-      {/* Transparent Pricing Packages */}
-      <section className="section-padding" id="pricing">
+      {/* DEDICATED SECTION: Website Development Cost in Kerala (2026 Transparent Pricing Guide) */}
+      <section className="section-padding" id="cost">
         <div className="container">
           <div className="section-header text-center" style={{ marginBottom: '45px' }}>
             <span className="section-badge">Transparent Commercials</span>
             <h2 className="section-title">
-              Clear, Predictable Web Development Packages
+              Website Development Cost in Kerala (2026 Transparent Pricing Matrix)
             </h2>
-            <p className="section-subtitle" style={{ maxWidth: '750px', margin: '0 auto' }}>
-              Zero hidden agency retainers. 100% intellectual property ownership from day one. Clearly defined deliverables for every stage of your digital growth.
+            <p className="section-subtitle" style={{ maxWidth: '780px', margin: '0 auto' }}>
+              Zero hidden agency retainers. 100% intellectual property ownership from Day 1. Clearly defined packages and deliverables for businesses inside Kerala and international clients.
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', marginBottom: '40px' }}>
             {pricingPackages.map((pkg, idx) => (
               <div
                 key={idx}
@@ -914,7 +1260,7 @@ export default function WebDevClient() {
                   <span style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--accent-orange-bright)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                     {pkg.badge}
                   </span>
-                  <h3 style={{ fontSize: '1.4rem', fontWeight: 700, color: 'var(--text-primary)', margin: '8px 0 12px' }}>
+                  <h3 style={{ fontSize: '1.35rem', fontWeight: 700, color: 'var(--text-primary)', margin: '8px 0 12px' }}>
                     {pkg.name}
                   </h3>
                   <div style={{ fontSize: '1.85rem', fontWeight: 800, color: 'var(--text-primary)', lineHeight: 1.1 }}>
@@ -951,6 +1297,27 @@ export default function WebDevClient() {
               </div>
             ))}
           </div>
+
+          {/* Detailed Itemized Matrix */}
+          <div style={{ background: 'var(--bg-card)', borderRadius: '16px', padding: '28px', border: '1px solid var(--border-color)', maxWidth: '900px', margin: '0 auto' }}>
+            <h4 style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '14px', textAlign: 'center' }}>
+              Why Kerala Website Development Cost Varies
+            </h4>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '16px', fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
+              <div>
+                <strong style={{ color: 'var(--accent-orange-bright)', display: 'block', marginBottom: '4px' }}>WordPress vs Next.js Architecture:</strong>
+                WordPress sites are cheap upfront (₹8k–₹15k) but cost ₹20k–₹50k/yr in plugin licenses, security cleanups, and slow hosting. Next.js delivers 0 recurring bloat, sub-second speed, and superior SEO.
+              </div>
+              <div>
+                <strong style={{ color: 'var(--accent-orange-bright)', display: 'block', marginBottom: '4px' }}>Agency Overhead vs Direct Architect:</strong>
+                Agencies charge ₹80k+ for basic sites to cover office leases and account executives. Working directly with Adarsh B S ensures 100% of your capital goes into senior code commits.
+              </div>
+              <div>
+                <strong style={{ color: 'var(--accent-orange-bright)', display: 'block', marginBottom: '4px' }}>Code Ownership &amp; Hosting Freedom:</strong>
+                You receive full source code access on your private GitHub repository on commit #1, deployed to modern clouds (Vercel, AWS, DigitalOcean) with zero vendor lock-in.
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -963,7 +1330,7 @@ export default function WebDevClient() {
               Frequently Asked Questions (Web Development Kerala)
             </h2>
             <p className="section-subtitle" style={{ maxWidth: '750px', margin: '0 auto' }}>
-              Everything you need to know about pricing, timelines, technology selection, and code ownership before starting your web project.
+              Everything you need to know about website development cost in Kerala, technology selection, hiring from outside India, and source code ownership.
             </p>
           </div>
 
@@ -1135,12 +1502,12 @@ export default function WebDevClient() {
             <div>
               <h4 className="footer-title">Web &amp; Software Solutions</h4>
               <ul className="footer-links">
-                <li><Link href="/web-development-kerala/" className="footer-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Development Kerala</Link></li>
+                <li><Link href="/web-development-kerala/" className="footer-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Development Company in Kerala</Link></li>
+                <li><Link href="/hire-developer/" className="footer-link">Hire Web Developer Kerala (Rates)</Link></li>
                 <li><Link href="/odoo-developer-kerala/" className="footer-link">Odoo ERP Developer Kerala</Link></li>
-                <li><Link href="/hire-developer/" className="footer-link">Hire Freelance Developer (Rates)</Link></li>
-                <li><a href="/#services" className="footer-link">Custom Software Engineering</a></li>
+                <li><a href="/#services" className="footer-link">Custom Web Application Development</a></li>
+                <li><a href="/#services" className="footer-link">Ecommerce Website Development</a></li>
                 <li><a href="/#services" className="footer-link">Technical SEO &amp; Speed Audits</a></li>
-                <li><a href="/#services" className="footer-link">WhatsApp Cloud API &amp; Automations</a></li>
               </ul>
             </div>
 
@@ -1178,11 +1545,10 @@ export default function WebDevClient() {
         <a href="tel:+919400355185" className="quick-bar-btn quick-bar-call">
           <Phone className="w-4 h-4" /> Call Now
         </a>
-        <a href="#pricing" className="quick-bar-btn btn-primary" style={{ flex: 1, padding: '10px' }}>
+        <a href="#cost" className="quick-bar-btn btn-primary" style={{ flex: 1, padding: '10px' }}>
           Packages
         </a>
       </div>
     </>
   );
 }
-
