@@ -7,6 +7,8 @@ const routes = [
   'hire-developer',
   'odoo-developer-kerala',
   'web-development-kerala',
+  'ai-automation-developer',
+  'saas-mvp-developer',
   'privacy-policy',
   'terms',
   'delete-data'

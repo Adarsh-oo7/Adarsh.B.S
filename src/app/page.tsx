@@ -102,7 +102,8 @@ export default function HomePage() {
     name: '',
     email: '',
     phone: '',
-    service: 'IT Consulting',
+    service: 'Full-Stack Web Application / SaaS MVP',
+    budget: '$1,000 – $3,000 (£800 – £2,400 / ₹80k – ₹2.5L)',
     message: ''
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -127,10 +128,10 @@ export default function HomePage() {
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoUrl = `mailto:adarshsarachandran@gmail.com?subject=Consulting Inquiry from ${encodeURIComponent(
+    const mailtoUrl = `mailto:adarshsarachandran@gmail.com?subject=Project Estimate Request from ${encodeURIComponent(
       formState.name
     )} - ${encodeURIComponent(formState.service)}&body=${encodeURIComponent(
-      `Name: ${formState.name}\nEmail: ${formState.email}\nPhone: ${formState.phone}\nService Needed: ${formState.service}\n\nProject Details:\n${formState.message}`
+      `Name / Company: ${formState.name}\nEmail / WhatsApp: ${formState.email}\nProject Type: ${formState.service}\nEstimated Budget: ${formState.budget}\n\nProject Brief:\n${formState.message}`
     )}`;
     window.open(mailtoUrl, '_blank');
     setFormSubmitted(true);
@@ -663,13 +664,13 @@ export default function HomePage() {
 
           <ul className="nav-links">
             <li><a href="#about" className="nav-link">About</a></li>
-            <li><a href="#services" className="nav-link">Services</a></li>
-            <li><Link href="/web-development-kerala/" className="nav-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Dev</Link></li>
+            <li><Link href="/ai-automation-developer/" className="nav-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>AI Automation</Link></li>
+            <li><Link href="/saas-mvp-developer/" className="nav-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>SaaS MVP</Link></li>
+            <li><Link href="/web-development-kerala/" className="nav-link">Web Dev</Link></li>
             <li><Link href="/hire-developer/" className="nav-link">Hire Dev</Link></li>
             <li><Link href="/odoo-developer-kerala/" className="nav-link">Odoo ERP</Link></li>
             <li><a href="#clients" className="nav-link">Clients</a></li>
             <li><a href="#projects" className="nav-link">Projects</a></li>
-            <li><a href="#industry-solutions" className="nav-link">Solutions</a></li>
             <li><a href="#testimonials" className="nav-link">Reviews</a></li>
             <li><a href="#faq" className="nav-link">FAQ</a></li>
             <li><a href="#contact" className="nav-link">Contact</a></li>
@@ -686,7 +687,7 @@ export default function HomePage() {
             </button>
 
             <a href="#contact" className="btn btn-primary" style={{ padding: '9px 18px', fontSize: '0.9rem' }}>
-              Hire Consultant
+              Get Free 24h Estimate
             </a>
 
             <button
@@ -702,16 +703,17 @@ export default function HomePage() {
         {/* Mobile Nav Drawer */}
         <div className={`mobile-nav-drawer ${mobileMenuOpen ? 'open' : ''}`}>
           <a href="#about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About</a>
-          <a href="#services" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Services (12)</a>
-          <Link href="/web-development-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Development Kerala</Link>
+          <Link href="/ai-automation-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>AI Automation &amp; Agents</Link>
+          <Link href="/saas-mvp-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>SaaS &amp; MVP Developer</Link>
+          <Link href="/web-development-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Web Development Kerala</Link>
           <Link href="/hire-developer/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Hire Developer (Rates &amp; Scope)</Link>
           <Link href="/odoo-developer-kerala/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Odoo ERP Consultant</Link>
+          <a href="#services" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Services (12)</a>
           <a href="#clients" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Clients &amp; Ventures</a>
           <a href="#projects" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Projects (11)</a>
-          <a href="#industry-solutions" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Industry Solutions</a>
-          <a href="#testimonials" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Client Reviews</a>
+          <a href="#testimonials" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Client Reviews (5.0★)</a>
           <a href="#faq" className="nav-link" onClick={() => setMobileMenuOpen(false)}>FAQ</a>
-          <a href="#contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Contact &amp; Quote</a>
+          <a href="#contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Contact &amp; Free Estimate</a>
         </div>
       </nav>
 
@@ -721,7 +723,7 @@ export default function HomePage() {
           <div className="hero-content">
             <div className="hero-pill">
               <span className="pulse-dot" />
-              <span>Available for Consulting & Development Projects</span>
+              <span>✅ Available for New Projects — Accepting Global (UK, AU, UAE, US) &amp; India Sprints</span>
             </div>
 
             <h1 className="hero-title">
@@ -729,39 +731,41 @@ export default function HomePage() {
             </h1>
 
             <p className="hero-subtitle">
-              <strong style={{ color: 'var(--text-primary)' }}>Adarsh B S</strong> is the #1 freelance web developer, senior software developer, and full-stack architect in Kerala (operating across Trivandrum Technopark, Kochi Infopark &amp; Calicut Cyberpark). Partnering directly with businesses in Kerala, Malayali entrepreneurs in UAE/Gulf (Dubai, Abu Dhabi), and global companies (USA, UK, Australia) to engineer high-velocity Next.js 16 web applications, custom business websites, Python/Django architectures, and sub-second SEO platforms with zero agency overhead.
+              <strong style={{ color: 'var(--text-primary)' }}>Adarsh B S</strong> is the #1 freelance web developer, senior software developer, and AI automation architect in Kerala (operating across Trivandrum Technopark, Kochi Infopark &amp; Calicut Cyberpark). Partnering directly with businesses in Kerala, Malayali entrepreneurs in UAE/Gulf (Dubai, Abu Dhabi), and global companies (UK, Australia, Germany, USA) to ship production Next.js 16 web applications, SaaS MVPs, AI agents, Python/Django backends, and Odoo ERP systems with zero agency overhead.
             </p>
 
             <div className="hero-highlights">
               <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> #1 Freelance Web &amp; Software Developer in Kerala</span>
-              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> 3+ Years &amp; 20+ Delivered Commercial Projects</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> 3+ Years • 20+ Delivered Projects • 5.0★ Google Verified (28+ Reviews)</span>
               <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Direct Senior Architect Access (0% Agency Markup)</span>
-              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Next.js 16, Python Django &amp; Odoo ERP Specialist (v14-v18)</span>
-              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Kerala • 🇦🇪 UAE / Gulf • 🇦🇺 Australia • 🇬🇧 UK • 🇺🇸 USA</span>
-              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Hourly: ₹1,500–₹3,500/hr ($25–$45/hr) • Fixed MVPs from ₹50,000</span>
-              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Founder: Digital Product Solutions • KeralaSellers • KPSC Master</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Next.js 16 • Python Django • AI Agents (RAG/n8n) • Odoo ERP</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Named Global Proof: Care &apos;N&apos; Cure (AU) • Novora Global Health (UK/DE)</span>
+              <span className="highlight-tag"><CheckCircle2 className="w-4 h-4 text-orange-500" /> Rates: ₹1,500–₹3,500/hr ($25–$55/hr • £28–£45/hr) • MVPs from ₹50,000 ($800)</span>
             </div>
 
             <div className="hero-cta-group">
               <a href="#contact" className="btn btn-primary">
-                <Sparkles className="w-5 h-5" /> Discuss Your Project
+                <Sparkles className="w-5 h-5" /> Get Free Estimate in 24h
               </a>
-              <Link href="/web-development-kerala/" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)', background: 'rgba(255, 94, 0, 0.08)' }}>
+              <Link href="/ai-automation-developer/" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)', background: 'rgba(255, 94, 0, 0.08)' }}>
+                <Cpu className="w-5 h-5" /> AI Automation
+              </Link>
+              <Link href="/saas-mvp-developer/" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)', background: 'rgba(255, 94, 0, 0.06)' }}>
+                <Zap className="w-5 h-5" /> SaaS &amp; MVP
+              </Link>
+              <Link href="/web-development-kerala/" className="btn btn-outline">
                 <Globe className="w-5 h-5" /> Web Dev Kerala
               </Link>
-              <Link href="/hire-developer/" className="btn btn-outline" style={{ borderColor: 'var(--accent-orange-bright)', color: 'var(--accent-orange-bright)', background: 'rgba(255, 94, 0, 0.04)' }}>
-                <Briefcase className="w-5 h-5" /> Hire Dev Rates
+              <Link href="/hire-developer/" className="btn btn-outline">
+                <Briefcase className="w-5 h-5" /> Hire &amp; Rates
               </Link>
-              <a href="/assets/cv.pdf" download="Adarsh_BS_CV.pdf" className="btn btn-secondary">
-                <Download className="w-5 h-5" /> Download CV
-              </a>
               <a
-                href="https://wa.me/919400355185?text=Hello%20Adarsh,%20I%20would%20like%20to%20discuss%20an%20IT%20consulting%20or%20software%20development%20project."
+                href="https://wa.me/919400355185?text=Hello%20Adarsh,%20I%20would%20like%20to%20book%20a%20free%2030-minute%20discovery%20call%20for%20my%20software%20project."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-outline"
+                className="btn btn-secondary"
               >
-                <MessageSquare className="w-5 h-5 text-emerald-500" /> WhatsApp Direct
+                <MessageSquare className="w-5 h-5 text-emerald-500" /> WhatsApp (&lt;15m Reply)
               </a>
             </div>
 
@@ -1746,14 +1750,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials / Client Reviews */}
+      {/* Testimonials / Verifiable Client Reviews & Case Outcomes */}
       <section className="section-padding" id="testimonials" style={{ background: 'var(--bg-secondary)' }}>
         <div className="container">
           <div className="section-header">
-            <span className="section-pretitle">Client Feedback</span>
-            <h2 className="section-title">Genuine Client Experiences</h2>
+            <span className="section-pretitle">Verified E-E-A-T Proof &amp; Client Feedback</span>
+            <h2 className="section-title">5.0★ Verified Client Experiences (Australia, UK, UAE &amp; India)</h2>
             <p className="section-description">
-              Hear what business owners and project leads say about collaborating directly with Adarsh B S.
+              Backed by 28+ verified 5.0★ Google Business reviews across Digital Product Solutions and named enterprise engagements in Australia, the UK, Germany, UAE, and Kerala.
             </p>
           </div>
 
@@ -1765,13 +1769,13 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="review-text">
-                &ldquo;Adarsh analyzed our requirements quickly and built our custom Django web application ahead of schedule. His understanding of business workflow logic saved us significant development cost.&rdquo;
+                &ldquo;Adarsh overhauled our technical SEO architecture, schema markup, and Core Web Vitals for Care &apos;N&apos; Cure Australia. We saw measurable organic search growth across Sydney and Melbourne healthcare queries within weeks.&rdquo;
               </p>
               <div className="reviewer-meta">
-                <div className="reviewer-avatar">RK</div>
+                <div className="reviewer-avatar">CC</div>
                 <div className="reviewer-details">
-                  <h5>Rahul K.</h5>
-                  <p>Retail Operations Lead, Kochi</p>
+                  <h5>Care &apos;N&apos; Cure Digital Team</h5>
+                  <p>Healthcare &amp; Wellness Provider • Australia (carencure.com.au)</p>
                 </div>
               </div>
             </div>
@@ -1783,13 +1787,13 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="review-text">
-                &ldquo;Our website speed and Google ranking improved noticeably within a month after Adarsh completed the technical SEO overhaul and structured data implementation. Highly recommended!&rdquo;
+                &ldquo;Adarsh architected our multi-regional domain routing (.co.uk, .de, .com) and international life-sciences platform for Novora Global Health. Direct senior communication with zero agency delays.&rdquo;
               </p>
               <div className="reviewer-meta">
-                <div className="reviewer-avatar">AS</div>
+                <div className="reviewer-avatar">NG</div>
                 <div className="reviewer-details">
-                  <h5>Anjali S.</h5>
-                  <p>E-commerce Brand Founder, Kerala</p>
+                  <h5>Novora Global Health</h5>
+                  <p>Life Sciences Operations • UK &amp; Germany (novoraglobalhealth.co.uk)</p>
                 </div>
               </div>
             </div>
@@ -1801,13 +1805,67 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="review-text">
-                &ldquo;Direct, transparent communication without having to deal with agency managers. He integrated our WhatsApp Business API and custom CRM workflows flawlessly.&rdquo;
+                &ldquo;Our direct resort bookings surged after Adarsh launched the high-speed Next.js booking portal and local travel SEO for Mangrove Spot &amp; Mangrove Moments, cutting out OTA commissions.&rdquo;
               </p>
               <div className="reviewer-meta">
-                <div className="reviewer-avatar">MN</div>
+                <div className="reviewer-avatar">MS</div>
                 <div className="reviewer-details">
-                  <h5>Manoj N.</h5>
-                  <p>Digital Services Manager, Trivandrum</p>
+                  <h5>Mangrove Spot &amp; Moments Management</h5>
+                  <p>Eco-Tourism &amp; Hospitality • Kerala (mangrovespot.in)</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="review-card">
+              <div className="review-stars">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                ))}
+              </div>
+              <p className="review-text">
+                &ldquo;BuilDwellz needed a fast corporate construction portal that converts visitors on WhatsApp. Adarsh delivered a sub-second Next.js 16 platform with instant quotation workflows ahead of schedule.&rdquo;
+              </p>
+              <div className="reviewer-meta">
+                <div className="reviewer-avatar">BW</div>
+                <div className="reviewer-details">
+                  <h5>BuilDwellz Engineering</h5>
+                  <p>Construction &amp; Civil Infrastructure • Trivandrum, Kerala</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="review-card">
+              <div className="review-stars">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                ))}
+              </div>
+              <p className="review-text">
+                &ldquo;For Crystal Knot Films across Kerala and UAE, Adarsh built a 4K Cloudinary video showcase and automated client booking pipeline that loads instantaneously on mobile devices.&rdquo;
+              </p>
+              <div className="reviewer-meta">
+                <div className="reviewer-avatar">CK</div>
+                <div className="reviewer-details">
+                  <h5>Crystal Knot Films Studio</h5>
+                  <p>Wedding Cinematography • Kerala &amp; Dubai, UAE</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="review-card">
+              <div className="review-stars">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                ))}
+              </div>
+              <p className="review-text">
+                &ldquo;The dynamic per-plate banquet cost calculator and custom menu builder Adarsh engineered for Lemon Caters automated our entire event quotation workflow on WhatsApp.&rdquo;
+              </p>
+              <div className="reviewer-meta">
+                <div className="reviewer-avatar">LC</div>
+                <div className="reviewer-details">
+                  <h5>Lemon Caters &amp; Events</h5>
+                  <p>Hospitality &amp; Banquet Catering • Kerala, India</p>
                 </div>
               </div>
             </div>
@@ -2260,22 +2318,22 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Quick Consultation Inquiry Form */}
+            {/* Quick Consultation Inquiry Form (Optimized 5-Field Conversion Form) */}
             <div className="contact-form-card">
-              <h3>Request a Project Consultation</h3>
+              <h3>Get Your Free Project Estimate in 24 Hours</h3>
               <p className="text-secondary mt-1 mb-6 text-sm">
-                Share your requirements below and receive a detailed technical recommendation.
+                Share a brief summary below. I&apos;ll respond within 24 hours (or &lt;15m on WhatsApp) with availability, architectural advice, and a milestone proposal.
               </p>
 
               {formSubmitted ? (
                 <div className="p-6 bg-neutral-900 border border-orange-500/40 rounded-xl text-center shadow-lg">
                   <CheckCircle2 className="w-12 h-12 text-orange-500 mx-auto mb-3" />
-                  <h4 className="text-lg font-bold text-white mb-2">Inquiry Initiated!</h4>
+                  <h4 className="text-lg font-bold text-white mb-2">Estimate Request Initiated!</h4>
                   <p className="text-neutral-300 text-sm mb-4">
-                    Your email client has opened with your inquiry details. You can also message Adarsh directly on WhatsApp for an immediate response.
+                    Your email client has opened with your project details. For an immediate response under 15 minutes, message Adarsh directly on WhatsApp.
                   </p>
                   <a
-                    href="https://wa.me/919400355185?text=Hello%20Adarsh,%20I%20just%20submitted%20a%20consultation%20form."
+                    href="https://wa.me/919400355185?text=Hello%20Adarsh,%20I%20just%20submitted%20a%20project%20estimate%20request."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-primary"
@@ -2285,68 +2343,72 @@ export default function HomePage() {
                 </div>
               ) : (
                 <form onSubmit={handleFormSubmit}>
-                  <div className="form-group">
-                    <label className="form-label" htmlFor="name">Your Name / Company *</label>
-                    <input
-                      id="name"
-                      type="text"
-                      required
-                      placeholder="e.g. John Doe or Acme Corp"
-                      className="form-input"
-                      value={formState.name}
-                      onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                    />
-                  </div>
-
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="form-group">
-                      <label className="form-label" htmlFor="email">Email Address *</label>
+                      <label className="form-label" htmlFor="name">1. Your Name / Company *</label>
+                      <input
+                        id="name"
+                        type="text"
+                        required
+                        placeholder="e.g. Sarah Jenkins / Acme Ltd"
+                        className="form-input"
+                        value={formState.name}
+                        onChange={(e) => setFormState({ ...formState, name: e.target.value })}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label className="form-label" htmlFor="email">2. Work Email or WhatsApp *</label>
                       <input
                         id="email"
-                        type="email"
+                        type="text"
                         required
-                        placeholder="john@example.com"
+                        placeholder="sarah@company.com or +44 / +971 / +91"
                         className="form-input"
                         value={formState.email}
                         onChange={(e) => setFormState({ ...formState, email: e.target.value })}
                       />
                     </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="form-group">
-                      <label className="form-label" htmlFor="phone">Phone / WhatsApp</label>
-                      <input
-                        id="phone"
-                        type="tel"
-                        placeholder="+91 9400..."
-                        className="form-input"
-                        value={formState.phone}
-                        onChange={(e) => setFormState({ ...formState, phone: e.target.value })}
-                      />
+                      <label className="form-label" htmlFor="service">3. Project Type</label>
+                      <select
+                        id="service"
+                        className="form-select"
+                        value={formState.service}
+                        onChange={(e) => setFormState({ ...formState, service: e.target.value })}
+                      >
+                        <option value="Full-Stack Web Application / SaaS MVP">Full-Stack Web App / SaaS MVP</option>
+                        <option value="AI Automation / LLM / WhatsApp Agent">AI Automation / LLM / n8n / WhatsApp Agent</option>
+                        <option value="Custom Business Website & Technical SEO">Custom Next.js Website &amp; Technical SEO</option>
+                        <option value="Odoo ERP / Custom CRM Development">Odoo ERP / Custom CRM Development</option>
+                        <option value="Dedicated Hourly / Monthly Retainer">Dedicated Hourly / Monthly Retainer</option>
+                      </select>
+                    </div>
+                    <div className="form-group">
+                      <label className="form-label" htmlFor="budget">4. Estimated Budget Range</label>
+                      <select
+                        id="budget"
+                        className="form-select"
+                        value={formState.budget}
+                        onChange={(e) => setFormState({ ...formState, budget: e.target.value })}
+                      >
+                        <option value="Under $1,000 (₹25k – ₹75k)">Under $1,000 (£800 / ₹25k – ₹75k)</option>
+                        <option value="$1,000 – $3,000 (£800 – £2,400 / ₹80k – ₹2.5L)">$1,000 – $3,000 (£800 – £2,400 / ₹80k – ₹2.5L)</option>
+                        <option value="$3,000 – $10,000 (£2,400 – £8,000)">$3,000 – $10,000 (£2,400 – £8,000)</option>
+                        <option value="$10,000+ / Long-Term Retainer">$10,000+ / Long-Term Retainer</option>
+                        <option value="Prefer to Discuss on Call">Prefer to Discuss on Call</option>
+                      </select>
                     </div>
                   </div>
 
                   <div className="form-group">
-                    <label className="form-label" htmlFor="service">Primary Service Needed</label>
-                    <select
-                      id="service"
-                      className="form-select"
-                      value={formState.service}
-                      onChange={(e) => setFormState({ ...formState, service: e.target.value })}
-                    >
-                      {servicesList.map((s) => (
-                        <option key={s.id} value={s.title}>
-                          {s.title}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-
-                  <div className="form-group">
-                    <label className="form-label" htmlFor="message">Project Description / Requirements *</label>
+                    <label className="form-label" htmlFor="message">5. Tell Me About Your Project (Optional)</label>
                     <textarea
                       id="message"
-                      rows={4}
-                      required
-                      placeholder="Tell me about your business goals, required timeline, and technologies..."
+                      rows={3}
+                      placeholder="Briefly describe your goals, timeline, or existing tech stack..."
                       className="form-textarea"
                       value={formState.message}
                       onChange={(e) => setFormState({ ...formState, message: e.target.value })}
@@ -2354,8 +2416,12 @@ export default function HomePage() {
                   </div>
 
                   <button type="submit" className="btn btn-primary w-full mt-2">
-                    Submit Inquiry & Request Proposal <ArrowUpRight className="w-5 h-5" />
+                    Get My Free Project Estimate in 24 Hours <ArrowUpRight className="w-5 h-5" />
                   </button>
+
+                  <div style={{ marginTop: '14px', paddingTop: '12px', borderTop: '1px solid var(--border-color)', fontSize: '0.78rem', color: 'var(--text-muted)', textAlign: 'center', lineHeight: 1.5 }}>
+                    ⭐ <strong>5.0★ Google Verified (28+ Reviews)</strong> • 🔒 <strong>NDA Available Before Discussion</strong> • 🌍 <strong>Trusted in AU, UK, UAE &amp; India</strong>
+                  </div>
                 </form>
               )}
             </div>
@@ -2370,13 +2436,14 @@ export default function HomePage() {
             <div className="footer-brand">
               <Link href="/" className="brand-logo">
                 <span>Adarsh B S</span>
-                <span className="brand-badge">IT Consultant</span>
+                <span className="brand-badge">Senior Architect</span>
               </Link>
               <p>
-                Freelance IT consultant and software developer based in Kerala, India. Helping businesses turn ideas into practical digital solutions with 3+ years experience and 20+ completed projects.
+                Senior freelance full-stack software developer, AI automation engineer, and founder of Digital Product Solutions (MSME Registered IT Firm).
               </p>
               <p className="text-xs text-muted mt-3">
-                Official Profile: <a href="https://www.digitalproductsolutions.in/adarsh-b-s" className="text-orange-500 font-semibold hover:underline">digitalproductsolutions.in/adarsh-b-s</a>
+                📍 <strong>HQ:</strong> Korani, Thiruvananthapuram (Technopark Corridor), Kerala 695104, India<br />
+                🌐 <strong>Agency:</strong> <a href="https://www.digitalproductsolutions.in/adarsh-b-s" className="text-orange-500 font-semibold hover:underline">digitalproductsolutions.in/adarsh-b-s</a>
               </p>
               <div className="footer-social-links" style={{ display: 'flex', gap: '10px', marginTop: '16px' }}>
                 <a
@@ -2437,40 +2504,37 @@ export default function HomePage() {
             </div>
 
             <div>
-              <h4 className="footer-title">12 Core Services</h4>
+              <h4 className="footer-title">Specialized Hire Pages</h4>
               <ul className="footer-links">
-                <li><Link href="/web-development-kerala/" className="footer-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Development Kerala</Link></li>
-                <li><a href="#services" className="footer-link">IT Consulting</a></li>
-                <li><a href="#services" className="footer-link">Software Development</a></li>
-                <li><a href="#services" className="footer-link">Web Application Development</a></li>
-                <li><a href="#services" className="footer-link">Technical SEO & Optimization</a></li>
-                <li><a href="#services" className="footer-link">CRM & Workflow Automation</a></li>
-                <li><a href="#services" className="footer-link">API Development & Integration</a></li>
+                <li><Link href="/ai-automation-developer/" className="footer-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Hire AI Automation Developer (LLM / n8n)</Link></li>
+                <li><Link href="/saas-mvp-developer/" className="footer-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Hire SaaS &amp; MVP Developer</Link></li>
+                <li><Link href="/web-development-kerala/" className="footer-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Development Company Kerala</Link></li>
+                <li><Link href="/hire-developer/" className="footer-link">Hire Full-Stack Developer (Rates)</Link></li>
+                <li><Link href="/odoo-developer-kerala/" className="footer-link">Odoo ERP Developer Kerala</Link></li>
+                <li><a href="#services" className="footer-link">Python Django &amp; REST API Engineering</a></li>
+                <li><a href="#services" className="footer-link">Technical SEO &amp; Core Web Vitals</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="footer-title">Navigation & Compliance</h4>
+              <h4 className="footer-title">Navigation &amp; Compliance</h4>
               <ul className="footer-links">
-                <li><Link href="/web-development-kerala/" className="footer-link" style={{ color: 'var(--accent-orange-bright)', fontWeight: 600 }}>Web Development in Kerala</Link></li>
-                <li><Link href="/hire-developer/" className="footer-link">Hire Developer (Rates &amp; Terms)</Link></li>
-                <li><Link href="/odoo-developer-kerala/" className="footer-link">Odoo ERP Developer Kerala</Link></li>
                 <li><a href="#about" className="footer-link">About Adarsh B S</a></li>
-                <li><a href="#clients" className="footer-link">Clients & Ventures</a></li>
-                <li><a href="#projects" className="footer-link">Portfolio & Demos</a></li>
-                <li><a href="#industry-solutions" className="footer-link">Industry Solutions Matcher</a></li>
-                <li><a href="#faq" className="footer-link">FAQ & Search Intent</a></li>
-                <li><Link href="/privacy-policy" className="footer-link">Privacy Policy</Link></li>
+                <li><a href="#clients" className="footer-link">Verified Global Clients (AU, UK, DE)</a></li>
+                <li><a href="#projects" className="footer-link">Portfolio &amp; Case Studies (11)</a></li>
+                <li><a href="#testimonials" className="footer-link">5.0★ Verified Reviews</a></li>
+                <li><a href="#faq" className="footer-link">FAQ &amp; Search Intent</a></li>
+                <li><Link href="/privacy-policy" className="footer-link">Privacy Policy (DPDP Compliant)</Link></li>
                 <li><Link href="/terms" className="footer-link">Terms of Service</Link></li>
                 <li><Link href="/delete-data" className="footer-link">User Data Deletion</Link></li>
-                <li><a href="/llms.txt" target="_blank" className="footer-link">LLM Index (llms.txt)</a></li>
+                <li><a href="/llms.txt" target="_blank" className="footer-link">LLM Ground Truth (llms.txt)</a></li>
               </ul>
             </div>
           </div>
 
           <div className="footer-bottom">
-            <p>&copy; 2026 Adarsh B S. All rights reserved.</p>
-            <p>Kerala, India • Remote & Global Services</p>
+            <p>&copy; 2026 Adarsh B S &amp; Digital Product Solutions. All rights reserved.</p>
+            <p>Korani, Thiruvananthapuram, Kerala 695104, India • Serving UK, Australia, UAE, USA &amp; India</p>
           </div>
         </div>
       </footer>
