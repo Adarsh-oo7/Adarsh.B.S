@@ -93,7 +93,7 @@ function AboutMeIcon({ className = "w-5 h-5", style }: { className?: string; sty
 export default function HomePage() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeProjectFilter, setActiveProjectFilter] = useState<'all' | 'client' | 'founded'>('all');
+  const [activeProjectFilter, setActiveProjectFilter] = useState<'all' | 'web' | 'ecommerce' | 'enterprise' | 'founded'>('all');
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [faqFilter, setFaqFilter] = useState<'all' | 'rates' | 'local' | 'odoo' | 'delivery'>('all');
 
@@ -224,7 +224,7 @@ export default function HomePage() {
     }
   ];
 
-  // Verified Clients & Founded Ventures
+  // Verified Clients, Builds & Founded Ventures
   const clientsList = [
     {
       id: 'carencure',
@@ -251,6 +251,54 @@ export default function HomePage() {
         { label: 'novoraglobalhealth.com (Global)', url: 'https://novoraglobalhealth.com/' }
       ],
       services: 'Multi-Region Architecture • SEO • IT Consulting'
+    },
+    {
+      id: 'buildwellz',
+      name: 'BuilDwellz Construction & Infra',
+      flag: '🇮🇳 Kerala, India',
+      role: 'Client • Construction & Web Platform',
+      image: '/assets/clients/buildwellz.png',
+      desc: 'High-performance corporate portal & portfolio showcase for Kerala construction and civil engineering leader, featuring WhatsApp lead capture and local SEO.',
+      domains: [
+        { label: 'BuilDwellz Portal', url: 'https://www.digitalproductsolutions.in/portfolio' }
+      ],
+      services: 'Corporate Web Platform • Local SEO • Lead Automation'
+    },
+    {
+      id: 'crystalknot',
+      name: 'Crystal Knot Films',
+      flag: '🇮🇳 Kerala & 🇦🇪 UAE',
+      role: 'Client • Wedding & Media Production',
+      image: '/assets/clients/crystalknot.png',
+      desc: 'Ultra-fast visual media portfolio, 4K cinematic streaming integration, and automated client inquiry pipeline for luxury wedding productions.',
+      domains: [
+        { label: 'Crystal Knot Films', url: 'https://www.digitalproductsolutions.in/portfolio' }
+      ],
+      services: 'Media Web Platform • Cloudinary CDN • Booking Pipeline'
+    },
+    {
+      id: 'squeezeberriez',
+      name: 'Squeeze Berriez',
+      flag: '🇮🇳 Kerala, India',
+      role: 'Client • F&B & D2C Commerce',
+      image: '/assets/clients/squeezeberriez.png',
+      desc: 'Vibrant product storytelling, mobile-first digital menu, and instant WhatsApp direct order checkout for premium beverage brand.',
+      domains: [
+        { label: 'Squeeze Berriez D2C', url: 'https://www.digitalproductsolutions.in/portfolio' }
+      ],
+      services: 'D2C Commerce • Mobile-First UI • WhatsApp Orders'
+    },
+    {
+      id: 'lemoncaters',
+      name: 'Lemon Caters & Events',
+      flag: '🇮🇳 Kerala, India',
+      role: 'Client • Catering & Hospitality Booking',
+      image: '/assets/clients/lemoncaters.png',
+      desc: 'Dynamic catering cost estimator, custom menu selector, and multi-tier event booking management portal for premier Kerala event caterers.',
+      domains: [
+        { label: 'Lemon Caters Portal', url: 'https://www.digitalproductsolutions.in/portfolio' }
+      ],
+      services: 'Event Booking Engine • Custom Quote Logic • Local SEO'
     },
     {
       id: 'mangrovespot',
@@ -314,91 +362,146 @@ export default function HomePage() {
     }
   ];
 
-  // Portfolio Projects - Real Client Deployments & Founded Ventures
+  // Portfolio Projects - Real Client Deployments & Founded Ventures (11 Featured Projects)
   const projectsList = [
     {
       id: 1,
       title: "Care 'N' Cure Australia - Healthcare Growth Platform",
-      category: 'client',
+      category: 'enterprise',
+      categories: ['all', 'enterprise', 'web'],
       image: '/assets/clients/carencure.png',
-      tag: 'Australian Enterprise Client',
+      tag: 'Australian Healthcare Enterprise',
       desc: "Full-scale organic SEO growth, technical performance optimization, and IT consulting for an Australian healthcare enterprise, driving sustained multi-channel client acquisition across Sydney and Melbourne.",
-      tech: ['IT Consulting', 'Technical SEO', 'Organic Growth', 'Web Optimization'],
+      tech: ['IT Consulting', 'Technical SEO', 'Organic Growth', 'Web Optimization', 'International SEO'],
       github: 'https://github.com/Adarsh-oo7/',
       demo: 'https://carencure.com.au/'
     },
     {
       id: 2,
       title: 'Novora Global Health Multi-Region Ecosystem',
-      category: 'client',
+      category: 'enterprise',
+      categories: ['all', 'enterprise', 'web'],
       image: '/assets/clients/novora.png',
-      tag: 'Global & UK / EU Client',
-      desc: 'Architected cross-border digital health platform infrastructure serving the UK, Germany, and international markets with multi-regional domain routing, performance tuning, and international SEO.',
+      tag: 'Global & UK / EU Life Sciences',
+      desc: 'Architected cross-border digital health platform infrastructure serving the UK, Germany, and international markets with multi-regional domain routing (.com, .de, .co.uk), performance tuning, and international SEO.',
       tech: ['Multi-Region Arch', 'Next.js / TypeScript', 'International SEO', 'API Infrastructure'],
       github: 'https://github.com/Adarsh-oo7/',
       demo: 'https://novoraglobalhealth.com/'
     },
     {
       id: 3,
+      title: 'BuilDwellz - Construction & Civil Engineering Platform',
+      category: 'web',
+      categories: ['all', 'web'],
+      image: '/assets/clients/buildwellz.png',
+      tag: 'Construction & Civil Engineering',
+      desc: 'High-performance corporate portal & portfolio showcase for Kerala construction and civil engineering leaders. Built with Next.js 16 and Tailwind CSS with integrated WhatsApp lead capture, instant quote workflows, and localized technical SEO.',
+      tech: ['Next.js 16', 'Tailwind CSS', 'WhatsApp Cloud API', 'Local Search SEO', 'Fast CDN'],
+      github: 'https://github.com/Adarsh-oo7/',
+      demo: 'https://www.digitalproductsolutions.in/portfolio'
+    },
+    {
+      id: 4,
+      title: 'Crystal Knot Films - Studio Showcase & Booking Pipeline',
+      category: 'web',
+      categories: ['all', 'web'],
+      image: '/assets/clients/crystalknot.png',
+      tag: 'Wedding Cinematography & Media',
+      desc: 'Architected a high-converting visual media showcase platform for premier wedding cinematographers across Kerala and UAE. Features 4K video embedding, image lazy-loading pipelines via Cloudinary, and automated client inquiry workflows.',
+      tech: ['Next.js', 'React 19', 'Cloudinary CDN', 'Lead Funnel Engine', 'Mobile UX'],
+      github: 'https://github.com/Adarsh-oo7/',
+      demo: 'https://www.digitalproductsolutions.in/portfolio'
+    },
+    {
+      id: 5,
+      title: 'Squeeze Berriez - Gourmet Beverage Brand & Direct Orders',
+      category: 'ecommerce',
+      categories: ['all', 'ecommerce', 'web'],
+      image: '/assets/clients/squeezeberriez.png',
+      tag: 'F&B • Beverage D2C Commerce',
+      desc: 'Crafted a vibrant, modern direct-to-consumer digital experience for a premium beverage brand. Implemented an interactive digital product catalog, nutrition showcase, and zero-friction instant WhatsApp ordering workflow.',
+      tech: ['Next.js', 'Direct WhatsApp Orders', 'Product Showcase', 'PostgreSQL', 'Performance Tuning'],
+      github: 'https://github.com/Adarsh-oo7/',
+      demo: 'https://www.digitalproductsolutions.in/portfolio'
+    },
+    {
+      id: 6,
+      title: 'Lemon Caters - Event Catering Calculator & Booking Engine',
+      category: 'web',
+      categories: ['all', 'web'],
+      image: '/assets/clients/lemoncaters.png',
+      tag: 'Catering & Event Logistics',
+      desc: 'Developed an end-to-end catering logistics platform featuring a dynamic per-plate cost estimator, custom multi-course menu builder, date availability tracking, and automated quotation generation for high-end events in Kerala.',
+      tech: ['Next.js', 'Dynamic Menu Engine', 'Quote Calculator', 'Automated Invoicing', 'Local SEO'],
+      github: 'https://github.com/Adarsh-oo7/',
+      demo: 'https://www.digitalproductsolutions.in/portfolio'
+    },
+    {
+      id: 7,
       title: 'Mangrove Spot - Business Consulting & Growth Engine',
-      category: 'client',
+      category: 'web',
+      categories: ['all', 'web'],
       image: '/assets/clients/mangrovespot.png',
-      tag: 'Kerala Business Client',
+      tag: 'Hospitality & Eco-Tourism Client',
       desc: 'End-to-end IT consulting and strategic organic SEO delivering proven search engine domination and multi-fold customer booking expansion for premier Kerala eco-tourism destination.',
       tech: ['IT Consulting', 'Local Search Dominance', 'Performance Engineering', 'Organic Growth'],
       github: 'https://github.com/Adarsh-oo7/',
       demo: 'https://www.mangrovespot.in/'
     },
     {
-      id: 4,
+      id: 8,
       title: 'Mangrove Moments - Experiential Tourism & Web Platform',
-      category: 'client',
+      category: 'web',
+      categories: ['all', 'web'],
       image: '/assets/clients/mangrovemoments.jpg',
-      tag: 'Tourism & Events Client',
+      tag: 'Tourism & Events Platform',
       desc: 'Custom web application development, responsive client booking workflows, and search engine optimization consulting for luxury Kerala experiential events and tourism.',
       tech: ['Web App Development', 'SEO Consulting', 'Responsive Design', 'Lead Automation'],
       github: 'https://github.com/Adarsh-oo7/',
       demo: 'https://www.mangrovemoments.com/'
     },
     {
-      id: 5,
-      title: 'Digital Product Solutions - Agency & Cloud Architecture',
-      category: 'founded',
-      image: '/assets/clients/digitalproductsolutions.png',
-      tag: 'Founded Tech Venture',
-      desc: 'Founded and engineered enterprise digital solutions agency delivering custom web platforms, cloud architecture, and end-to-end business automation for international businesses.',
-      tech: ['Founder & Architect', 'Next.js', 'Python / Django', 'Cloud Systems'],
-      github: 'https://github.com/Adarsh-oo7/',
-      demo: 'https://www.digitalproductsolutions.in/'
-    },
-    {
-      id: 6,
-      title: 'Kerala Sellers - B2B Commercial Marketplace',
-      category: 'founded',
+      id: 9,
+      title: 'Kerala Sellers - B2B Commercial Marketplace Platform',
+      category: 'ecommerce',
+      categories: ['all', 'ecommerce', 'founded'],
       image: '/assets/clients/keralasellers.png',
-      tag: 'Founded Commercial Platform',
-      desc: 'State-wide commercial vendor directory and commerce platform connecting Kerala businesses, engineered with programmatic SEO and high-volume merchant discovery.',
-      tech: ['Platform Founder', 'E-Commerce Arch', 'Programmatic SEO', 'PostgreSQL'],
+      tag: 'Founded Commercial Marketplace',
+      desc: '8-month deep product build: statewide commercial vendor directory and multi-merchant platform connecting Kerala businesses, engineered with programmatic SEO, multi-category vendor portals, and PostgreSQL search indexing.',
+      tech: ['Platform Founder', 'E-Commerce Arch', 'Programmatic SEO', 'PostgreSQL', 'Vendor Portals'],
       github: 'https://github.com/Adarsh-oo7/',
       demo: 'https://www.keralasellers.in/'
     },
     {
-      id: 7,
+      id: 10,
       title: 'KPSC Master - High-Concurrency EdTech Platform',
       category: 'founded',
+      categories: ['all', 'web', 'founded'],
       image: '/assets/clients/kpscmaster.png',
       tag: 'Founded EdTech Platform',
       desc: 'High-volume competitive examination portal serving thousands of Kerala Public Service Commission aspirants, engineered for extreme speed, high concurrent load, and organic search ranking.',
       tech: ['Founder & Architect', 'System Architecture', 'High-Traffic SEO', 'Database Optimization'],
       github: 'https://github.com/Adarsh-oo7/',
       demo: 'https://www.kpscmaster.in/'
+    },
+    {
+      id: 11,
+      title: 'Digital Product Solutions - Agency & Cloud Architecture',
+      category: 'founded',
+      categories: ['all', 'enterprise', 'founded'],
+      image: '/assets/clients/digitalproductsolutions.png',
+      tag: 'Founded Tech Venture & Agency',
+      desc: 'Founded and engineered enterprise digital solutions agency delivering custom web platforms, cloud architecture, and end-to-end business automation for international businesses.',
+      tech: ['Founder & Architect', 'Next.js 16', 'Python / Django', 'Odoo ERP', 'Cloud Systems'],
+      github: 'https://github.com/Adarsh-oo7/',
+      demo: 'https://www.digitalproductsolutions.in/'
     }
   ];
 
   const filteredProjects =
     activeProjectFilter === 'all'
       ? projectsList
-      : projectsList.filter((p) => p.category === activeProjectFilter);
+      : projectsList.filter((p) => p.categories.includes(activeProjectFilter));
 
   // FAQ for Google & LLM Optimization (12 High-Intent Search & Work Getting Q&As)
   const faqs = [
@@ -803,10 +906,10 @@ export default function HomePage() {
       <section className="section-padding" id="clients">
         <div className="container">
           <div className="section-header">
-            <span className="section-pretitle">Proven Track Record</span>
-            <h2 className="section-title">Featured Clients & Founded Ventures</h2>
+            <span className="section-pretitle">Verified Deployments &amp; Portfolio</span>
+            <h2 className="section-title">Featured Clients &amp; Founded Ventures</h2>
             <p className="section-description">
-              Trusted by international businesses across Australia, the UK, Germany, and Kerala for high-ROI IT consulting, full-stack architecture, and aggressive organic growth.
+              Trusted by international enterprises and regional leaders across Australia, the UK, Germany, UAE, and Kerala for high-ROI web development, custom software engineering, and technical SEO growth.
             </p>
           </div>
 
@@ -1104,10 +1207,10 @@ export default function HomePage() {
       <section className="section-padding" id="projects">
         <div className="container">
           <div className="section-header">
-            <span className="section-pretitle">Proven Portfolio</span>
-            <h2 className="section-title">Featured Business & Web Projects</h2>
+            <span className="section-pretitle">Proven Portfolio &amp; Case Studies</span>
+            <h2 className="section-title">Featured Web &amp; Software Deployments</h2>
             <p className="section-description">
-              Explore recent applications designed and engineered for real-world functionality, high performance, and positive client ROI.
+              Explore 11 enterprise web platforms, custom software architectures, e-commerce systems, and client deployments engineered by Adarsh B S and Digital Product Solutions (DPS).
             </p>
           </div>
 
@@ -1117,19 +1220,31 @@ export default function HomePage() {
               onClick={() => setActiveProjectFilter('all')}
               className={`filter-tab ${activeProjectFilter === 'all' ? 'active' : ''}`}
             >
-              All Projects &amp; Ventures (7)
+              All Deployments (11)
             </button>
             <button
-              onClick={() => setActiveProjectFilter('client')}
-              className={`filter-tab ${activeProjectFilter === 'client' ? 'active' : ''}`}
+              onClick={() => setActiveProjectFilter('web')}
+              className={`filter-tab ${activeProjectFilter === 'web' ? 'active' : ''}`}
             >
-              Global &amp; Client Engagements (4)
+              Custom Web &amp; Software (8)
+            </button>
+            <button
+              onClick={() => setActiveProjectFilter('ecommerce')}
+              className={`filter-tab ${activeProjectFilter === 'ecommerce' ? 'active' : ''}`}
+            >
+              E-Commerce &amp; Retail (2)
+            </button>
+            <button
+              onClick={() => setActiveProjectFilter('enterprise')}
+              className={`filter-tab ${activeProjectFilter === 'enterprise' ? 'active' : ''}`}
+            >
+              Global &amp; Enterprise (3)
             </button>
             <button
               onClick={() => setActiveProjectFilter('founded')}
               className={`filter-tab ${activeProjectFilter === 'founded' ? 'active' : ''}`}
             >
-              Founded Startups &amp; Platforms (3)
+              Founded Platforms (3)
             </button>
           </div>
 

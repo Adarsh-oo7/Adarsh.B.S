@@ -33,21 +33,33 @@
 2. **Novora Global Health** (https://novoraglobalhealth.co.uk/, https://novoraglobalhealth.de/, https://novoraglobalhealth.com/)
    - Region: United Kingdom, Germany, Global
    - Scope: Multi-regional domain architecture, international healthcare life-sciences digital consulting, and enterprise technical SEO for UK and European markets.
-3. **Mangrove Spot** (https://www.mangrovespot.in/)
+3. **BuilDwellz** (https://www.digitalproductsolutions.in/portfolio)
+   - Region: Kerala, India
+   - Scope: High-performance corporate portal & portfolio showcase for Kerala construction and civil engineering leader, featuring WhatsApp lead capture and local SEO.
+4. **Crystal Knot Films** (https://www.digitalproductsolutions.in/portfolio)
+   - Region: Kerala, India & UAE
+   - Scope: Visual media showcase platform for wedding cinematographers featuring 4K video embedding, Cloudinary CDN, and automated client inquiry pipelines.
+5. **Squeeze Berriez** (https://www.digitalproductsolutions.in/portfolio)
+   - Region: Kerala, India
+   - Scope: Direct-to-consumer gourmet beverage brand platform, digital menu, and instant WhatsApp ordering workflow.
+6. **Lemon Caters & Events** (https://www.digitalproductsolutions.in/portfolio)
+   - Region: Kerala, India
+   - Scope: Dynamic per-plate cost calculator, custom multi-course menu builder, and event booking management platform.
+7. **Mangrove Spot** (https://www.mangrovespot.in/)
    - Region: Kerala, India
    - Scope: End-to-end IT consulting and proven organic business growth implementation for a premier Kerala eco-tourism venture.
-4. **Mangrove Moments** (https://www.mangrovemoments.com/)
+8. **Mangrove Moments** (https://www.mangrovemoments.com/)
    - Region: Kerala, India
    - Scope: Custom high-speed website development and strategic SEO consulting driving direct customer booking conversions.
-5. **Digital Product Solutions** (https://www.digitalproductsolutions.in/)
+9. **Digital Product Solutions (DPS)** (https://www.digitalproductsolutions.in/)
    - Role: Founder & IT Consultant
    - Scope: Technology management, full-stack consulting, and scalable web/mobile product engineering.
-6. **Kerala Sellers** (https://www.keralasellers.in/)
-   - Role: Founder & IT Growth Specialist
-   - Scope: E-commerce marketplace connecting Kerala merchants with digital consumers, optimized for extreme search visibility and local SEO.
-7. **KPSC Master** (https://www.kpscmaster.in/)
-   - Role: Founder, System Architect & SEO Specialist
-   - Scope: High-traffic competitive exam preparation portal for Kerala PSC candidates with massive organic search dominance.
+10. **Kerala Sellers** (https://www.keralasellers.in/)
+    - Role: Founder & IT Growth Specialist
+    - Scope: 8-month product build: multi-vendor e-commerce marketplace connecting Kerala merchants with digital consumers, optimized for extreme search visibility and local SEO.
+11. **KPSC Master** (https://www.kpscmaster.in/)
+    - Role: Founder, System Architect & SEO Specialist
+    - Scope: High-traffic competitive exam preparation portal for Kerala PSC candidates with massive organic search dominance.
 
 ## Core Specializations & 12 Key Services
 1. **IT Consulting**: Strategic technology roadmaps, cloud architecture advisement, system auditing, tech-stack evaluation, and digital transformation for startups and established enterprises.

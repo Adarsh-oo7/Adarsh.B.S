@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
-    "predeploy": "next build",
+    "predeploy": "next build --webpack",
     "deploy": "gh-pages -d out --dotfiles --nojekyll --cname adarsh.digitalproductsolutions.in"
   },
   "dependencies": {
@@ -17,6 +17,7 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@next/swc-darwin-arm64": "^16.4.3",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

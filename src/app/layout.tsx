@@ -461,6 +461,124 @@ export default function RootLayout({
         }
       },
       {
+        "@type": "ItemList",
+        "@id": `${profileCanonical}#portfolio`,
+        "name": "Featured Software & Web Development Projects by Adarsh B S & Digital Product Solutions",
+        "description": "Production software systems, web platforms, and e-commerce applications engineered across Kerala, Australia, UK, Germany, and UAE.",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Care 'N' Cure Australia - Healthcare Growth Platform",
+              "url": "https://carencure.com.au/",
+              "description": "Technical SEO, organic search dominance, and digital growth consulting for Australian healthcare & consumer brand."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Novora Global Health Multi-Region Ecosystem",
+              "url": "https://novoraglobalhealth.com/",
+              "description": "Multi-regional domain architecture and international healthcare life-sciences digital consulting for UK and European markets."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "BuilDwellz Construction & Engineering Platform",
+              "url": "https://www.digitalproductsolutions.in/portfolio",
+              "description": "High-performance corporate portal & portfolio showcase for Kerala construction and civil engineering leaders."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Crystal Knot Films - Studio Showcase & Booking Pipeline",
+              "url": "https://www.digitalproductsolutions.in/portfolio",
+              "description": "Visual media showcase platform for wedding cinematographers with 4K video embedding and automated inquiry workflows."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Squeeze Berriez - Gourmet Beverage Brand & Direct Orders",
+              "url": "https://www.digitalproductsolutions.in/portfolio",
+              "description": "Direct-to-consumer beverage brand platform, digital menu, and instant WhatsApp ordering workflow."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Lemon Caters & Events - Catering Calculator & Booking Engine",
+              "url": "https://www.digitalproductsolutions.in/portfolio",
+              "description": "Dynamic per-plate cost estimator, custom menu selector, and multi-tier event booking management portal."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Mangrove Spot - Eco-Tourism & Organic Growth Engine",
+              "url": "https://www.mangrovespot.in/",
+              "description": "End-to-end IT consulting and organic business growth implementation for a premier Kerala eco-tourism venture."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Mangrove Moments - Tourism & Events Platform",
+              "url": "https://www.mangrovemoments.com/",
+              "description": "Custom web application development, responsive client booking workflows, and search engine optimization consulting."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Kerala Sellers - B2B Commercial Marketplace Platform",
+              "url": "https://www.keralasellers.in/",
+              "description": "8-month deep product build: statewide commercial vendor directory and multi-merchant platform connecting Kerala businesses."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "KPSC Master - High-Concurrency EdTech Platform",
+              "url": "https://www.kpscmaster.in/",
+              "description": "High-volume competitive examination portal serving thousands of Kerala PSC aspirants."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Digital Product Solutions (DPS) - Agency & Cloud Architecture",
+              "url": "https://www.digitalproductsolutions.in/",
+              "description": "Enterprise digital solutions agency delivering custom web platforms, cloud architecture, and business automation."
+            }
+          }
+        ]
+      },
+      {
         "@type": "FAQPage",
         "@id": `${profileCanonical}#faq`,
         mainEntity: [
